@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE articleinfo PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Test_Case.ent">
+%BOOK_ENTITIES;
+]>
+<articleinfo id="arti-Test_Case-Test_Case-Test_Case">
+	<title>Test Case</title>
+	<subtitle>为测试的同事提供友好的版本控制</subtitle>
+	<productname>EayunOS</productname>
+	<productnumber>4.0</productnumber>
+	<edition>0</edition>
+	<pubsnumber>0</pubsnumber>
+	<abstract>
+		<para>
+                 测试人员一直背负着效率低下的恶名。在大多数公司中，他们是中最不受重视的一个角色，在出现软件危机时，也是最先要受到“株连”的。我的一位担任测试经理的朋友，对此是深有感触。下面是他的牢骚：
+                </para>
+                <para>
+给测试留的时间不充分，又期望过高；
+                </para>
+                <para>
+屡犯错误的开发人员被调到测试部门“改造”，导致测试人员的自尊受到挫折；
+                </para>
+                <para>
+测试的计划性不强，谁也说不清一个回归测试到底测试了多少测试用例；
+                </para>
+                <para>
+
+测试用例完全不成体系，即使有某个可以参照，又往往是落后和过时的；
+                </para>
+                <para>
+
+测试部门不能有效的开发和维护测试工具，也没有对测试用例文档版本控制（Word格式的测试用例，实在是难以版本控制、难以多人维护）。
+
+您是否也遇到了同样的问题呢？
+                </para>
+                <para>
+
+我们来帮助他寻找一下问题的症结所在吧。是什么原因导致测试的工作没有得到足够的重视呢？是因为看不到测试工作的价值。这又是为什么呢？测试工作没有秩序的，难以及时发现问题，当软件产品抱着极大的期望值上市的时候，漏洞百出，人们当然习惯性的反推，为什么没有能够测试出来？进一步会问，到底测试了哪些功能？如果这时测试部门回答不出，那么可能就要有人要承担责任了。这当然不一定是测试的错。但是测试部门能够拿出一整套测试用例文档，告诉项目经理，这些都是我们测试通过的。那么问题的焦点就回到了分析测试用例上了。是不是有发现问题的测试用例？如果有，是哪个测试人员的疏忽导致问题没有找到？如果是测试用例没有覆盖到，那么就应该借这个代价昂贵的机进一步补充和完善测试用例，确保不会再出现类似问题。
+                </para>
+                <para>
+
+如果以上的分析大致正确的话，测试用例文档的积累，是重树测试部门形象的良机。DocBook正好适合这种需要持续积累的技术文档的撰写，再配合版本控制软件，建立一套可行的测试用例撰写和维护规范应该不难。当我把DocBook介绍给我的这位担任测试经理的朋友之后，他真的用 DocBook 改进了他的工作，得到领导的赏识。这不能不说是一个奇迹。
+                </para>
+                <para>
+
+下面是改进的测试部门的工作流程：
+                </para>
+                <para>
+
+一个回归测试周期的整个过程，都要以文档化的测试用例为基础。任何工作都体现在文档中，工作就做到了心中有数；
+                </para>
+                <para>
+
+测试用例要有统一的编号，一次回归测试测试就是有这一系列测试用例组成的；
+                </para>
+                <para>
+
+测试用例要由全体测试人员共同维护，随时随地更新，而这还需要版本控制系统的介入；
+                </para>
+                <para>
+
+规范的测试用例格式，内容要涵盖测试方法、输入和输出，还要包括测试中用到的模拟数据、自动化脚本等等；
+                </para>
+                <para>
+
+采用DocBook，撰写可以持续维护的测试用例文档，享受版本控制。
+		</para>
+	</abstract>
+	<corpauthor>
+		<inlinemediaobject>
+			<imageobject>
+				<imagedata fileref="Common_Content/images/title_logo.svg" format="SVG" />
+			</imageobject>
+		</inlinemediaobject>
+	</corpauthor>
+	<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="Author_Group.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+</articleinfo>
+
