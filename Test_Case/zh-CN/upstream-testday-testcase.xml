@@ -3,7 +3,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "Test_Case.ent">
 %BOOK_ENTITIES;
 ]>
-<sect1><title>场景测试</title>
+<sect1><title>testday3.3</title>
 <informaltable  frame='all'>	
 <tgroup cols='8' align='left' colsep='1' rowsep='1'>
   <colspec colname='c1'/>
@@ -29,8 +29,8 @@
     <entry>测试用例编号</entry>
     <entry>TESTB2B-0001</entry>
     <entry>测试用例名称</entry>
-    <entry>用户登录测试</entry>
-    <entry>作者</entry>
+    <entry></entry>
+    <entry></entry>
     <entry></entry>
   </row>
   <row>
@@ -52,11 +52,11 @@
 
 <table  frame='topbot'><title>测试步骤</title>
 <tgroup cols='5' align='left' colsep='1' rowsep='1'>
-  <colspec colwidth='1*'/>
-  <colspec colwidth='20*'/>
-  <colspec colwidth='10*'/>
-  <colspec colwidth='5*'/>
-  <colspec colwidth='10*'/>
+  <colspec colname='c1' colwidth='5*'/>
+  <colspec colname='c2' colwidth='20*'/>
+  <colspec colname='c3' colwidth='10*'/>
+  <colspec colname='c4' colwidth='5*'/>
+  <colspec colname='c5' colwidth='10*'/>
 <thead>
   <row>
     <entry>用例编号</entry><entry>操作</entry><entry>预期结果</entry><entry>实际结果</entry><entry>备注</entry>
@@ -64,50 +64,422 @@
 </thead>
 <tbody>
   <row>
+    <?dbhtml bgcolor="#1ce858" ?><?dbfo bgcolor="#1ce858" ?>
+    <entry namest="c1" nameend="c5" align="center">支持内存的快照</entry>
+  </row>
+  <row>
+    <?dbhtml bgcolor="#1c8ee8" ?><?dbfo bgcolor="#1c8ee8" ?>
+    <entry namest="c1" nameend="c5" align="center">创建快照</entry>
+  </row>
+  <row>
     <entry>1</entry>
     <entry>
-      <para>前提：虚拟化平台至少有一个Host及ISO domain
-创建Red Hat Enterprise Linux server
-1 登录虚拟化系统，在左侧树形面板下点击Expand All,选择Default数据中心下Default集群下点击VMs , 在右侧虚拟机列表下点击菜单栏内的New VM,输入名称、内存大小、选择操作系统为RedHat Enterprise Linux6.X X64、其他项保持默认设置，点击OK 
-2 弹出“New Virtual Machine-Guide Me”窗口，提示配置虚拟机磁盘，设置磁盘大小，网络接口默认VirtIO，点击OK（根据需要可以再添加磁盘）点击configure Later，创建的虚拟机显示在虚拟机列表下,安装操作系统</para>
+      <para>
+        1 选中运行状态的虚拟机，点击“create snapshot”；
+        2 在弹出的对话框内选中“Save Memory”点击OK；  
+      </para>
     </entry>
     <entry>
-      <para>创建的虚拟机成功，虚拟机可以正常使用</para>
+      <para>
+        在该云主机详细面板下选择“Snapshots”显示创建完成的Snapshot包含Memory
+      </para>
     </entry>
     <entry>
     </entry>
     <entry>
-     <para>创建Windows系统的虚拟机</para>
+     <para>
+        
+     </para>
     </entry>
   </row>
   <row>
     <entry>2</entry>
     <entry>
-      <para>前提：虚拟化平台至少有一个Host及ISO domain
-已经创建一个Red Hat Enterprise Linux server
-创建Red Hat Enterprise Linux Templates
-1 关闭虚拟,确保虚拟机状态Down
-2 Sealing 虚拟机（Linux/Windows参照文档Administration Guide）
-3 选中该虚拟机，点击菜单栏Make Template，在弹出的“New Template”输入名称，设置“允许所有用户访问该模板”及“复制虚拟机权限”，点击OK</para>
+      <para>
+       1 选中运行状态的虚拟机，点击“create snapshot”；
+2 在弹出的对话框内不选中“Save Memory”点击OK；
+      </para>
     </entry>
     <entry>
-      <para>虚拟机状态由Image Locke->Down
-在Template列表下显示创建的模板状态由Locked->OK</para>
+      <para>
+      在该云主机详细面板下选择“Snapshots”显示创建完成的Snapshot不包含Memory
+      </para>
     </entry>
     <entry>
     </entry>
     <entry>
-     创建Linux系统的模板
     </entry>
   </row>
   <row>
-    <entry>...</entry>
+    <?dbhtml bgcolor="#1ce858" ?><?dbfo bgcolor="#1ce858" ?>
+    <entry namest="c1" nameend="c5" align="center">预览快照</entry>
+  </row>
+  <row>
+    <entry>3</entry>
     <entry>
-      <para>...</para>
-      <para>...</para>
+      <para>
+       1 选中关闭状态的虚拟机；
+2 在虚拟机详细面板下选择“Snapshots”列表显示该虚拟机所有的快照；
+3 选中包含Memory的快照点击“Preview”，在“Preview Snapshot”对话框内选中“Restore Memory”点击OK；
+4 运行虚拟机；
+      </para>
     </entry>
     <entry>
-      <para>...</para>
+      <para>
+       1 查看虚拟机状态由“restoring state”到“up”;
+2 进入虚拟机检查之前的状态是否被恢复
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>4</entry>
+    <entry>
+      <para>
+      1 选中关闭状态的虚拟机；
+2 在虚拟机详细面板下选择“Snapshots”列表显示该虚拟机所有的快照；
+3 选中包含Memory的快照点击“Preview”，在“Preview Snapshot”对话框内不选中“Restore Memory”点击OK；
+4 运行虚拟机；
+      </para>
+    </entry>
+    <entry>
+      <para>
+         1 查看虚拟机状态由“powering up”到“up”;
+2 进入虚拟机，虚拟机状态没有变化只是刚刚启动
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <?dbhtml bgcolor="#1ce858" ?><?dbfo bgcolor="#1ce858" ?>
+    <entry namest="c1" nameend="c5" align="center">追加快照</entry>
+  </row>
+  <row>
+    <entry>5</entry>
+    <entry>
+      <para>
+    1 选中关闭状态的虚拟机；
+2 在虚拟机详细面板下选择“Snapshots”列表显示该虚拟机所有的快照；
+3 选中包含Memory的快照点击“Preview”，在“Preview Snapshot”对话框内选中“Restore Memory”点击OK；
+4 修改虚拟机，点击“commit”；
+5 在快照列表下该快照状态为active并包含Memory；
+6 运行虚拟机（run VM）；
+7 检查虚拟机状态由“restoring state”到“up”；
+8 进入虚拟机检查状态是否被恢复到快照时的状态；    
+      </para>
+    </entry>
+    <entry>
+      <para>
+      过程中5、7和8步骤中状态正确
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>6</entry>
+    <entry>
+      <para>
+     1 选中关闭状态的虚拟机；
+2 在虚拟机详细面板下选择“Snapshots”列表显示该虚拟机所有的快照；
+3 选中包含Memory的快照点击“Preview”，在“Preview Snapshot”对话框内不选中“Restore Memory”点击OK；
+4 修改虚拟机，点击“commit”；
+5 在快照列表下该快照状态为active并不包含Memory
+6 运行虚拟机（Run VM）；
+7 检查虚拟机状态由“powering up”到“up”；
+8 进入虚拟机检查状态没有变化保留之前状态只是重启了虚拟机
+      </para>
+    </entry>
+    <entry>
+      <para>
+      过程中5、7和8步骤中状态正确
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <?dbhtml bgcolor="#1ce858" ?><?dbfo bgcolor="#1ce858" ?>
+    <entry namest="c1" nameend="c5" align="center">运行虚拟机</entry>
+  </row>
+  <row>
+    <entry>7</entry>
+    <entry>
+      <para>
+     1 选择包含Memory的快照点击“Preview”，在“Preview Snapshot”对话框内选中“Restore Memory”点击OK；
+2 修改虚拟机，点击“commit”；
+3 采用stateless方式运行虚拟机（Run VM in stateless mode）；
+4 检查虚拟机状态是由“restoring state”到“up”；
+5 进入虚拟机检查虚拟机状态是否被恢复，同时修改虚拟机；
+6 关闭虚拟机；
+7 再运行虚拟机；
+8 检查虚拟机状态是由“restoring state”到“up”；
+9 再次进入虚拟机检查状态，虚拟机恢复到第二次修改虚拟机之前的状态；
+       
+      </para>
+    </entry>
+    <entry>
+      <para>
+       过程中4、5、8和9四步骤中状态正确
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>8</entry>
+    <entry>
+      <para>
+        1 选择包含Memory的快照点击“Preview”，在“Preview Snapshot”对话框内选中“Restore Memory”点击OK；
+2 修改虚拟机，点击“commit”；
+3 采用stateless方式运行虚拟机（Run VM in stateless mode）；
+4 检查虚拟机状态是由“restoring state”到“up”；
+5 进入虚拟机检查虚拟机状态是否被恢复，同时修改虚拟机；
+6 关闭虚拟机；
+7 再运行虚拟机；
+8 检查虚拟机状态是由“restoring state”到“up”；
+9 再次进入虚拟机检查状态，虚拟机恢复到第二次修改虚拟机之前的状态；
+      </para>
+    </entry>
+    <entry>
+      <para>
+        过程中4、5、8和9四步骤中状态正确
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <?dbhtml bgcolor="#1ce858" ?><?dbfo bgcolor="#1ce858" ?>
+    <entry namest="c1" nameend="c5" align="center">导入/导出虚拟机</entry>
+  </row>
+  <row>
+    <entry>9</entry>
+    <entry>
+      <para>
+      1 运行虚拟机
+2 创建带内存的活跃状态的快照
+3 关闭虚拟机
+4 Preview快照
+5 commit to 快照
+6 导出虚拟机
+7 移除虚拟机
+8 导入虚拟机
+9 检查快照页面中是否有两个带内存的快照
+10 运行虚拟机
+11 确认初始状态是‘restoring state’然后变成‘up’
+12 连接到虚拟机，检查之前的状态是否恢复（打开的应用、剪贴板内容等等） 
+      </para>
+    </entry>
+    <entry>
+      <para>
+        过程中9、11和12步骤中正确
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>10</entry>
+    <entry>
+      <para>
+         1 运行虚拟机
+2 创建带内存的活跃状态的快照
+3 关闭虚拟机
+4 Preview快照
+5 commit to 快照
+6 导出虚拟机
+7 以克隆方式导入虚拟机（只能这么做，因为虚拟机已经存在了）
+8 检查快页面单中是否只有唯一不带内存的快照（活跃状态的快照）
+9 运行虚拟机
+10 确认初始状态是‘powering up’然后变成‘up’
+11 连接到虚拟机，检查是否看起来像刚启动之后
+      </para>
+    </entry>
+    <entry>
+      <para>
+        过程中8、10和11步骤中正确
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>11</entry>
+    <entry>
+      <para>
+      1 在NFS存储上：
+2 运行虚拟机
+3 创建带内存的活跃状态的快照
+4 关闭虚拟机
+5 Preview快照
+6 commit to 快照
+7 导出虚拟机
+8 在block-based存储上：
+9 导入虚拟机
+10 运行虚拟机
+11 确认初始状态是‘restoring state’然后变成‘up’
+12 连接到虚拟机，检查之前的状态是否恢复（打开的应用、剪贴板内容等等）
+      </para>
+    </entry>
+    <entry>
+      <para>
+    过程中11和12步骤中正确
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>12</entry>
+    <entry>
+      <para>
+      与上一个case一样，但是第一步在block-based存储上，后一步在file based存储上
+      </para>
+    </entry>
+    <entry>
+      <para>
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>13</entry>
+    <entry>
+      <para>
+       1 运行虚拟机
+2 创建带内存的活跃状态的快照
+3 关闭虚拟机
+4 Preview快照
+5 commit to 快照
+6 用“Collapse Snapshots”导出虚拟机
+7 移除虚拟机
+8 导入虚拟机
+9 检查快照页面中是否只有唯一带内存的快照
+10 运行虚拟机
+11 确认初始状态是‘restoring state’然后变成‘up’
+12 连接到虚拟机，检查之前的状态是否恢复（打开的应用、剪贴板内容等等）
+      </para>
+    </entry>
+    <entry>
+      <para>
+       过程中9、11和12步骤中正确
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>14</entry>
+    <entry>
+      <para>
+        1 运行虚拟机
+2 创建带内存的活跃状态的快照
+3 关闭虚拟机
+4 Preview快照
+5 commit to 快照
+6 导出虚拟机
+7 移除虚拟机
+8 用“Collapse Snapshots”导入虚拟机
+9 检查快照页面中是否只有唯一带内存的快照
+10 运行虚拟机
+11 确认初始状态是‘restoring state’然后变成‘up’
+12 连接到虚拟机，检查之前的状态是否恢复（打开的应用、剪贴板内容等等）
+      </para>
+    </entry>
+    <entry>
+      <para>
+       过程中9、11和12步骤中正确
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <?dbhtml bgcolor="#1ce858" ?><?dbfo bgcolor="#1ce858" ?>
+    <entry namest="c1" nameend="c5" align="center"></entry>
+  </row>
+  <row>
+    <entry>2</entry>
+    <entry>
+      <para>
+      </para>
+    </entry>
+    <entry>
+      <para>
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>2</entry>
+    <entry>
+      <para>
+      </para>
+    </entry>
+    <entry>
+      <para>
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>2</entry>
+    <entry>
+      <para>
+      </para>
+    </entry>
+    <entry>
+      <para>
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>2</entry>
+    <entry>
+      <para>
+      </para>
+    </entry>
+    <entry>
+      <para>
+      </para>
     </entry>
     <entry>
     </entry>
