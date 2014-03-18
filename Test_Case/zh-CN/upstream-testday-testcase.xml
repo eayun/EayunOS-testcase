@@ -424,31 +424,20 @@
   </row>
   <row>
     <?dbhtml bgcolor="#1ce858" ?><?dbfo bgcolor="#1ce858" ?>
-    <entry namest="c1" nameend="c5" align="center"></entry>
+    <entry namest="c1" nameend="c5" align="center">RDP</entry>
   </row>
   <row>
-    <entry>2</entry>
+    <entry>21</entry>
     <entry>
       <para>
+        1 创建一个windows系统的虚拟机，安装windows系统，设置允许远程访问该虚拟机；
+2 在console操作的对话框内选择“Native client”；
+3 点击console按钮进入console；
       </para>
     </entry>
     <entry>
       <para>
-      </para>
-    </entry>
-    <entry>
-    </entry>
-    <entry>
-    </entry>
-  </row>
-  <row>
-    <entry>2</entry>
-    <entry>
-      <para>
-      </para>
-    </entry>
-    <entry>
-      <para>
+         可以通过RDP进入
       </para>
     </entry>
     <entry>
@@ -457,9 +446,16 @@
     </entry>
   </row>
   <row>
-    <entry>2</entry>
+    <?dbhtml bgcolor="#1ce858" ?><?dbfo bgcolor="#1ce858" ?>
+    <entry namest="c1" nameend="c5" align="center">Redesigned Display Options dialog</entry>
+  </row>
+  <row>
+    <entry>38</entry>
     <entry>
       <para>
+          Test dialog functionality
+1 创建2个虚拟机，使用SPICE和VNC访问该虚拟机；
+2 打开Console 操作对话框尝试各种操作组合，然后连接虚拟机
       </para>
     </entry>
     <entry>
@@ -472,7 +468,931 @@
     </entry>
   </row>
   <row>
-    <entry>2</entry>
+    <entry>39</entry>
+    <entry>
+      <para>
+         Testing options persistence
+1 打开console操作对话框；
+2 改变一些操作；
+3 刷新浏览器；
+4 再次打开console操作对话框；
+      </para>
+    </entry>
+    <entry>
+      <para>
+        检查之前选中的操作被是否被选中
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <?dbhtml bgcolor="#1ce858" ?><?dbfo bgcolor="#1ce858" ?>
+    <entry namest="c1" nameend="c5" align="center">EmulatedMachine</entry>
+  </row>
+  <row>
+    <entry>40</entry>
+    <entry>
+      <para>
+        在fedora host的Cluster下，创建虚拟机并运行虚拟机
+      </para>
+    </entry>
+    <entry>
+      <para>
+         虚拟机创建成功并可运行
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>41</entry>
+    <entry>
+      <para>
+         在RHEL6 host，创建虚拟机并运行虚拟机
+      </para>
+    </entry>
+    <entry>
+      <para>
+       虚拟机创建成功并可运行
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>42</entry>
+    <entry>
+      <para>
+       在fedora host的Cluster下,添加一个RHEL6的node;
+在RHEL6 host的Cluster下，添加一个fedora的node
+      </para>
+    </entry>
+    <entry>
+      <para>
+       由于UNSUPPORTED_EMULATION_MODE，host为NON_OPERATIONAL
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <?dbhtml bgcolor="#1ce858" ?><?dbfo bgcolor="#1ce858" ?>
+    <entry namest="c1" nameend="c5" align="center">Manage Storage Connections</entry>
+  </row>
+  <row>
+    <entry>63</entry>
+    <entry>
+      <para>
+      NFS - edit in webadmin UI
+前提准备：手动复制存储域的内容将其从当前路径到目标路径
+1 Data domain置成维护模式
+2 右键编辑存储域
+3 修改挂载路径到其他存储服务器
+4 编辑NFS高级选项：retransmissions, timeout 
+5 激活存储域
+      </para>
+    </entry>
+    <entry>
+      <para>
+      
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>64</entry>
+    <entry>
+      <para>
+         Posix - edit in webadmin UI
+前提准备：手动复制存储域的内容将其从当前路径到目标路径
+1 Data domain置成维护模式
+2 右键编辑存储域
+3 修改挂载路径到其他存储服务器
+4 编辑挂载操作
+5 激活存储域
+      </para>
+    </entry>
+    <entry>
+      <para>
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <?dbhtml bgcolor="#1ce858" ?><?dbfo bgcolor="#1ce858" ?>
+    <entry namest="c1" nameend="c5" align="center">节点</entry>
+  </row>
+  <row>
+    <entry>69</entry>
+    <entry>
+      <para>
+          Auto-install(HTTPS)
+使用自动安装方式注册https(management_server=host:port)
+      </para>
+    </entry>
+    <entry>
+      <para>
+          为了被批准Host应该在Engine上可见
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>70</entry>
+    <entry>
+      <para>
+       Auto-install(HTTP)
+使用自动安装方式注册https(management_server=host:port)（port 80）
+      </para>
+    </entry>
+    <entry>
+      <para>
+        为了被批准Host应该在Engine上可见
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>71</entry>
+    <entry>
+      <para>
+         Auto-install(password)
+带 rhevm-admin-password 的自动安装
+      </para>
+    </entry>
+    <entry>
+      <para>
+         Root password 应该正确设置
+ssh password认证应该启用
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>72</entry>
+    <entry>
+      <para>
+        TUI--HTTPS
+在TUI注册Host，确认认证，host应该显示
+      </para>
+    </entry>
+    <entry>
+      <para>
+        Host在Engine上可见待批准
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>73</entry>
+    <entry>
+      <para>
+        TUI--HTTP
+在TUI使用HTTP80端口注册Host
+      </para>
+    </entry>
+    <entry>
+      <para>
+      Host在Engine上可见待批准
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>74</entry>
+    <entry>
+      <para>
+             TUI--password
+设置密码在TUI ovirt Engine屏
+      </para>
+    </entry>
+    <entry>
+      <para>
+Root password 应该正确设置
+ssh password认证应该启用
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>75</entry>
+    <entry>
+      <para>
+        Engine添加Host
+设置密码后（或者通过TUI或者自动安装）使用添加Host流程在Engine上添加ovirt Node Host
+      </para>
+    </entry>
+    <entry>
+      <para>
+    Host正确添加并激活
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>76</entry>
+    <entry>
+      <para>
+        Engine approval
+注册完成后（），在Engine上批准ovirt node
+      </para>
+    </entry>
+    <entry>
+      <para>
+      Host成功被批准
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>77</entry>
+    <entry>
+      <para>
+        异常测试：无效的host名字及无效的ip
+在TUI上设置无效的hostname或无效的iP
+      </para>
+    </entry>
+    <entry>
+      <para>
+          屏幕上会出现警告，不能设定成功
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>78</entry>
+    <entry>
+      <para>
+        异常测试：无效的端口
+在TUI上设置无效的端口
+      </para>
+    </entry>
+    <entry>
+      <para>
+     屏幕上会出现警告，不能设定成功
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>79</entry>
+    <entry>
+      <para>
+         异常测试：拒绝证书
+注册engine时，不下载证书
+      </para>
+    </entry>
+    <entry>
+      <para>
+          不能设定成功
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>80</entry>
+    <entry>
+      <para>
+        异常测试：确认密码设置为与密码不匹配
+设置密码，确认密码时输入其它密码
+      </para>
+    </entry>
+    <entry>
+      <para>
+         不能设定成功
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>81</entry>
+    <entry>
+      <para>
+           获取证书
+点击获取证书（https）
+      </para>
+    </entry>
+    <entry>
+      <para>
+         屏幕上清晰显示指纹并提供接受或者拒绝
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>82</entry>
+    <entry>
+      <para>
+        屏幕上清晰显示指纹并提供接受或者拒绝
+      </para>
+    </entry>
+    <entry>
+      <para>
+         页面应该返回并提示证书已被接受
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>83</entry>
+    <entry>
+      <para>
+         异常测试：从错误的Host上获取证书
+从一个错误的Host或者IP获取证书
+      </para>
+    </entry>
+    <entry>
+      <para>
+       屏幕清晰显示获取证书错误的信息
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <?dbhtml bgcolor="#1ce858" ?><?dbfo bgcolor="#1ce858" ?>
+    <entry namest="c1" nameend="c5" align="center">整合功能</entry>
+  </row>
+  <row>
+    <?dbhtml bgcolor="#ffe858" ?><?dbfo bgcolor="#ffe858" ?>
+    <entry namest="c1" nameend="c5" align="center">基本测试</entry>
+  </row>
+  <row>
+    <entry>84</entry>
+    <entry>
+      <para>
+        在一个干净系统下运行engine-setup-2
+      </para>
+    </entry>
+    <entry>
+      <para>
+        1 检查整个过程是否成功
+2 检查portal入口是否可以进入系统
+3 check that the engine is running as it was installed using legacy setup
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>85</entry>
+    <entry>
+      <para>
+    在一个干净系统下安装AIO插件并运行engine-setup-2
+      </para>
+    </entry>
+    <entry>
+      <para>
+        1 检查整个过程是否成功
+2 检查portal入口是否可以进入系统
+3  check that the engine is running as it was installed using legacy setup with AIO plugin
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>86</entry>
+    <entry>
+      <para>
+     在一个已安装了engine-setup-2的系统上运行engine-cleanup-2
+      </para>
+    </entry>
+    <entry>
+      <para>
+         检查系统被清空
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>87</entry>
+    <entry>
+      <para>
+         版本升级
+安装静态版本在一个可支持的操作系统上（3.2版本不支持Fedora 19）现将版本升级为3.3.0
+运行 engine-setup-2
+      </para>
+    </entry>
+    <entry>
+      <para>
+         1 检查安装包是否升级到3.3.0
+2 检查DB 是否升级
+3 检查配置是否升级
+4 检查升级以后portal入口是否可以登录系统
+5 检查升级以后engine是否可以正常运行
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>88</entry>
+    <entry>
+      <para>
+      安装beta版本使用engine-setup-2
+升级到最新的engine-setup-2
+运行engine-setup-2
+      </para>
+    </entry>
+    <entry>
+      <para>
+         1 检查安装包是否升级到最新
+2 检查DB 是否升级
+3 检查配置是否升级
+4 检查升级以后portal入口是否可以登录系统
+5 检查升级以后engine是否可以正常运行
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>89</entry>
+    <entry>
+      <para>
+        安装beta版本使用legacy engine-setup
+升级ovirt-engine-setup到最新的版本
+运行 engine-setup-2
+      </para>
+    </entry>
+    <entry>
+      <para>
+       1 检查安装包是否升级到最新
+2 检查DB 是否升级
+3 检查配置是否升级
+4 检查升级以后portal入口是否可以登录系统
+5 检查升级以后engine是否可以正常运行
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <?dbhtml bgcolor="#ffe858" ?><?dbfo bgcolor="#ffe858" ?>
+    <entry namest="c1" nameend="c5" align="center">Detailed Features Testing</entry>
+  </row>
+  <row>
+    <entry>90</entry>
+    <entry>
+      <para>
+最低硬件要求验证
+运行engine-setup-2 在一个小于4GB内存的系统
+      </para>
+    </entry>
+    <entry>
+      <para>
+ 验证警告：在这Host上是内存不足
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>91</entry>
+    <entry>
+      <para>
+推荐硬件需求验证
+运行engine-setup-2 在一个小于16GB内存的系统
+      </para>
+    </entry>
+    <entry>
+      <para>
+验证警告：系统运行的内存没有达到推荐使用的内存
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>92</entry>
+    <entry>
+      <para>
+   生成answer文件
+运行engine-setup-2 --generate-answer=filename或
+运行engine-setup-2 --generate-answer=filename
+      </para>
+    </entry>
+    <entry>
+      <para>
+执行命令后，文件生成
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>93</entry>
+    <entry>
+      <para>
+         使用answer文件
+在之前执行的生成一个answer文件下运行engine-setup-2 --config-append=filename 或
+engine-cleanup-2 --config-append=filename
+      </para>
+    </entry>
+    <entry>
+      <para>
+engine-setup-2正常运行
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>94</entry>
+    <entry>
+      <para>
+日志
+运行 engine-setup-2 或 engine-cleanup-2
+      </para>
+    </entry>
+    <entry>
+      <para>
+检查在/tmp下创建了一个文件
+检查记录的配置摘要
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>95</entry>
+    <entry>
+      <para>
+日志
+运行 engine-setup-2 --log=filename或 engine-cleanup-2 --log=filename
+      </para>
+    </entry>
+    <entry>
+      <para>
+检查在指定路径下创建log
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+
+  <row>
+    <entry>96</entry>
+    <entry>
+      <para>
+  防火墙管理配置
+在一个干净的系统下运行engine-setup-2
+      </para>
+    </entry>
+    <entry>
+      <para>
+1 检查如果只有安装firewalld系统才会提示你是否要配置它
+2 检查如果只有安装iptables系统才会提示你是否要配置它
+3 检查如果安装了firewalld和iptables系统会首先提示你firewalld，如果你回答no系统会提示iptables
+4 检查执行结束后仅选择正在运行的firewall管理
+5 如果没有firewall管理被选择，用户可以手动配置
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>97</entry>
+    <entry>
+      <para>
+  密码隐藏
+运行engine-setup-2
+      </para>
+    </entry>
+    <entry>
+      <para>
+1 检查当输入密码时屏幕上没有任何显示
+2 检查输入的密码在日志中是不可见的
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>98</entry>
+    <entry>
+      <para>
+      输出信息
+运行engine-setup-2 
+      </para>
+    </entry>
+    <entry>
+      <para>
+1 check that there is a message telling where to find the log file
+2 check that a summary of the configuration is presented when running without an answer file before applying changes to the system allowing the user to abort the procedure
+3 check that there is an info message finalizing the successful install
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>99</entry>
+    <entry>
+      <para>
+输出信息
+运行engine-cleanup-2
+      </para>
+    </entry>
+    <entry>
+      <para>
+1 check that there is a message telling where to find the log file
+2 check that there is an info message finalizing the successful cleanup
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>100</entry>
+    <entry>
+      <para>
+数据库配置
+在干净系统上运行engine-setup-2
+选择本地数据库
+选择自动的postgresql配置
+      </para>
+    </entry>
+    <entry>
+      <para>
+检查数据库是不是正确的配置和创建
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>101</entry>
+    <entry>
+      <para>
+数据库配置
+在干净系统上运行engine-setup-2
+选择本地数据库
+选择手动配置postgresql
+根据屏幕提示，填充所需的连接参数
+      </para>
+    </entry>
+    <entry>
+      <para>
+1 检查设置成功完成
+2 检查设置结束engine正常运行
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>102</entry>
+    <entry>
+      <para>
+远程数据库配置
+在干净系统下运行engine-setup-2
+选择远程数据库，按照屏幕提示，填充所需的连接参数
+      </para>
+    </entry>
+    <entry>
+      <para>
+1 检查设置成功完成
+2 检查设置结束engine正常运行
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>103</entry>
+    <entry>
+      <para>
+Apache配置
+在干净系统上运行engine-setup-2
+      </para>
+    </entry>
+    <entry>
+      <para>
+1 check that if selinux is enabled  httpd_can_network_connect flag is enabled on http and https ports
+2 check that existing httpd configuration were backed up
+3 check that mod_ssl was configured for using engine apache keys
+4 check that Apache was configured as proxy for the requests to the jboss service
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>104</entry>
+    <entry>
+      <para>
+工具配置
+在一干经系统下运行engine-setup-2
+      </para>
+    </entry>
+    <entry>
+      <para>
+检查ovirt-log-collector、ovirt-iso-uploader和ovirt-image-uploader是否配置
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>105</entry>
+    <entry>
+      <para>
+验证AIO插件硬件需求
+安装ovirt-engine-setup-plugins-allinone 运行engine-setup-2
+      </para>
+    </entry>
+    <entry>
+      <para>
+1 检查如果启用了对虚拟化的CPU硬件支持那么可以配置VDSM
+2 如果bios禁用了或者CPU不支持对虚拟化CPU硬件支持那么不可以配置VDSM
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>89</entry>
+    <entry>
+      <para>
+      </para>
+    </entry>
+    <entry>
+      <para>
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>89</entry>
+    <entry>
+      <para>
+      </para>
+    </entry>
+    <entry>
+      <para>
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>89</entry>
+    <entry>
+      <para>
+      </para>
+    </entry>
+    <entry>
+      <para>
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>89</entry>
+    <entry>
+      <para>
+      </para>
+    </entry>
+    <entry>
+      <para>
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>89</entry>
+    <entry>
+      <para>
+      </para>
+    </entry>
+    <entry>
+      <para>
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>89</entry>
     <entry>
       <para>
       </para>
