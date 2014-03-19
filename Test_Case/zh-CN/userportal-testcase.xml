@@ -3,7 +3,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "Test_Case.ent">
 %BOOK_ENTITIES;
 ]>
-<sect1><title>场景测试</title>
+<sect1><title>用户门户测试</title>
 <informaltable  frame='all'>	
 <tgroup cols='8' align='left' colsep='1' rowsep='1'>
   <colspec colname='c1'/>
@@ -27,11 +27,11 @@
   </row>
   <row>
     <entry>测试用例编号</entry>
-    <entry>TESTB2B-0001</entry>
+    <entry>TEST-0001</entry>
     <entry>测试用例名称</entry>
-    <entry>用户登录测试</entry>
+    <entry>用户门户</entry>
     <entry>作者</entry>
-    <entry></entry>
+    <entry>阎颖</entry>
   </row>
   <row>
     <entry>测试用例描述(方法和目的)</entry>
@@ -52,11 +52,11 @@
 
 <table  frame='topbot'><title>测试步骤</title>
 <tgroup cols='5' align='left' colsep='1' rowsep='1'>
-  <colspec colwidth='1*'/>
-  <colspec colwidth='20*'/>
-  <colspec colwidth='10*'/>
-  <colspec colwidth='5*'/>
-  <colspec colwidth='10*'/>
+  <colspec colname="c1" colwidth='10*'/>
+  <colspec colname="c2" colwidth='20*'/>
+  <colspec colname="c3" colwidth='10*'/>
+  <colspec colname="c4" colwidth='5*'/>
+  <colspec colname="c5" colwidth='10*'/>
 <thead>
   <row>
     <entry>用例编号</entry><entry>操作</entry><entry>预期结果</entry><entry>实际结果</entry><entry>备注</entry>
@@ -64,40 +64,270 @@
 </thead>
 <tbody>
   <row>
+    <?dbhtml bgcolor="#ffe858" ?><?dbfo bgcolor="#ffe858" ?>
+    <entry namest="c1" nameend="c5" align="center">登录/登出</entry>
+  </row>
+  <row>
     <entry>1</entry>
     <entry>
-      <para>前提：虚拟化平台至少有一个Host及ISO domain
-创建Red Hat Enterprise Linux server
-1 登录虚拟化系统，在左侧树形面板下点击Expand All,选择Default数据中心下Default集群下点击VMs , 在右侧虚拟机列表下点击菜单栏内的New VM,输入名称、内存大小、选择操作系统为RedHat Enterprise Linux6.X X64、其他项保持默认设置，点击OK 
-2 弹出“New Virtual Machine-Guide Me”窗口，提示配置虚拟机磁盘，设置磁盘大小，网络接口默认VirtIO，点击OK（根据需要可以再添加磁盘）点击configure Later，创建的虚拟机显示在虚拟机列表下,安装操作系统</para>
+      <para>
+      1.浏览器中输入engine地址，打开网页，点击User Portal
+2.在弹出登录框中输入用户名、密码、在Domain下拉菜单上选择用户对应的正确的domain（如admin -> ）
+3.若该用户下只有一个虚拟机选中“Connect Automatically”
+4.点击Login
+      </para>
     </entry>
     <entry>
-      <para>创建的虚拟机成功，虚拟机可以正常使用</para>
+      <para>
+进入系统会直接连接虚拟机
+      </para>
     </entry>
     <entry>
     </entry>
     <entry>
-     <para>创建Windows系统的虚拟机</para>
+     <para>
+
+     </para>
     </entry>
   </row>
   <row>
     <entry>2</entry>
     <entry>
-      <para>前提：虚拟化平台至少有一个Host及ISO domain
-已经创建一个Red Hat Enterprise Linux server
-创建Red Hat Enterprise Linux Templates
-1 关闭虚拟,确保虚拟机状态Down
-2 Sealing 虚拟机（Linux/Windows参照文档Administration Guide）
-3 选中该虚拟机，点击菜单栏Make Template，在弹出的“New Template”输入名称，设置“允许所有用户访问该模板”及“复制虚拟机权限”，点击OK</para>
+      <para>
+1.浏览器中输入engine地址，打开网页，点击User Portal
+2.在弹出登录框中输入用户名、密码、在Domain下拉菜单上选择用户对应的正确的domain（如admin -> ）
+3.若该用户下有多个虚拟机不选中“Connect Automatically”
+4.点击Login
+      </para>
     </entry>
     <entry>
-      <para>虚拟机状态由Image Locke->Down
-在Template列表下显示创建的模板状态由Locked->OK</para>
+      <para>
+   进入系统
+      </para>
     </entry>
     <entry>
     </entry>
     <entry>
-     创建Linux系统的模板
+    </entry>
+  </row>
+  <row>
+    <?dbhtml bgcolor="#ffe858" ?><?dbfo bgcolor="#ffe858" ?>
+    <entry namest="c1" nameend="c5" align="center">中英文切换</entry>
+  </row>
+  <row>
+    <entry>3</entry>
+    <entry>
+      <para>
+      1.浏览器中输入engine地址，打开网页，选择页面下语言切换下拉菜单，选择英文，登录
+      </para>
+    </entry>
+    <entry>
+      <para>
+       进入系统应为英文环境
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>4</entry>
+    <entry>
+      <para>
+    浏览器中输入engine地址，打开网页，选择页面下语言切换下拉菜单，选择中文，登录
+      </para>
+    </entry>
+    <entry>
+      <para>
+   进入系统应为中文环境
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <?dbhtml bgcolor="#ffe858" ?><?dbfo bgcolor="#ffe858" ?>
+    <entry namest="c1" nameend="c5" align="center">安装SPICE客户端</entry>
+  </row>
+  <row>
+    <entry>5</entry>
+    <entry>
+      <para>
+     Linux Firefox 安装SPICE
+1. yum install spice-xpi
+2. rpm -q virt-viewer(输出：virt-viewer-0.5.2-18.e16_4.2.x86_64)
+3.yum install virt-viewer
+4. Restart Firefox
+5.使用SPICE连接虚拟机
+      </para>
+    </entry>
+    <entry>
+      <para>
+         可以使用SPICE访问虚拟机
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>6</entry>
+    <entry>
+      <para>
+Windows IE 安装SPICE
+1.安装remote-viewer
+2.Restart IE 
+3.使用SPICE
+      </para>
+    </entry>
+    <entry>
+      <para>
+  可以使用SPICE访问虚拟机
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <?dbhtml bgcolor="#ffe858" ?><?dbfo bgcolor="#ffe858" ?>
+    <entry namest="c1" nameend="c5" align="center">用户界面</entry>
+  </row>
+  <row>
+    <entry>7</entry>
+    <entry>
+      <para>
+1.UserPortal登录系统，系统显示分配给该用户的所有虚拟机
+2.显示虚拟机的类型和状态
+      </para>
+    </entry>
+    <entry>
+      <para>
+     界面显示正确
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <?dbhtml bgcolor="#ffe858" ?><?dbfo bgcolor="#ffe858" ?>
+    <entry namest="c1" nameend="c5" align="center">虚拟机相关</entry>
+  </row>
+  <row>
+    <entry>8</entry>
+    <entry>
+      <para>
+  选择一个单独虚拟机（非虚拟机池内的），点击“运行”绿色箭头按钮
+      </para>
+    </entry>
+    <entry>
+      <para>
+连接进入虚拟机
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>9</entry>
+    <entry>
+      <para>
+         <orderedlist numeration="arabic">
+             <listitem>
+               <para>
+           选择虚拟机池点击“run”绿色箭头
+               </para>
+             </listitem>
+             <listitem>
+               <para>
+           开启一个虚拟机，虚拟机Powering up（电源正在启动)
+               </para>
+             </listitem>
+             <listitem>
+               <para>
+           虚拟机启动完成后，虚拟机（Machine is Ready）
+               </para>
+             </listitem>
+        </orderedlist>
+      </para>
+    </entry>
+    <entry>
+      <para>
+           连接进入虚拟机
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>2</entry>
+    <entry>
+      <para>
+      </para>
+    </entry>
+    <entry>
+      <para>
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>2</entry>
+    <entry>
+      <para>
+      </para>
+    </entry>
+    <entry>
+      <para>
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>2</entry>
+    <entry>
+      <para>
+      </para>
+    </entry>
+    <entry>
+      <para>
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
+    </entry>
+  </row>
+  <row>
+    <entry>2</entry>
+    <entry>
+      <para>
+      </para>
+    </entry>
+    <entry>
+      <para>
+      </para>
+    </entry>
+    <entry>
+    </entry>
+    <entry>
     </entry>
   </row>
   <row>
