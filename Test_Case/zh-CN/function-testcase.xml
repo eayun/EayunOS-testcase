@@ -3,7 +3,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "Test_Case.ent">
 %BOOK_ENTITIES;
 ]>
-<sect1><title>场景测试</title>
+<sect1><title>功能测试</title>
 <informaltable  frame='all'>	
 <tgroup cols='8' align='left' colsep='1' rowsep='1'>
   <colspec colname='c1'/>
@@ -27,11 +27,11 @@
   </row>
   <row>
     <entry>测试用例编号</entry>
-    <entry>TESTB2B-0001</entry>
-    <entry>测试用例名称</entry>
-    <entry>用户登录测试</entry>
-    <entry>作者</entry>
     <entry></entry>
+    <entry>测试用例名称</entry>
+    <entry>功能测试</entry>
+    <entry>作者</entry>
+    <entry>阎颖</entry>
   </row>
   <row>
     <entry>测试用例描述(方法和目的)</entry>
@@ -52,11 +52,11 @@
 
 <table  frame='topbot'><title>测试步骤</title>
 <tgroup cols='5' align='left' colsep='1' rowsep='1'>
-  <colspec colwidth='1*'/>
-  <colspec colwidth='20*'/>
-  <colspec colwidth='10*'/>
-  <colspec colwidth='5*'/>
-  <colspec colwidth='10*'/>
+  <colspec colname='c1' colwidth='5*'/>
+  <colspec colname='c2' colwidth='20*'/>
+  <colspec colname='c3' colwidth='10*'/>
+  <colspec colname='c4' colwidth='5*'/>
+  <colspec colname='c5' colwidth='10*'/>
 <thead>
   <row>
     <entry>用例编号</entry><entry>操作</entry><entry>预期结果</entry><entry>实际结果</entry><entry>备注</entry>
@@ -64,40 +64,3688 @@
 </thead>
 <tbody>
   <row>
+    <?dbhtml bgcolor="#1ce858" ?><?dbfo bgcolor="#1ce858" ?>
+    <entry namest="c1" nameend="c5" align="center">数据中心</entry>
+  </row>
+  <row>
     <entry>1</entry>
     <entry>
-      <para>前提：虚拟化平台至少有一个Host及ISO domain
-创建Red Hat Enterprise Linux server
-1 登录虚拟化系统，在左侧树形面板下点击Expand All,选择Default数据中心下Default集群下点击VMs , 在右侧虚拟机列表下点击菜单栏内的New VM,输入名称、内存大小、选择操作系统为RedHat Enterprise Linux6.X X64、其他项保持默认设置，点击OK 
-2 弹出“New Virtual Machine-Guide Me”窗口，提示配置虚拟机磁盘，设置磁盘大小，网络接口默认VirtIO，点击OK（根据需要可以再添加磁盘）点击configure Later，创建的虚拟机显示在虚拟机列表下,安装操作系统</para>
+      <para>
+    创建数据中心
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+登录虚拟化系统，在左侧树形面板下点击Expand All,点击System选择Data Centers
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+点击New，显示New Data Center对话框，输入名称及其描述，选择Type（必须与该数据中心的存储类型一致）
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击OK，显示New Data Center-Guide me对话框，提示配置Cluster（可以在这部直接配置Cluster也可以之后再创建Cluster）
+              </para>
+            </listitem>
+        </orderedlist>
     </entry>
     <entry>
-      <para>创建的虚拟机成功，虚拟机可以正常使用</para>
+      <para>
+   
+数据中心创建成功
+      </para>
     </entry>
     <entry>
+      <para>
+   
+      </para>
     </entry>
     <entry>
-     <para>创建Windows系统的虚拟机</para>
+     <para>
+     
+     </para>
     </entry>
   </row>
   <row>
     <entry>2</entry>
     <entry>
-      <para>前提：虚拟化平台至少有一个Host及ISO domain
-已经创建一个Red Hat Enterprise Linux server
-创建Red Hat Enterprise Linux Templates
-1 关闭虚拟,确保虚拟机状态Down
-2 Sealing 虚拟机（Linux/Windows参照文档Administration Guide）
-3 选中该虚拟机，点击菜单栏Make Template，在弹出的“New Template”输入名称，设置“允许所有用户访问该模板”及“复制虚拟机权限”，点击OK</para>
+      <para>
+  编辑数据中心
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+登录虚拟化系统，在左侧树形面板下点击Expand All,点击System选择Data Centers
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在右侧详细面板下选择待编辑的数据中心（激活状态），点击edit（Type项不可编辑）编辑其它选项。
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击OK，
+              </para>
+            </listitem>
+        </orderedlist>
     </entry>
     <entry>
-      <para>虚拟机状态由Image Locke->Down
-在Template列表下显示创建的模板状态由Locked->OK</para>
+      <para>
+   Type类型不可编辑刷新界面可以看到数据中心修改成功
+      </para>
     </entry>
     <entry>
+      <para>
+   
+      </para>
     </entry>
     <entry>
-     创建Linux系统的模板
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>3</entry>
+    <entry>
+      <para>
+       编辑数据中心
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+ 登录虚拟化系统，在左侧树形面板下点击Expand All,点击System选择Data Centers
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在右侧详细面板下选择待编辑的数据中心（未初始化状态），点击edit（Type项可编辑）编辑其它选项
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   Type类型可以编辑，刷新界面可以看到数据中心修改成功
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>4</entry>
+    <entry>
+      <para>
+            编辑数据中心
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+登录虚拟化系统，在左侧树形面板下点击Expand All,点击System选择Data Centers
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在右侧详细面板下选择待编辑的数据中心（无响应状态），点击edit（Type项不可编辑）编辑其它选项。
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   Type类型不可编辑，刷新界面可以看到数据中心修改成功
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>5</entry>
+    <entry>
+      <para>
+删除数据中心
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+登录虚拟化系统，在左侧树形面板下点击Expand All,点击System选择Data Centers
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在右侧详细面板下选择待编辑的数据中心（未初始化状态），无存储或存储域为maintenace,点击remove
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+ 点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   数据中心被删除
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>6</entry>
+    <entry>
+      <para>
+   强制删除数据中心
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+登录虚拟化系统，在左侧树形面板下点击Expand All,点击System选择Data Centers
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在右侧详细面板下选择待编辑的数据中心（无响应状态）， 同时该数据中心下有Host，点击Force Remove
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   数据中心被删除
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>7</entry>
+    <entry>
+      <para>
+强制删除数据中心
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+登录虚拟化系统，在左侧树形面板下点击Expand All,点击System选择Data Centers
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在右侧详细面板下选择待编辑的数据中心（无响应状态）， 同时该数据中心没有Host但有存储，点击Force Remove
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   数据中心不能被删除提示无Host
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <?dbhtml bgcolor="#1ce858" ?><?dbfo bgcolor="#1ce858" ?>
+    <entry namest="c1" nameend="c5" align="center">集群</entry>
+  </row>
+  <row>
+    <entry>8</entry>
+    <entry>
+      <para>
+          创建集群
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+ 若在配置数据中心完成的最后一步显示New Data Center-Guide me可以直接点击Configure Cluster，若不是则可以点击菜单栏内的Guide me显示New Data Center me点击Configure Cluster
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在New Cluster下General项内输入名称及描述
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+CPU Name下选择能最好描述Host的CPU（注意默认Cluster下不需要这步）
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+设置Optinization及Resilience Policy、Cluster Policy根据实际需要
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击OK，在New Data Center-Guide me下可以继续添加Cluster也可以配置Host也可以选择稍后再配置
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   创建集群成功
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>9</entry>
+    <entry>
+      <para>
+编辑集群
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+登录虚拟化系统，在左侧树形面板下点击Expand All,点击System,在右侧详细面板点击Clusters,选择待编辑的集群
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+点击edit，编辑选项
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+ 点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   集群修改成功
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>10</entry>
+    <entry>
+      <para>
+添加一个存在的集群
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+删除某一数据中心
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在左侧树形面板下点击Expand All ，点击System，在右侧详细面板点击Clusters ,选中被删除数据中心遗留下的Cluster，点击edit，编辑重新设置，选择数据中心等
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+ 点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+集群被成功添加进其它数据中心   
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>11</entry>
+    <entry>
+      <para>
+删除集群
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+登录虚拟化系统，在左侧树形面板下点击Expand All,点击System,在右侧详细面板点击Clusters,选择待删除的集群
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+点击Remove，编辑选项
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   集群被成功删除
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <?dbhtml bgcolor="#1ce858" ?><?dbfo bgcolor="#1ce858" ?>
+    <entry namest="c1" nameend="c5" align="center">主机</entry>
+  </row>
+  <row>
+    <entry>12</entry>
+    <entry>
+      <para>
+添加Host（管理系统注册方式）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+若在配置集群完成的最后一步显示New Data Center-Guide me可以直接点击Configure Host，若不是则可以点击菜单栏内的Guide me,在对话框内点击Configure Host
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在New Host对话框，进行配置，输入名称、描述、Ip地址密码，SSH Fingerprint等，还可设置电源管理
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击OK，在Host列表下可以看到状态installing->Reboot->Awaiting->Up
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   添加Host成功
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>13</entry>
+    <entry>
+      <para>
+   添加Host（Console注册方式）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+安装Host完成后在Console界面下配置Status、Network、Security、oVirt-Engine（ip及端口号设置80）保存设置
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在系统管理平台Host列表下，会显示该Host，点击菜单Approve，可以设置电源管理等，点击OK,Host 列表下可以看到状态installing->Reboot->Awaiting->Up
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   添加Host成功
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>14</entry>
+    <entry>
+      <para>
+配置Host电源管理
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在虚拟化管理系统左侧树形面板下选择Expand All->System 在右侧详细面板中选择Hosts，选择待配置电源管理的host，点击菜单内的edit，在Edit Host界面下的Power Management,输IPMI的ip地址、用户名及密码、Type，点击Test，提示success
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   提示success，电源管理配置成功，可以通过电源管理对主机进行重启关机等操作
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>15</entry>
+    <entry>
+      <para>
+配置及更换主机SPM
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在虚拟化管理系统左侧树形面板下选择Expand All->System 在右侧详细面板中选择Hosts，选择待配置SPM的host，点击菜单内的edit，在Edit Host界面下的SPM,分别设置优先级（Low、Normal、High）
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+观察实际使用
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   SPM设置成功
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>16</entry>
+    <entry>
+      <para>
+维护主机
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在虚拟化管理系统左侧树形面板下选择Expand All->System 在右侧详细面板中选择Hosts，选择待维护的host，点击菜单内的Maintenance,弹出Maintenance Host(s)确认框，点击OK
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+ 列表下该Host状态Preparing Maintenance->Maintenance
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   主机进入维护模式
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>17</entry>
+    <entry>
+      <para>
+激活主机
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+ 在Host列表下，选择已被设置成Maintenance模式的Host，点击菜单内的Active
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+ Host状态Unassigned->Up
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   主机激活成功
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>18</entry>
+    <entry>
+      <para>
+删除主机（前提主机不是non-responsive、没有磁盘卷、主机本身不是存储域（本地数存储就属于这种情况）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在Host列表下，选择待删除的Host，将其置成Maintenance，点击Remove
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   Host成功被删除
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>19</entry>
+    <entry>
+      <para>
+强制删除主机（前提主机是non-responsive、没有磁盘卷、主机本身不是存储域（本地数存储就属于这种情况）中任意一种）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在Host列表下，选择待删除的Host，将其置成Maintenance，点击Remove，再选中Force Remove，点击OK
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   Host成功被删除
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <?dbhtml bgcolor="#1ce858" ?><?dbfo bgcolor="#1ce858" ?>
+    <entry namest="c1" nameend="c5" align="center">存储</entry>
+  </row>
+  <row>
+    <entry>20</entry>
+    <entry>
+      <para>
+配置存储（NFS类型的DataDomain）前提已经存在一个NFS存储
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在左侧树形面板下点击Expand All，在System下选择数据中心点击Storage，在详细面板菜单下点击New Domain
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在New Domain对话框内输入名称、选择存储域类型、Export Path等信息
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击OK,创建的存储域显示在存储列表下状态由Locked->Active
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   创建NFS类型的Data Domain成功
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>21</entry>
+    <entry>
+      <para>
+配置存储（ISCSI类型的Data Domain）
+前提已经存在一个ISCSI存储
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在左侧树形面板下点击Expand All，在System下选择数据中心点击Storage，在详细面板菜单下点击New Domain
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在New Domain对话框内输入名称、选择存储域类型、Export Path等信息
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击OK，创建的存储域显示在存储列表下状态由Locked->Active
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   创建ISCSI类型的Data Domain成功
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>22</entry>
+    <entry>
+      <para>
+配置ISO Domain（创建一个存在的ISO Domain）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在左侧树形面板下点击Expand All，在System下选择数据中心，在右侧的数据中心列表下选择该数据中心，显示详细面板
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在详细面板下选择Storage，点击菜单栏内的Attach ISO，选择ISO Domain，点击OK
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+ISO Domain显示在存储列表下状态由Locked->Active
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   ISO Domain创建成功
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>23</entry>
+    <entry>
+      <para>
+配置Export Domain
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在左侧树形面板下点击Expand All，在System下选择数据中心，在右侧的数据中心列表下选择该数据中心，显示详细面板
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在详细面板下选择Storage，点击菜单栏内的Attach ISO，选择Export Domain，点击OK
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+Export Domain显示在存储列表下状态由Locked->Active
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   Export Domain创建成功
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>24</entry>
+    <entry>
+      <para>
+分离(Export Domain、ISO Domain、DataDomain）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在Storage列表下，选择指定的存储域
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在Storage的详细面板下选择Data Center，将要脱离的数据中心修改为Maintenance模式
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击Detach
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   存储域分离出数据中心
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>25</entry>
+    <entry>
+      <para>
+维护存储域
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在Storage列表下，选择指定的存储域
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+关闭并且移走运行在该存储域下的所有的虚拟机
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+在Storage详细面板下点击Data Center 
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击Maintenance
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   存储域设置为Maintenance模式
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>26</entry>
+    <entry>
+      <para>
+激活存储域
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+ 在Storage列表下，选择指定的存储域
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在Storage详细面板下点击Data Center 
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击Active
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   存储域被激活
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>27</entry>
+    <entry>
+      <para>
+Destroy存储域
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+ 在Storage列表下，选择指定的存储域
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+右键该存储域选择Destroy，在弹出的Destroy Storage Domain选择Approve operation
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+ 点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry> 
+      <para>
+   存储域被Destroy
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>28</entry>
+    <entry>
+      <para>
+删除存储域
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在Storage列表下，选择指定的存储域
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+将该存储域变为Maintenance模式
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+将该存储域与数据中心Detach
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击Remove，在Remove Storage确认框选择一个host从列表下
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   存储域被删除
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <?dbhtml bgcolor="#1ce858" ?><?dbfo bgcolor="#1ce858" ?>
+    <entry namest="c1" nameend="c5" align="center">模板</entry>
+  </row>
+  <row>
+    <entry>29</entry>
+    <entry>
+      <para>
+        创建模板（Windows、Linux）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在虚拟机列表下，选择指定的虚拟机
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+确认虚拟机状态为Down
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+ 点击Make Template打开New Template窗口
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+输入名称，描述等信息
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+选择Host Cluster
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+ 默认选中Allow all users to access this Template
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+ 点击OK,创建模板
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   虚拟机状态由Image Locke->Down
+在Template列表下显示创建的模板状态由Locked->OK
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>30</entry>
+    <entry>
+      <para>
+删除模板（默认的Blank 模板不允许删除）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在模板列表下选中待删除的模板
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+点击Remove打开Remove Template窗口
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   模板被删除
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>31</entry>
+    <entry>
+      <para>
+导出模板（前提：已创建好Export存储域）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在模板列表下，选中待导出模板
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+点击Export，打开Export Template窗口，选择ForceOverride
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+  模板导入到Export存储域 
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>32</entry>
+    <entry>
+      <para>
+导入摸版（已存在Export域）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+ 在左侧树形面板下找到Export存储域
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在详细面板下选择Export存储域内的Template
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+选中模板，点击Import，在Import template窗口内选择Destination Cluster和Storage
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+清楚Clone All Templates
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   模板导出
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <?dbhtml bgcolor="#1ce858" ?><?dbfo bgcolor="#1ce858" ?>
+    <entry namest="c1" nameend="c5" align="center">虚拟机</entry>
+  </row>
+  <row>
+    <entry>33</entry>
+    <entry>
+      <para>
+前提：虚拟化平台至少有一个Host及ISO domain
+创建Red Hat Enterprise Linux server
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+登录虚拟化系统，在左侧树形面板下点击Expand All,选择Default数据中心下Default集群下点击VMs , 在右侧虚拟机列表下点击菜单栏内的New VM,输入名称、内存大小、选择操作系统为RedHat Enterprise Linux6.X X64、其他项保持默认设置，点击OK 
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+弹出“New Virtual Machine-Guide Me”窗口，提示配置虚拟机磁盘，设置磁盘大小，网络接口默认VirtIO，点击OK（根据需要可以再添加磁盘）点击configure Later，创建的虚拟机显示在虚拟机列表下,安装操作系统（若采用run once方式安装添加CD则不需要changeCD）
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   创建的虚拟机成功，虚拟机可以正常使用
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>34</entry>
+    <entry>
+      <para>
+前提：虚拟化平台至少有一个Host及ISO domain
+创建Windows虚拟机（win7 64）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+登录虚拟化系统，在左侧树形面板下点击Expand All,选择Default数据中心下Default集群下点击VMs , 在右侧虚拟机列表下点击菜单栏内的New VM,输入名称、内存大小、选择操作系统为windows7 X64、Optimized for项选择Desktop其他项保持默认设置，点击OK 
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+弹出“New Virtual Machine-Guide Me”窗口，提示配置虚拟机磁盘，设置磁盘大小，网络接口默认VirtIO，点击OK（根据需要可以再添加磁盘）点击configure Later，创建的虚拟机显示在虚拟机列表下,安装操作系统（安装到选择自定义项时在管理平台上changeCD添加驱动，回到安装界面刷新界面可以看到安装的磁盘，再到管理平台changeCD加载系统安装盘，开始正常安装操作系统）（安装完系统后changeCD）（若采用run once方式安装添加CD则不需要changeCD）
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   创建的虚拟机成功，虚拟机可以正常使用
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     创建Windows系统的虚拟机
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>35</entry>
+    <entry>
+      <para>
+登录虚拟机（前提：已安装SPICE）
+
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在虚拟机列表下选择运行的虚拟机，点击console按钮（绿色电脑图标）
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   登录虚拟机
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>36</entry>
+    <entry>
+      <para>
+shut down 虚拟机
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+ 在虚拟机列表下选择运行的虚拟机，点击菜单内的shut down或者右键菜单中选择shut down
+
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+虚拟机状态变为Down   
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>37</entry>
+    <entry>
+      <para>
+power off虚拟机
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+1 在虚拟机列表下选择运行的虚拟机，右键菜单中选择power off
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+虚拟机关机Down   
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>38</entry>
+    <entry>
+      <para>
+删除虚拟机
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+ 在虚拟机列表下选择状态为Down的虚拟机（或将要删除的虚拟机关机）
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+点击Remove，弹出Remove Virtual Machine（s）窗口
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   虚拟机被删除
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>39</entry>
+    <entry>
+      <para>
+暂停虚拟机
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在虚拟机列表下选择运行的虚拟机，点击菜单内的suspend或者右键菜单中选择suspend
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+虚拟机暂停状态Paused
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>40</entry>
+    <entry>
+      <para>
+虚拟机创建快照
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在虚拟机列表下选中运行的虚拟机
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在虚拟机详细面板菜单Snapshots下点击Create,在弹出的界面输入描述，保存，点击OK
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>41</entry>
+    <entry>
+      <para>
+使用快照恢复虚拟机
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在虚拟机列表里选择指定虚拟机
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+将虚拟机关机状态powered down
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+在虚拟机详细面板中点击菜单内的Snapshots，选择待恢复的快照
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+点击Preview,虚拟机状态由Image Locked->Down
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+               点击Preview,虚拟机状态由Image Locked->Down
+              </para>
+            </listitem>
+
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   虚拟机恢复到快照
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>42</entry>
+    <entry>
+      <para>
+导入虚拟机（已创建Export存储域）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在虚拟机列表下，选中待导入的虚拟机，关闭这些虚拟机
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+点击Export，打开Export Template窗口，选择ForceOverride
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   虚拟机被导入到Export存储域
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>43</entry>
+    <entry>
+      <para>
+导出虚拟机（已创建Export存储域）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在左侧树形面板下找到Export存储域
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在详细面板下选择Export存储域内的虚拟机导入列表
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+选中这些虚拟机，点击Import，在Import virtual machine（s）窗口内选择Destination Cluster和Storage
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+选择Collapse All Snapshots
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   虚拟机被导出
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <?dbhtml bgcolor="#1ce858" ?><?dbfo bgcolor="#1ce858" ?>
+    <entry namest="c1" nameend="c5" align="center">虚拟机动态迁移</entry>
+  </row>
+  <row>
+    <entry>44</entry>
+    <entry>
+      <para>
+虚拟机动态迁移从一个Host到另一个Host,前提：创建虚拟机时，设置Host->Migration Options设置为“允许手动和自动迁移”
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+登录虚拟化系统，在左侧树形面板下点击Expand All,选择一个数据中心下指定集群，点击VMs
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+ 在虚拟机列表下选择一个或者多个虚拟机（运行状态），点击菜单上的Migrate
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+在“Migrate Virtual Machines”下选择“自动选择主机”或“选择目标主机”点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   虚拟机迁移成功（从一Host迁移到该集群下另一Host）
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     配置设置为“允许手动和自动迁移”
+测试手动迁移
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>45</entry>
+    <entry>
+      <para>
+虚拟机动态迁移从一个Host到另一个Host
+前提：创建虚拟机时，设置Host->Migration Options设置为“仅允许手动迁移”
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+登录虚拟化系统，在左侧树形面板下点击Expand All,选择一个数据中心下指定集群，点击VMs
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在虚拟机列表下选择一个或者多个虚拟机（运行状态），点击菜单上的Migrate
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+在“Migrate Virtual Machines”下选择“自动选择主机”或“选择目标主机”点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   虚拟机迁移成功（从一Host迁移到该集群下另一Host）
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     配置设置为“仅允许手动迁移”
+测试手动迁移
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>46</entry>
+    <entry>
+      <para>
+    虚拟机动态迁移从一个Host到另一个Host
+前提：创建虚拟机时，设置Host->Migration Options设置为“不允许迁移”
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+登录虚拟化系统，在左侧树形面板下点击Expand All,选择一个数据中心下指定集群，点击VMs
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在虚拟机列表下选择一个或者多个虚拟机（运行状态），点击菜单上的Migrate
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+ 在“Migrate Virtual Machines”下选择“自动选择主机”或“选择目标主机”点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   虚拟机没有迁移提示不能迁移
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     配置设置为“不允许迁移”
+测试手动迁移
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>47</entry>
+    <entry>
+      <para>
+  当Host变为维护模式时，虚拟机自动动态迁移到其他Host
+前提：创建虚拟机时，设置Host->Migration Options设置为“允许手动和自动迁移”
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+登录虚拟化系统，在左侧树形面板下点击Expand All，选择一个数据中心下指定集群下的Hosts
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在Hosts列表下选择其中一个Host，点击菜单Maintenance，该Host变为维护模式
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+ 检查该集群下创建在该Host下的虚拟机是否自动迁移到该集群下其他Host上
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   虚拟机自动迁移
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     配置设置为“允许手动和自动迁移”
+测试自动迁移
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>48</entry>
+    <entry>
+      <para>
+当Host变为维护模式时，虚拟机自动动态迁移到其他Host
+前提：创建虚拟机时，设置Host->Migration Options设置为“仅允许手动迁移”
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+登录虚拟化系统，在左侧树形面板下点击Expand All，选择一个数据中心下指定集群下的Hosts
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在Hosts列表下选择其中一个Host，点击菜单Maintenance，试图将该Host变为维护模式
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   Host不能变为维护模式，提示该Host上有不能迁移的虚拟机
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     配置设置为“仅允许手动迁移”
+
+测试自动迁移
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>49</entry>
+    <entry>
+      <para>
+当Host变为维护模式时，虚拟机自动动态迁移到其他Host
+前提：创建虚拟机时，设置Host->Migration Options设置为“不允许迁移”
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+登录虚拟化系统，在左侧树形面板下点击Expand All，选择一个数据中心下指定集群下的Hosts
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在Hosts列表下选择其中一个Host，点击菜单Maintenance，试图将该Host变为维护模式
+
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+Host不能变为维护模式，提示该Host上有不能迁移的虚拟机   
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     配置设置为“不允许迁移”
+
+测试自动迁移
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>50</entry>
+    <entry>
+      <para>
+定义Cluster power saving policy->Evenly_Distributed虚拟机动态迁移（CpuOverCommitDurationMinutes(0,10)）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     测试自动迁移
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>51</entry>
+    <entry>
+      <para>
+定义Cluster power saving policy->Evenly_Distributed虚拟机动态迁移（HighUtilization[50,99]）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     测试自动迁移
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>52</entry>
+    <entry>
+      <para>
+定义Cluster power saving policy->Power_Saving虚拟机动态迁移（CpuOverCommitDurationMinutes(0,10)）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     测试自动迁移
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>53</entry>
+    <entry>
+      <para>
+定义Cluster power saving policy->Power_Saving虚拟机动态迁移（HighUtilization[50,99]）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>54</entry>
+    <entry>
+      <para>
+定义Cluster power saving policy->Power_Saving虚拟机动态迁移（LowUtilization[10,49]）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <?dbhtml bgcolor="#ffe858" ?><?dbfo bgcolor="#ffe858" ?>
+    <entry namest="c1" nameend="c5" align="center">以上用例均为虚拟机磁盘为Internal
+
+当虚拟机磁盘为External时进行虚拟机迁移，是否可以迁移成功（手动、自动）？？？</entry>
+  </row>
+  <row>
+    <?dbhtml bgcolor="#1ce858" ?><?dbfo bgcolor="#1ce858" ?>
+    <entry namest="c1" nameend="c5" align="center">虚拟机高可用</entry>
+  </row>
+  <row>
+    <entry>55</entry>
+    <entry>
+      <para>
+前提：配置电源管理禁用Cluster policy(设置为None)虚拟机配置High Availability（只有服务器版本的虚拟机可以配置）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+登录系统在左侧树形面板选择Expand All->System,在右侧详细面板菜单中选择Virtual Mchines 点击Edit 在Edit Server Virtual Machine对话框 High Availability->Priority for Run/Migration queue 选中High，勾选中Highly Available项
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>56</entry>
+    <entry>
+      <para>
+Host-Initated reboot
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+登录系统在树形面板下选择VMs,高可用的虚拟机显示在虚拟机详细列表下
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在树形面板选择Hosts，可用的Hosts显示在Hosts的详细列表下，选择其中一台Host，点击Power Management下拉菜单内选择Restart，在Restart Host对话框内点击OK，主机状态变为Reboot->Non-Responsive
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+Host正在重启中，观察运行在这个Host上的虚拟机，在树形面板下点击VMs,显示虚拟机列表，虚拟机在Host重启完成后shut down状态
+最后虚拟机是在另一台host重启起来
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>57</entry>
+    <entry>
+      <para>
+Virtual Machine Interruption
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在host上运行多个虚拟机，并把其中一些设置为高可用
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+.在host上登录终端，使用vdsClient命令，查看进程列表
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+根据虚拟机的进程id，使用“kill -9”杀掉虚拟机进程；
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+观察虚拟机列表，其中高可用虚拟机会立刻重新启动，而非高可用虚拟机处于停止状态； 
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>58</entry>
+    <entry>
+      <para>
+Non-Operational Host(Host是SPM)
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+查看storage网络的名字和物理接口。在“Host"tab中选择要操作的host，点击“Network Interfaces”子tab，可以看到其至少有一个rhevm网络和一个storage网络。在Tree面板中点击“ISCSI-share”，在“Storage”tab中选择“ISCSI-share”，点击“Edit”打开“Edit Domain”对话框，点击“+”显示iSCSI目标；
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+.通过ssh连接到host，使用ifconfig命令确认网络连接正常。根据storage网络的名字，用ifdown命令关闭storage网络；
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+由于host是SPM的，所以它会立刻自动重启。高可用虚拟机会在cluster中其他可用host上启动，非高可用虚拟机会暂停。而一旦这台host重新运行，原来运行在这条host上的虚拟机会重新迁移回这条host运行；
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>59</entry>
+    <entry>
+      <para>
+Non-Operational Host（Host不是SPM）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+操作步骤同host不是spm的情况；
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+与SPM情况不同，host上的所有虚拟机都会迁移到其他host上运行；
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>60</entry>
+    <entry>
+      <para>
+Non-responsive host（连接破坏）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+首先查看host的网络信息，然后使用ifdown命令关闭其rhevm网络（注意，上一个case是关闭storage网络）；
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+高可用虚拟机会在其他host上重新启动，非高可用虚拟机不会；
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>61</entry>
+    <entry>
+      <para>
+Non-responsive host（不正确保护）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在Hosts tab中选择要操作的虚拟机，点击“Power Management”下拉菜单中的“Restart”，来重启host；
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+host重启完毕后，高可用虚拟机会立刻重新运行，在host重启过程中，高可用虚拟机会在其它host上运行。而非高可用虚拟机会始终处于关闭状态；
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <?dbhtml bgcolor="#1ce858" ?><?dbfo bgcolor="#1ce858" ?>
+    <entry namest="c1" nameend="c5" align="center">虚拟机池</entry>
+  </row>
+  <row>
+    <entry>62</entry>
+    <entry>
+      <para>
+创建虚拟机池（前提：已有模板）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在管理系统平台详细面板下点击Pools，打开New Pool窗口
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+设置Host Cluster、Template、操作系统、optimized for、VMs的数量、Maximum number of VMs per user及名称描述等信息
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击Show Advanced Options，填充每项内的信息等
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+完成全部设置后，点击OK，创建虚拟机池
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   虚拟机列表下显示创建的虚拟机，数量为虚拟机池设置的数量，同时显示特殊标识，区别于单独的虚拟机
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>63</entry>
+    <entry>
+      <para>
+Prestarting Virtual Machines in a Pool
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+点击Pools，在虚拟机池列表下，选定虚拟机池
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+点击Edit ，打开Edit Pool窗口
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+ Prestarted VMs这项输入启动虚拟机的数量
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+ pool 项下的Pool Type确保设置为Automatic
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   虚拟机列表下显示启动的虚拟机池内的指定数量的虚拟机状态为UP
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>64</entry>
+    <entry>
+      <para>
+添加虚拟机到虚拟机池
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+点击Pools，在虚拟机池列表下，选定虚拟机池
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+点击Edit ，打开Edit Pool窗口
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+Increase number of VMs in pool by这项输入增加的虚拟机的数量
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   虚拟机列表先显示创建增加的虚拟机
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>65</entry>
+    <entry>
+      <para>
+从虚拟机池中分离虚拟机
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+点击Pools，在虚拟机池列表下，选定虚拟机池
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+确保待分离的虚拟机为关闭状态，状态为Down
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在虚拟机池详细面板下，点击Virtual Machines，选中列表下的虚拟机，点击Detach
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+在Detach Virtual Machine（s）对话框，点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   从虚拟机池分离出来，虚拟机图标显示为正常独立的虚拟机
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>66</entry>
+    <entry>
+      <para>
+删除虚拟机池
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+点击Pools,在虚拟机池列表下，选定虚拟机池
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+点击Remove ，打开Remove Pool（s）
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   虚拟机池被删除
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <?dbhtml bgcolor="#1ce858" ?><?dbfo bgcolor="#1ce858" ?>
+    <entry namest="c1" nameend="c5" align="center">虚拟机磁盘</entry>
+  </row>
+  <row>
+    <entry>67</entry>
+    <entry>
+      <para>
+ADD虚拟机磁盘（Internal、External）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在虚拟机列表下，指定虚拟机
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在该虚拟机详细面板下点击Disks
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+点击菜单内的Add
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+在Add Virtual Disk下配置，配置完成后点击OK
+
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+Disk列表下显示新添加的磁盘   
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>68</entry>
+    <entry>
+      <para>
+Move数据域之间磁盘迁移（前提：该数据中心下至少有两个Data Domain）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在虚拟机列表下，指定虚拟机（独立虚拟机并且非虚拟机池内分离出来的虚拟机状态为运行状态）
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在该虚拟机详细面板下点击Disks
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+选中该列表显示的磁盘，点击菜单内的Move
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在Move Disk（s）,下选择目标Data Domain
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+      <para>
+   迁移失败
+      </para>
+    </entry>
+    <entry>
+     <para>
+     测试迁移磁盘功能
+
+独立虚拟机并且非虚拟机池内分离出来的虚拟机状态为运行状态的虚拟机
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>69</entry>
+    <entry>
+      <para>
+Move数据域之间磁盘迁移（前提：该数据中心下至少有两个Data Domain）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在虚拟机列表下，指定虚拟机（独立虚拟机并且非虚拟机池内分离出来的虚拟机状态状态为关闭状态）
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在该虚拟机详细面板下点击Disks
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+选中该列表显示的磁盘，点击菜单内的Move
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在Move Disk（s）,下选择目标Data Domain
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+      <para>
+   磁盘迁移成功
+      </para>
+    </entry>
+    <entry>
+     <para>
+     测试迁移磁盘功能
+
+独立虚拟机并且非虚拟机池内分离出来的虚拟机状态状态为关闭状态的虚拟机
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>70</entry>
+    <entry>
+      <para>
+Move数据域之间磁盘迁移（前提：该数据中心下至少有两个Data Domain）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在虚拟机列表下，指定虚拟机（虚拟机池内的虚拟机状态为运行状态）
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在该虚拟机详细面板下点击Disks
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+选中该列表显示的磁盘，点击菜单内的Move
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+ 在Move Disk（s）,下选择目标Data Domain
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+      <para>
+   虚拟机池内运行状态的虚拟机不能迁移
+      </para>
+    </entry>
+    <entry>
+     <para>
+    测试迁移磁盘功能
+
+虚拟机池内的虚拟机状态为运行状态的虚拟机 
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>71</entry>
+    <entry>
+      <para>
+Move数据域之间磁盘迁移（前提：该数据中心下至少有两个Data Domain）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在虚拟机列表下，指定虚拟机（虚拟机池内分离的虚拟机状态为关闭状态）
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在该虚拟机详细面板下点击Disks
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+选中该列表显示的磁盘，点击菜单内的Move
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在Move Disk（s）,下选择目标Data Domain
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+      <para>
+   不能迁移，目标存储域为空且不能编辑
+      </para>
+    </entry>
+    <entry>
+     <para>
+     测试迁移磁盘功能
+
+虚拟机池内分离的虚拟机状态为关闭状态的虚拟机
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>73</entry>
+    <entry>
+      <para>
+Move数据域之间磁盘迁移（前提：该数据中心下至少有两个Data Domain）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在虚拟机列表下，指定虚拟机（虚拟机池内分离的虚拟机状态为运行状态）
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在该虚拟机详细面板下点击Disks
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+选中该列表显示的磁盘，点击菜单内的Move
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在Move Disk（s）,下选择目标Data Domain
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+      <para>
+   不能迁移，目标存储域为空且不能编辑
+提示运行虚拟机不能迁移
+      </para>
+    </entry>
+    <entry>
+     <para>
+     测试迁移磁盘功能
+
+虚拟机池内分离的虚拟机状态为运行状态的虚拟机
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>74</entry>
+    <entry>
+      <para>
+Move数据域之间磁盘迁移（前提：该数据中心下至少有两个Data Domain）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+ 在虚拟机列表下，指定虚拟机（模板创建的虚拟机）
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在该虚拟机详细面板下点击Disks
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+ 选中该列表显示的磁盘，点击菜单内的Move
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在Move Disk（s）,下选择目标Data Domain
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+      <para>
+   不能迁移
+      </para>
+    </entry>
+    <entry>
+     <para>
+     测试迁移磁盘功能
+
+模板创建的虚拟机
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>75</entry>
+    <entry>
+      <para>
+Move数据域之间磁盘迁移（前提：该数据中心下至少有两个Data Domain）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在虚拟机列表下，指定虚拟机（创建过快照的虚拟机）
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在该虚拟机详细面板下点击Disks
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+选中该列表显示的磁盘，点击菜单内的Move
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在Move Disk（s）,下选择目标Data Domain
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+      <para>
+   迁移失败
+      </para>
+    </entry>
+    <entry>
+     <para>
+     测试迁移磁盘功能
+创建快照的虚拟机
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>76</entry>
+    <entry>
+      <para>
+Edit 虚拟机磁盘
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在虚拟机列表下，指定虚拟机
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在该虚拟机详细面板下点击Disks
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在Disk列表下选中Disk
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击菜单内的Edit，设置完毕后点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   磁盘编辑完成
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>77</entry>
+    <entry>
+      <para>
+Remove虚拟机磁盘（关闭状态的虚拟机）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在虚拟机列表下，指定虚拟机
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在该虚拟机详细面板下点击Disks
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在Disk列表下选中Disk
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+ 点击菜单内的Remove，在Remove Disk（s）框选中Remove permanently
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+ 点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   磁盘删除成功
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>78</entry>
+    <entry>
+      <para>
+Active虚拟机磁盘（虚拟机磁盘为非Active状态）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+ 在虚拟机列表下，指定虚拟机
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在该虚拟机详细面板下点击Disks
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在Disk列表下选中Disk
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+ 点击菜单内的Active
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   磁盘被激活
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>79</entry>
+    <entry>
+      <para>
+Deactive虚拟机磁盘
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在虚拟机列表下，指定虚拟机
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在该虚拟机详细面板下点击Disks
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+ 在Disk列表下选中Disk
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击菜单内的Deactive
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   使磁盘无效，标志变为Inactive
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>80</entry>
+    <entry>
+      <para>
+Scan Alignment虚拟机磁盘
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在虚拟机列表下，指定虚拟机
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在该虚拟机详细面板下点击Disks
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在Disk列表下选中Disk，将磁盘Deactive
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+右键该磁盘，选择菜单内的Scan Alignment
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+      <para>
+   不确定此功能在什么情况下使用
+虚拟机关机磁盘变为Inactive状态下也不可点
+目前只有数据中心宕掉后的虚拟机此项可点
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>81</entry>
+    <entry>
+      <para>
+创建共享磁盘（Internal）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+在虚拟机列表下，指定某一虚拟机
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+ 在该虚拟机详细面板下点击Disks
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+点击Add，选择Internal,填充磁盘大小，描述等信息，设置共享
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+点击OK，磁盘创建完成，会有一个小手的标志代表是共享磁盘
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+ 在虚拟机列表下，指定其他虚拟机
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+在该虚拟机详细面板下点击Disks
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+点击Add，在Add Virtual Disk，选中Attach Disk，在显示磁盘列表下选中共享磁盘，点击OK
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+磁盘共享给该虚拟机
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   磁盘实现共享
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <?dbhtml bgcolor="#1ce858" ?><?dbfo bgcolor="#1ce858" ?>
+    <entry namest="c1" nameend="c5" align="center">事件通知</entry>
+  </row>
+  <row>
+    <entry>82</entry>
+    <entry>
+      <para>
+添加事件通知功能（前提：已经安装了MTA agent）
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+登录虚拟化系统，在左侧树形面板下点击Expand All,点击System，在右侧详细面板菜单内点击Users
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+选中用户列表下的用户
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+在该用户详细面板下点击Event Notifier，点击Manage Events，打开Add Event Notification窗口
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+选择需要通知的事项，填充邮件地址
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+点击OK
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+ssh登录到manager节点，开启服务
+# chkconfig --add engine-notifierd
+# chkconfig engine-notifierd o n
+# service engi ne-notifierd restart
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+   当系统出现问题会自动发到填写的邮箱内
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry>83</entry>
+    <entry>
+      <para>
+      取消事件通知
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+登录虚拟化系统，在左侧树形面板下点击Expand All,点击System，在右侧详细面板菜单内点击Users
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+选中用户列表下的用户
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+ 在该用户详细面板下点击Event Notifier，点击Manage Events，打开Add Event Notification窗口
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+ 清除所有所选的事件（删除通知）
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+点击OK
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+邮件将不再自动发送通知
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
+    </entry>
+  </row>
+  <row>
+    <entry></entry>
+    <entry>
+      <para>
+      </para>
+         <orderedlist numeration="arabic">
+             <listitem>
+              <para>
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+              </para>
+            </listitem>
+             <listitem>
+              <para>
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+              </para>
+            </listitem>
+        </orderedlist>
+    </entry>
+    <entry>
+      <para>
+      </para>
+    </entry>
+    <entry>
+      <para>
+   
+      </para>
+    </entry>
+    <entry>
+     <para>
+     
+     </para>
     </entry>
   </row>
   <row>
