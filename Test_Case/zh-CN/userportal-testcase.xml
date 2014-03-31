@@ -78,52 +78,88 @@
                 </thead>
                 <tbody>
                     <row>
-                    <entry>1</entry>
-                    <entry>
-                        <para>
-                            1.浏览器中输入engine地址，打开网页，点击User Portal
-                            2.在弹出登录框中输入用户名、密码、在Domain下拉菜单
-                            上选择用户对应的正确的domain（如admin -> ）
-                            3.若该用户下只有一个虚拟机选中
-                            “Connect Automatically”
-                            4.点击Login
-                        </para>
-                    </entry>
-                    <entry>
-                        <para>
-                            进入系统会直接连接虚拟机
-                        </para>
-                    </entry>
-                    <entry>
-                    </entry>
-                    <entry>
-                        <para>
+                        <entry>1</entry>
+                        <entry>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+                                        浏览器中输入engine地址，打开网页，点击
+                                        User Portal
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        在弹出登录框中输入用户名、密码、在Domain
+                                        下拉菜单上选择用户对应的正确的domain
+                                        （如admin -> ）
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        若该用户下只有一个虚拟机选中
+                                        “Connect Automatically”
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        点击Login
+                                    </para>
+                                </listitem>
+                            </orderedlist>
+                        </entry>
+                        <entry>
+                            <para>
+                                进入系统会直接连接虚拟机
+                            </para>
+                        </entry>
+                        <entry>
+                        </entry>
+                        <entry>
+                            <para>
 
-                        </para>
-                    </entry>
-                </row>
-                <row>
-                    <entry>2</entry>
-                    <entry>
-                        <para>
-                            1.浏览器中输入engine地址，打开网页，点击User Portal
-                            2.在弹出登录框中输入用户名、密码、在Domain下拉菜单
-                            上选择用户对应的正确的domain（如admin -> ）
-                            3.若该用户下有多个虚拟机不选中
-                            “Connect Automatically”
-                            4.点击Login
-                        </para>
-                    </entry>
-                    <entry>
-                        <para>
-                            进入系统
-                        </para>
-                    </entry>
-                    <entry>
-                    </entry>
-                    <entry>
-                    </entry>
-                </row>
+                            </para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>2</entry>
+                        <entry>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+                                        浏览器中输入engine地址，打开网页，点击
+                                        User Portal
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        在弹出登录框中输入用户名、密码、在Domain
+                                        下拉菜单上选择用户对应的正确的domain
+                                        （如admin -> ）
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        若该用户下有多个虚拟机不选中
+                                        “Connect Automatically”
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        点击Login
+                                    </para>
+                                </listitem>
+                            </orderedlist>
+                        </entry>
+                        <entry>
+                            <para>
+                                进入系统
+                            </para>
+                        </entry>
+                        <entry>
+                        </entry>
+                        <entry>
+                        </entry>
+                    </row>
                 </tbody>
             </tgroup>
         </informaltable>
@@ -152,41 +188,41 @@
                 </thead>
                 <tbody>
                     <row>
-                    <entry>3</entry>
-                    <entry>
-                        <para>
-                            1.浏览器中输入engine地址，打开网页，选择页面下语言
-                            切换下拉菜单，选择英文，登录
-                        </para>
-                    </entry>
-                    <entry>
-                        <para>
-                            进入系统应为英文环境
-                        </para>
-                    </entry>
-                    <entry>
-                    </entry>
-                    <entry>
-                    </entry>
-                </row>
-                <row>
-                    <entry>4</entry>
-                    <entry>
-                        <para>
-                            浏览器中输入engine地址，打开网页，选择页面下语言切
-                            换下拉菜单，选择中文，登录
-                        </para>
-                    </entry>
-                    <entry>
-                        <para>
-                            进入系统应为中文环境
-                        </para>
-                    </entry>
-                    <entry>
-                    </entry>
-                    <entry>
-                    </entry>
-                </row>
+                        <entry>3</entry>
+                        <entry>
+                            <para>
+                                浏览器中输入engine地址，打开网页，选择页面下语言
+                                切换下拉菜单，选择英文，登录
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+                                进入系统应为英文环境
+                            </para>
+                        </entry>
+                        <entry>
+                        </entry>
+                        <entry>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>4</entry>
+                        <entry>
+                            <para>
+                                浏览器中输入engine地址，打开网页，选择页面下语
+                                言切换下拉菜单，选择中文，登录
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+                                进入系统应为中文环境
+                            </para>
+                        </entry>
+                        <entry>
+                        </entry>
+                        <entry>
+                        </entry>
+                    </row>
                 </tbody>
             </tgroup>
         </informaltable>
@@ -215,48 +251,85 @@
                 </thead>
                 <tbody>
                     <row>
-                    <entry>5</entry>
-                    <entry>
-                        <para>
-                            Linux Firefox 安装SPICE
-                            1. yum install spice-xpi
-                            2. rpm -q virt-viewer
-                            (输出：virt-viewer-0.5.2-18.e16_4.2.x86_64)
-                            3.yum install virt-viewer
-                            4. Restart Firefox
-                            5.使用SPICE连接虚拟机
-                        </para>
-                    </entry>
-                    <entry>
-                        <para>
-                            可以使用SPICE访问虚拟机
-                        </para>
-                    </entry>
-                    <entry>
-                    </entry>
-                    <entry>
-                    </entry>
-                </row>
-                <row>
-                    <entry>6</entry>
-                    <entry>
-                        <para>
-                            Windows IE 安装SPICE
-                            1.安装remote-viewer
-                            2.Restart IE 
-                            3.使用SPICE
-                        </para>
-                    </entry>
-                    <entry>
-                        <para>
-                            可以使用SPICE访问虚拟机
-                        </para>
-                    </entry>
-                    <entry>
-                    </entry>
-                    <entry>
-                    </entry>
-                </row>
+                        <entry>5</entry>
+                        <entry>
+                            <orderedlist numeration="arabic">
+                                <title>
+                                    Linux Firefox 安装SPICE
+                                </title>
+                                <listitem>
+                                    <para>
+                                        yum install spice-xpi
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        rpm -q virt-viewer
+                                        (输出：
+                                        virt-viewer-0.5.2-18.e16_4.2.x86_64)
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        yum install virt-viewer
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        Restart Firefox
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        使用SPICE连接虚拟机
+                                    </para>
+                                </listitem>
+                            </orderedlist>
+                        </entry>
+                        <entry>
+                            <para>
+                                可以使用SPICE访问虚拟机
+                            </para>
+                        </entry>
+                        <entry>
+                        </entry>
+                        <entry>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>6</entry>
+                        <entry>
+                            <orderedlist numeration="arabic">
+                                <title>
+                                    Windows IE 安装SPICE
+                                </title>
+                                <listitem>
+                                    <para>
+                                        安装remote-viewer
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        Restart IE 
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        使用SPICE
+                                    </para>
+                                </listitem>
+                            </orderedlist>
+                        </entry>
+                        <entry>
+                            <para>
+                                可以使用SPICE访问虚拟机
+                            </para>
+                        </entry>
+                        <entry>
+                        </entry>
+                        <entry>
+                        </entry>
+                    </row>
                 </tbody>
             </tgroup>
         </informaltable>
@@ -284,25 +357,33 @@
                     </row>
                 </thead>
                 <tbody>
-                <row>
-                    <entry>7</entry>
-                    <entry>
-                        <para>
-                            1.UserPortal登录系统，系统显示分配给该用户的所有虚
-                            拟机
-                            2.显示虚拟机的类型和状态
-                        </para>
-                    </entry>
-                    <entry>
-                        <para>
-                            界面显示正确
-                        </para>
-                    </entry>
-                    <entry>
-                    </entry>
-                    <entry>
-                    </entry>
-                </row>
+                    <row>
+                        <entry>7</entry>
+                        <entry>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+                                        UserPortal登录系统，系统显示分配给该用户
+                                        的所有虚拟机
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        显示虚拟机的类型和状态
+                                    </para>
+                                </listitem>
+                            </orderedlist>
+                        </entry>
+                        <entry>
+                            <para>
+                                界面显示正确
+                            </para>
+                        </entry>
+                        <entry>
+                        </entry>
+                        <entry>
+                        </entry>
+                    </row>
                 </tbody>
             </tgroup>
         </informaltable>
@@ -331,140 +412,146 @@
                 </thead>
                 <tbody>
                     <row>
-                    <entry>8</entry>
-                    <entry>
-                        <para>
-                            选择一个单独虚拟机（非虚拟机池内的），点击“运行”绿
-                            色箭头按钮
-                        </para>
-                    </entry>
-                    <entry>
-                        <para>
-                            连接进入虚拟机
-                        </para>
-                    </entry>
-                    <entry>
-                    </entry>
-                    <entry>
-                    </entry>
-                </row>
-                <row>
-                    <entry>9</entry>
-                    <entry>
-                        <para>
+                        <entry>8</entry>
+                        <entry>
+                            <para>
+                                选择一个单独虚拟机（非虚拟机池内的），点击
+                                “运行”绿色箭头按钮
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+                                连接进入虚拟机
+                            </para>
+                        </entry>
+                        <entry>
+                        </entry>
+                        <entry>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>9</entry>
+                        <entry>
+                            <para>
+                                <orderedlist numeration="arabic">
+                                    <listitem>
+                                        <para>
+                                            选择虚拟机池点击“run”绿色箭头
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            开启一个虚拟机，虚拟机
+                                            Powering up（电源 正在启动)
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            虚拟机启动完成后，虚拟机
+                                            （Machine is Ready）
+                                        </para>
+                                    </listitem>
+                                </orderedlist>
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+                                连接进入虚拟机
+                            </para>
+                        </entry>
+                        <entry>
+                        </entry>
+                        <entry>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>2</entry>
+                        <entry>
+                            <para>
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+                            </para>
+                        </entry>
+                        <entry>
+                        </entry>
+                        <entry>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>2</entry>
+                        <entry>
+                            <para>
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+                            </para>
+                        </entry>
+                        <entry>
+                        </entry>
+                        <entry>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>2</entry>
+                        <entry>
+                            <para>
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+                            </para>
+                        </entry>
+                        <entry>
+                        </entry>
+                        <entry>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>2</entry>
+                        <entry>
+                            <para>
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+                            </para>
+                        </entry>
+                        <entry>
+                        </entry>
+                        <entry>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>...</entry>
+                        <entry>
                             <orderedlist numeration="arabic">
                                 <listitem>
-                                    <para>
-                                        选择虚拟机池点击“run”绿色箭头
-                                    </para>
+                                    <para>...</para>
                                 </listitem>
                                 <listitem>
-                                    <para>
-                                        开启一个虚拟机，虚拟机Powering up（电源
-                                        正在启动)
-                                    </para>
-                                </listitem>
-                                <listitem>
-                                    <para>
-                                        虚拟机启动完成后，虚拟机
-                                        （Machine is Ready）
-                                    </para>
+                                    <para>...</para>
                                 </listitem>
                             </orderedlist>
-                        </para>
-                    </entry>
-                    <entry>
-                        <para>
-                            连接进入虚拟机
-                        </para>
-                    </entry>
-                    <entry>
-                    </entry>
-                    <entry>
-                    </entry>
-                </row>
-                <row>
-                    <entry>2</entry>
-                    <entry>
-                        <para>
-                        </para>
-                    </entry>
-                    <entry>
-                        <para>
-                        </para>
-                    </entry>
-                    <entry>
-                    </entry>
-                    <entry>
-                    </entry>
-                </row>
-                <row>
-                    <entry>2</entry>
-                    <entry>
-                        <para>
-                        </para>
-                    </entry>
-                    <entry>
-                        <para>
-                        </para>
-                    </entry>
-                    <entry>
-                    </entry>
-                    <entry>
-                    </entry>
-                </row>
-                <row>
-                    <entry>2</entry>
-                    <entry>
-                        <para>
-                        </para>
-                    </entry>
-                    <entry>
-                        <para>
-                        </para>
-                    </entry>
-                    <entry>
-                    </entry>
-                    <entry>
-                    </entry>
-                </row>
-                <row>
-                    <entry>2</entry>
-                    <entry>
-                        <para>
-                        </para>
-                    </entry>
-                    <entry>
-                        <para>
-                        </para>
-                    </entry>
-                    <entry>
-                    </entry>
-                    <entry>
-                    </entry>
-                </row>
-                <row>
-                    <entry>...</entry>
-                    <entry>
-                        <para>...</para>
-                        <para>...</para>
-                    </entry>
-                    <entry>
-                        <para>...</para>
-                    </entry>
-                    <entry>
-                    </entry>
-                    <entry>
-                    </entry>
-                </row>
-            </tbody>
-        </tgroup>
-    </informaltable>
+                        </entry>
+                        <entry>
+                            <para>...</para>
+                        </entry>
+                        <entry>
+                        </entry>
+                        <entry>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
 
-    <note>
-        <para>
-            其他注意事项：
-        </para>
-    </note>
-</section>
+        <note>
+            <para>
+                其他注意事项：
+            </para>
+        </note>
+    </section>
 </section>

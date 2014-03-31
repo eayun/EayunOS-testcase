@@ -82,11 +82,20 @@
                         <row>
                             <entry>1</entry>
                             <entry>
-                                <para>
-                                    1 选中运行状态的虚拟机，点击
-                                    “create snapshot”；
-                                    2 在弹出的对话框内选中“Save Memory”点击OK；  
-                                </para>
+                                <orderedlist numeration="arabic">
+                                    <listitem>
+                                        <para>
+                                            选中运行状态的虚拟机，点击
+                                            “create snapshot”；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            在弹出的对话框内选中“Save Memory”
+                                            点击OK；  
+                                        </para>
+                                    </listitem>
+                                </orderedlist>
                             </entry>
                             <entry>
                                 <para>
@@ -105,12 +114,20 @@
                         <row>
                             <entry>2</entry>
                             <entry>
-                                <para>
-                                    1 选中运行状态的虚拟机，点击
-                                    “create snapshot”；
-                                    2 在弹出的对话框内不选中“Save Memory”点击
-                                    OK；
-                                </para>
+                                <orderedlist numeration="arabic">
+                                    <listitem>
+                                        <para>
+                                            选中运行状态的虚拟机，
+                                            点击“create snapshot”；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            在弹出的对话框内不选中“Save Memory”
+                                            点击 OK；
+                                        </para>
+                                    </listitem>
+                                </orderedlist>
                             </entry>
                             <entry>
                                 <para>
@@ -153,21 +170,46 @@
                         <row>
                             <entry>3</entry>
                             <entry>
-                                <para>
-                                    1 选中关闭状态的虚拟机；
-                                    2 在虚拟机详细面板下选择“Snapshots”列表显示
-                                    该虚拟机所有的快照；
-                                    3 选中包含Memory的快照点击“Preview”，在
-                                    “Preview Snapshot”对话框内选中
-                                    “Restore Memory”点击OK；
-                                    4 运行虚拟机；
-                                </para>
+                                <orderedlist numeration="arabic">
+                                    <listitem>
+                                        <para>
+                                            选中关闭状态的虚拟机；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            在虚拟机详细面板下选择“Snapshots”列
+                                            表显示该虚拟机所有的快照；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            选中包含Memory的快照点击“Preview”，
+                                            在“Preview Snapshot”对话框内选中
+                                            “Restore Memory”点击OK；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            运行虚拟机；
+                                        </para>
+                                    </listitem>
+                                </orderedlist>
                             </entry>
                             <entry>
-                                <para>
-                                    1 查看虚拟机状态由“restoring state”到“up”;
-                                    2 进入虚拟机检查之前的状态是否被恢复
-                                </para>
+                                <orderedlist numeration="arabic">
+                                    <listitem>
+                                        <para>
+                                            查看虚拟机状态由“restoring state”到
+                                            “up”;
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            进入虚拟机检查之前的状态是否被恢复
+                                        </para>
+                                    </listitem>
+                                </orderedlist>
                             </entry>
                             <entry>
                             </entry>
@@ -177,21 +219,46 @@
                         <row>
                             <entry>4</entry>
                             <entry>
-                                <para>
-                                    1 选中关闭状态的虚拟机；
-                                    2 在虚拟机详细面板下选择“Snapshots”列表显示
-                                    该虚拟机所有的快照；
-                                    3 选中包含Memory的快照点击“Preview”，在
-                                    “Preview Snapshot”对话框内不选中
-                                    “Restore Memory”点击OK；
-                                    4 运行虚拟机；
-                                </para>
+                                <orderedlist numeration="arabic">
+                                    <listitem>
+                                        <para>
+                                            选中关闭状态的虚拟机；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            在虚拟机详细面板下选择“Snapshots”列
+                                            表显示该虚拟机所有的快照；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            选中包含Memory的快照点击“Preview”，
+                                            在“Preview Snapshot”对话框内不选中
+                                            “Restore Memory”点击OK；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            运行虚拟机；
+                                        </para>
+                                    </listitem>
+                                </orderedlist>
                             </entry>
                             <entry>
-                                <para>
-                                    1 查看虚拟机状态由“powering up”到“up”;
-                                    2 进入虚拟机，虚拟机状态没有变化只是刚刚启动
-                                </para>
+                                <orderedlist numeration="arabic">
+                                    <listitem>
+                                        <para>
+                                            查看虚拟机状态由“powering up”到“up”;
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            进入虚拟机，虚拟机状态没有变化只是
+                                            刚刚启动
+                                        </para>
+                                    </listitem>
+                                </orderedlist>
                             </entry>
                             <entry>
                             </entry>
@@ -228,21 +295,54 @@
                         <row>
                             <entry>5</entry>
                             <entry>
-                                <para>
-                                    1 选中关闭状态的虚拟机；
-                                    2 在虚拟机详细面板下选择“Snapshots”列表显示
-                                    该虚拟机所有的快照；
-                                    3 选中包含Memory的快照点击“Preview”，在
-                                    “Preview Snapshot”对话框内选中
-                                    “Restore Memory”点击OK；
-                                    4 修改虚拟机，点击“commit”；
-                                    5 在快照列表下该快照状态为active并包含
-                                    Memory；
-                                    6 运行虚拟机（run VM）；
-                                    7 检查虚拟机状态由“restoring state”到“up”；
-                                    8 进入虚拟机检查状态是否被恢复到快照时的状
-                                    态；    
-                                </para>
+                                <orderedlist numeration="arabic">
+                                    <listitem>
+                                        <para>
+                                            选中关闭状态的虚拟机；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            在虚拟机详细面板下选择“Snapshots”列
+                                            表显示该虚拟机所有的快照；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            选中包含Memory的快照点击“Preview”，
+                                            在“Preview Snapshot”对话框内选中
+                                            “Restore Memory”点击OK；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            修改虚拟机，点击“commit”；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            在快照列表下该快照状态为active并包
+                                            含Memory；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            运行虚拟机（run VM）；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            检查虚拟机状态由“restoring state”到
+                                            “up”；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            进入虚拟机检查状态是否被恢复到快照
+                                            时的状态；    
+                                        </para>
+                                    </listitem>
+                                </orderedlist>
                             </entry>
                             <entry>
                                 <para>
@@ -257,21 +357,52 @@
                         <row>
                             <entry>6</entry>
                             <entry>
-                                <para>
-                                    1 选中关闭状态的虚拟机；
-                                    2 在虚拟机详细面板下选择“Snapshots”列表显示
-                                    该虚拟机所有的快照；
-                                    3 选中包含Memory的快照点击“Preview”，在
-                                    “Preview Snapshot”对话框内不选中
-                                    “Restore Memory”点击OK；
-                                    4 修改虚拟机，点击“commit”；
-                                    5 在快照列表下该快照状态为active并不包含
-                                    Memory
-                                    6 运行虚拟机（Run VM）；
-                                    7 检查虚拟机状态由“powering up”到“up”；
-                                    8 进入虚拟机检查状态没有变化保留之前状态只
-                                    是重启了虚拟机
-                                </para>
+                                <orderedlist numeration="arabic">
+                                    <listitem>
+                                        <para>
+                                            选中关闭状态的虚拟机；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            在虚拟机详细面板下选择“Snapshots”列
+                                            表显示该虚拟机所有的快照；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            选中包含Memory的快照点击“Preview”，
+                                            在“Preview Snapshot”对话框内不选中
+                                            “Restore Memory”点击OK；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            修改虚拟机，点击“commit”；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            在快照列表下该快照状态为active并不
+                                            包含Memory
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            运行虚拟机（Run VM）；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            检查虚拟机状态由“powering up”到“up”；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            进入虚拟机检查状态没有变化保留之前状态只是重启了虚拟机
+                                        </para>
+                                    </listitem>
+                                </orderedlist>
                             </entry>
                             <entry>
                                 <para>
@@ -314,23 +445,53 @@
                     <row>
                         <entry>7</entry>
                         <entry>
-                            <para>
-                                1 选择包含Memory的快照点击“Preview”，在
-                                “Preview Snapshot”对话框内选中“Restore Memory”
-                                点击OK；
-                                2 修改虚拟机，点击“commit”；
-                                3 采用stateless方式运行虚拟机
-                                （Run VM in stateless mode）；
-                                4 检查虚拟机状态是由“restoring state”到“up”；
-                                5 进入虚拟机检查虚拟机状态是否被恢复，同时修改
-                                虚拟机；
-                                6 关闭虚拟机；
-                                7 再运行虚拟机；
-                                8 检查虚拟机状态是由“restoring state”到“up”；
-                                9 再次进入虚拟机检查状态，虚拟机恢复到第二次修
-                                改虚拟机之前的状态；
-
-                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+                                        选择包含Memory的快照点击“Preview”，在“Preview Snapshot”对话框内选中“Restore Memory”点击OK；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        修改虚拟机，点击“commit”；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        采用stateless方式运行虚拟机（Run VM in stateless mode）；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        检查虚拟机状态是由“restoring state”到“up”；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        进入虚拟机检查虚拟机状态是否被恢复，同时修改虚拟机；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        关闭虚拟机；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        再运行虚拟机；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        检查虚拟机状态是由“restoring state”到“up”；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        再次进入虚拟机检查状态，虚拟机恢复到第二次修改虚拟机之前的状态；
+                                    </para>
+                                </listitem>
+                            </orderedlist>
                         </entry>
                         <entry>
                             <para>
@@ -345,22 +506,53 @@
                     <row>
                         <entry>8</entry>
                         <entry>
-                            <para>
-                                1 选择包含Memory的快照点击“Preview”，在
-                                “Preview Snapshot”对话框内选中“Restore Memory”
-                                点击OK；
-                                2 修改虚拟机，点击“commit”；
-                                3 采用stateless方式运行虚拟机
-                                （Run VM in stateless mode）；
-                                4 检查虚拟机状态是由“restoring state”到“up”；
-                                5 进入虚拟机检查虚拟机状态是否被恢复，同时修改
-                                虚拟机；
-                                6 关闭虚拟机；
-                                7 再运行虚拟机；
-                                8 检查虚拟机状态是由“restoring state”到“up”；
-                                9 再次进入虚拟机检查状态，虚拟机恢复到第二次修
-                                改虚拟机之前的状态；
-                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+                                        选择包含Memory的快照点击“Preview”，在“Preview Snapshot”对话框内选中“Restore Memory”点击OK；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        修改虚拟机，点击“commit”；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        采用stateless方式运行虚拟机（Run VM in stateless mode）；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        检查虚拟机状态是由“restoring state”到“up”；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        进入虚拟机检查虚拟机状态是否被恢复，同时修改虚拟机；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        关闭虚拟机；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        再运行虚拟机；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        检查虚拟机状态是由“restoring state”到“up”；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        再次进入虚拟机检查状态，虚拟机恢复到第二次修改虚拟机之前的状态；
+                                    </para>
+                                </listitem>
+                            </orderedlist>
                         </entry>
                         <entry>
                             <para>
@@ -402,21 +594,70 @@
                     <row>
                         <entry>9</entry>
                         <entry>
-                            <para>
-                                1 运行虚拟机
-                                2 创建带内存的活跃状态的快照
-                                3 关闭虚拟机
-                                4 Preview快照
-                                5 commit to 快照
-                                6 导出虚拟机
-                                7 移除虚拟机
-                                8 导入虚拟机
-                                9 检查快照页面中是否有两个带内存的快照
-                                10 运行虚拟机
-                                11 确认初始状态是‘restoring state’然后变成‘up’
-                                12 连接到虚拟机，检查之前的状态是否恢复（打开的
-                                应用、剪贴板内容等等） 
-                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+                                        运行虚拟机
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        创建带内存的活跃状态的快照
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        关闭虚拟机
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        Preview快照
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        commit to 快照
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        导出虚拟机
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        移除虚拟机
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        导入虚拟机
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        检查快照页面中是否有两个带内存的快照
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        运行虚拟机
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        确认初始状态是‘restoring state’然后变成
+                                        ‘up’
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        连接到虚拟机，检查之前的状态是否恢复
+                                        （打开的应用、剪贴板内容等等） 
+                                    </para>
+                                </listitem>
+                            </orderedlist>
                         </entry>
                         <entry>
                             <para>
@@ -431,21 +672,65 @@
                     <row>
                         <entry>10</entry>
                         <entry>
-                            <para>
-                                1 运行虚拟机
-                                2 创建带内存的活跃状态的快照
-                                3 关闭虚拟机
-                                4 Preview快照
-                                5 commit to 快照
-                                6 导出虚拟机
-                                7 以克隆方式导入虚拟机（只能这么做，因为虚拟机
-                                已经存在了）
-                                8 检查快页面单中是否只有唯一不带内存的快照（活
-                                跃状态的快照）
-                                9 运行虚拟机
-                                10 确认初始状态是‘powering up’然后变成‘up’
-                                11 连接到虚拟机，检查是否看起来像刚启动之后
-                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+                                        运行虚拟机
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        创建带内存的活跃状态的快照
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        关闭虚拟机
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        Preview快照
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        commit to 快照
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        导出虚拟机
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        以克隆方式导入虚拟机（只能这么做，因为
+                                        虚拟机已经存在了）
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        检查快页面单中是否只有唯一不带内存的快照
+                                        （活跃状态的快照）
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        运行虚拟机
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        确认初始状态是‘powering up’然后变成‘up’
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        连接到虚拟机，检查是否看起来像刚启动之后
+                                    </para>
+                                </listitem>
+                            </orderedlist>
                         </entry>
                         <entry>
                             <para>
@@ -460,21 +745,70 @@
                     <row>
                         <entry>11</entry>
                         <entry>
-                            <para>
-                                1 在NFS存储上：
-                                2 运行虚拟机
-                                3 创建带内存的活跃状态的快照
-                                4 关闭虚拟机
-                                5 Preview快照
-                                6 commit to 快照
-                                7 导出虚拟机
-                                8 在block-based存储上：
-                                9 导入虚拟机
-                                10 运行虚拟机
-                                11 确认初始状态是‘restoring state’然后变成‘up’
-                                12 连接到虚拟机，检查之前的状态是否恢复（打开的
-                                应用、剪贴板内容等等）
-                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+                                        在NFS存储上：
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        运行虚拟机
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        创建带内存的活跃状态的快照
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        关闭虚拟机
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        Preview快照
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        commit to 快照
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        导出虚拟机
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        在block-based存储上：
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        导入虚拟机
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        运行虚拟机
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        确认初始状态是‘restoring state’然后变成
+                                        ‘up’
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        连接到虚拟机，检查之前的状态是否恢复（
+                                        打开的应用、剪贴板内容等等）
+                                    </para>
+                                </listitem>
+                            </orderedlist>
                         </entry>
                         <entry>
                             <para>
@@ -506,21 +840,78 @@
                     <row>
                         <entry>13</entry>
                         <entry>
-                            <para>
-                                1 运行虚拟机
-                                2 创建带内存的活跃状态的快照
-                                3 关闭虚拟机
-                                4 Preview快照
-                                5 commit to 快照
-                                6 用“Collapse Snapshots”导出虚拟机
-                                7 移除虚拟机
-                                8 导入虚拟机
-                                9 检查快照页面中是否只有唯一带内存的快照
-                                10 运行虚拟机
-                                11 确认初始状态是‘restoring state’然后变成‘up’
-                                12 连接到虚拟机，检查之前的状态是否恢复（打开的
-                                应用、剪贴板内容等等）
-                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+                                        运行虚拟机
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        创建带内存的活跃状态的快照
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        关闭虚拟机
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        Preview快照
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        commit to 快照
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        用“Collapse Snapshots”导出虚拟机
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        移除虚拟机
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        导入虚拟机
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        检查快照页面中是否只有唯一带内存的快照
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        运行虚拟机
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        确认初始状态是‘restoring state’然后变成
+                                        ‘up’
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        连接到虚拟机，检查之前的状态是否恢复（打
+                                        开的应用、剪贴板内容等等）
+                                    </para>
+                                </listitem>
+                            </orderedlist>
                         </entry>
                         <entry>
                             <para>
@@ -535,21 +926,70 @@
                     <row>
                         <entry>14</entry>
                         <entry>
-                            <para>
-                                1 运行虚拟机
-                                2 创建带内存的活跃状态的快照
-                                3 关闭虚拟机
-                                4 Preview快照
-                                5 commit to 快照
-                                6 导出虚拟机
-                                7 移除虚拟机
-                                8 用“Collapse Snapshots”导入虚拟机
-                                9 检查快照页面中是否只有唯一带内存的快照
-                                10 运行虚拟机
-                                11 确认初始状态是‘restoring state’然后变成‘up’
-                                12 连接到虚拟机，检查之前的状态是否恢复（打开的
-                                应用、剪贴板内容等等）
-                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+                                        运行虚拟机
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        创建带内存的活跃状态的快照
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        关闭虚拟机
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        Preview快照
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        commit to 快照
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        导出虚拟机
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        移除虚拟机
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        用“Collapse Snapshots”导入虚拟机
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        检查快照页面中是否只有唯一带内存的快照
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        运行虚拟机
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        确认初始状态是‘restoring state’然后变成
+                                        ‘up’
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        连接到虚拟机，检查之前的状态是否恢复（打
+                                        开的应用、剪贴板内容等等）
+                                    </para>
+                                </listitem>
+                            </orderedlist>
                         </entry>
                         <entry>
                             <para>
@@ -591,12 +1031,25 @@
                     <row>
                         <entry>21</entry>
                         <entry>
-                            <para>
-                                1 创建一个windows系统的虚拟机，安装windows系
-                                统，设置允许远程访问该虚拟机；
-                                2 在console操作的对话框内选择“Native client”；
-                                3 点击console按钮进入console；
-                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+                                        创建一个windows系统的虚拟机，安装
+                                        windows系统，设置允许远程访问该虚拟机；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        在console操作的对话框内选择
+                                        “Native client”；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        点击console按钮进入console；
+                                    </para>
+                                </listitem>
+                            </orderedlist>
                         </entry>
                         <entry>
                             <para>
@@ -638,12 +1091,23 @@
                     <row>
                         <entry>38</entry>
                         <entry>
-                            <para>
-                                Test dialog functionality
-                                1 创建2个虚拟机，使用SPICE和VNC访问该虚拟机；
-                                2 打开Console 操作对话框尝试各种操作组合，然后
-                                连接虚拟机
-                            </para>
+                            <orderedlist numeration="arabic">
+                                <title>
+                                    Test dialog functionality
+                                </title>
+                                <listitem>
+                                    <para>
+                                        创建2个虚拟机，使用SPICE和VNC访问该虚拟
+                                        机；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        打开Console 操作对话框尝试各种操作组合，
+                                        然后连接虚拟机
+                                    </para>
+                                </listitem>
+                            </orderedlist>
                         </entry>
                         <entry>
                             <para>
@@ -657,13 +1121,31 @@
                     <row>
                         <entry>39</entry>
                         <entry>
-                            <para>
-                                Testing options persistence
-                                1 打开console操作对话框；
-                                2 改变一些操作；
-                                3 刷新浏览器；
-                                4 再次打开console操作对话框；
-                            </para>
+                            <orderedlist numeration="arabic">
+                                <title>
+                                    Testing options persistence
+                                </title>
+                                <listitem>
+                                    <para>
+                                        打开console操作对话框；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        改变一些操作；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        刷新浏览器；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        再次打开console操作对话框；
+                                    </para>
+                                </listitem>
+                            </orderedlist>
                         </entry>
                         <entry>
                             <para>
@@ -785,16 +1267,41 @@
                     <row>
                         <entry>63</entry>
                         <entry>
-                            <para>
-                                NFS - edit in webadmin UI
-                                前提准备：手动复制存储域的内容将其从当前路径到
-                                目标路径
-                                1 Data domain置成维护模式
-                                2 右键编辑存储域
-                                3 修改挂载路径到其他存储服务器
-                                4 编辑NFS高级选项：retransmissions, timeout 
-                                5 激活存储域
-                            </para>
+                            <orderedlist numeration="arabic">
+                                <title>
+                                    NFS - edit in webadmin UI
+                                </title>
+                                <para>
+                                    前提准备：手动复制存储域的内容将其从当前路径
+                                    到目标路径
+                                </para>
+                                <listitem>
+                                    <para>
+                                        Data domain置成维护模式
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        右键编辑存储域
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        修改挂载路径到其他存储服务器
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        编辑NFS高级选项：retransmissions,
+                                        timeout 
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        激活存储域
+                                    </para>
+                                </listitem>
+                            </orderedlist>
                         </entry>
                         <entry>
                             <para>
@@ -809,16 +1316,40 @@
                     <row>
                         <entry>64</entry>
                         <entry>
-                            <para>
-                                Posix - edit in webadmin UI
-                                前提准备：手动复制存储域的内容将其从当前路径到
-                                目标路径
-                                1 Data domain置成维护模式
-                                2 右键编辑存储域
-                                3 修改挂载路径到其他存储服务器
-                                4 编辑挂载操作
-                                5 激活存储域
-                            </para>
+                            <orderedlist numeration="arabic">
+                                <title>
+                                    Posix - edit in webadmin UI
+                                </title>
+                                <para>
+                                    前提准备：手动复制存储域的内容将其从当前路径
+                                    到目标路径
+                                </para>
+                                <listitem>
+                                    <para>
+                                        Data domain置成维护模式
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        右键编辑存储域
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        修改挂载路径到其他存储服务器
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        编辑挂载操作
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        激活存储域
+                                    </para>
+                                </listitem>
+                            </orderedlist>
                         </entry>
                         <entry>
                             <para>
@@ -1169,12 +1700,24 @@
                                 </para>
                             </entry>
                             <entry>
-                                <para>
-                                    1 检查整个过程是否成功
-                                    2 检查portal入口是否可以进入系统
-                                    3 check that the engine is running as it
-                                    was installed using legacy setup
-                                </para>
+                                <orderedlist numeration="arabic">
+                                    <listitem>
+                                        <para>
+                                            检查整个过程是否成功
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            检查portal入口是否可以进入系统
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            check that the engine is running as
+                                            it was installed using legacy setup
+                                        </para>
+                                    </listitem>
+                                </orderedlist>
                             </entry>
                             <entry>
                             </entry>
@@ -1190,13 +1733,25 @@
                                 </para>
                             </entry>
                             <entry>
-                                <para>
-                                    1 检查整个过程是否成功
-                                    2 检查portal入口是否可以进入系统
-                                    3  check that the engine is running as it
-                                    was installed using legacy setup with AIO
-                                    plugin
-                                </para>
+                                <orderedlist numeration="arabic">
+                                    <listitem>
+                                        <para>
+                                            检查整个过程是否成功
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            检查portal入口是否可以进入系统
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            check that the engine is running as
+                                            it was installed using legacy setup
+                                            with AIO plugin
+                                        </para>
+                                    </listitem>
+                                </orderedlist>
                             </entry>
                             <entry>
                             </entry>
@@ -1232,13 +1787,34 @@
                                 </para>
                             </entry>
                             <entry>
-                                <para>
-                                    1 检查安装包是否升级到3.3.0
-                                    2 检查DB 是否升级
-                                    3 检查配置是否升级
-                                    4 检查升级以后portal入口是否可以登录系统
-                                    5 检查升级以后engine是否可以正常运行
-                                </para>
+                                <orderedlist numeration="arabic">
+                                    <listitem>
+                                        <para>
+                                            检查安装包是否升级到3.3.0
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            检查DB 是否升级
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            检查配置是否升级
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            检查升级以后portal入口是否可以登录
+                                            系统
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            检查升级以后engine是否可以正常运行
+                                        </para>
+                                    </listitem>
+                                </orderedlist>
                             </entry>
                             <entry>
                             </entry>
@@ -1255,13 +1831,34 @@
                                 </para>
                             </entry>
                             <entry>
-                                <para>
-                                    1 检查安装包是否升级到最新
-                                    2 检查DB 是否升级
-                                    3 检查配置是否升级
-                                    4 检查升级以后portal入口是否可以登录系统
-                                    5 检查升级以后engine是否可以正常运行
-                                </para>
+                                <orderedlist numeration="arabic">
+                                    <listitem>
+                                        <para>
+                                            检查安装包是否升级到最新
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            检查DB 是否升级
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            检查配置是否升级
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            检查升级以后portal入口是否可以登录
+                                            系统
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            检查升级以后engine是否可以正常运行
+                                        </para>
+                                    </listitem>
+                                </orderedlist>
                             </entry>
                             <entry>
                             </entry>
@@ -1278,13 +1875,34 @@
                                 </para>
                             </entry>
                             <entry>
-                                <para>
-                                    1 检查安装包是否升级到最新
-                                    2 检查DB 是否升级
-                                    3 检查配置是否升级
-                                    4 检查升级以后portal入口是否可以登录系统
-                                    5 检查升级以后engine是否可以正常运行
-                                </para>
+                                <orderedlist numeration="arabic">
+                                    <listitem>
+                                        <para>
+                                            检查安装包是否升级到最新
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            检查DB 是否升级
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            检查配置是否升级
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            检查升级以后portal入口是否可以登录
+                                            系统
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            检查升级以后engine是否可以正常运行
+                                        </para>
+                                    </listitem>
+                                </orderedlist>
                             </entry>
                             <entry>
                             </entry>
@@ -1442,16 +2060,39 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                1 检查如果只有安装firewalld系统才会提示你是否要
-                                配置它
-                                2 检查如果只有安装iptables系统才会提示你是否要
-                                配置它
-                                3 检查如果安装了firewalld和iptables系统会首先提
-                                示你firewalld，如果你回答no系统会提示iptables
-                                4 检查执行结束后仅选择正在运行的firewall管理
-                                5 如果没有firewall管理被选择，用户可以手动配置
-                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+                                        检查如果只有安装firewalld系统才会提示你
+                                        是否要配置它
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        检查如果只有安装iptables系统才会提示你是
+                                        否要配置它
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        检查如果安装了firewalld和iptables系统会
+                                        首先提示你firewalld，如果你回答no系统会
+                                        提示iptables
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        检查执行结束后仅选择正在运行的firewall
+                                        管理
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        如果没有firewall管理被选择，用户可以手动
+                                        配置
+                                    </para>
+                                </listitem>
+                            </orderedlist>
                         </entry>
                         <entry>
                         </entry>
@@ -1467,10 +2108,18 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                1 检查当输入密码时屏幕上没有任何显示
-                                2 检查输入的密码在日志中是不可见的
-                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+                                        检查当输入密码时屏幕上没有任何显示
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        检查输入的密码在日志中是不可见的
+                                    </para>
+                                </listitem>
+                            </orderedlist>
                         </entry>
                         <entry>
                         </entry>
@@ -1486,16 +2135,29 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                1 check that there is a message telling where
-                                to find the log file
-                                2 check that a summary of the configuration is
-                                presented when running without an answer file
-                                before applying changes to the system allowing
-                                the user to abort the procedure
-                                3 check that there is an info message finalizing
-                                the successful install
-                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+                                        check that there is a message telling
+                                        where to find the log file
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        check that a summary of the
+                                        configuration is presented when running
+                                        without an answer file before applying
+                                        changes to the system allowing the user
+                                        to abort the procedure
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        check that there is an info message
+                                        finalizing the successful install
+                                    </para>
+                                </listitem>
+                            </orderedlist>
                         </entry>
                         <entry>
                         </entry>
@@ -1511,12 +2173,20 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                1 check that there is a message telling where to
-                                find the log file
-                                2 check that there is an info message finalizing
-                                the successful cleanup
-                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+                                        check that there is a message telling
+                                        where to find the log file
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        check that there is an info message
+                                        finalizing the successful cleanup
+                                    </para>
+                                </listitem>
+                            </orderedlist>
                         </entry>
                         <entry>
                         </entry>
@@ -1555,10 +2225,18 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                1 检查设置成功完成
-                                2 检查设置结束engine正常运行
-                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+                                        检查设置成功完成
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        检查设置结束engine正常运行
+                                    </para>
+                                </listitem>
+                            </orderedlist>
                         </entry>
                         <entry>
                         </entry>
@@ -1575,10 +2253,18 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                1 检查设置成功完成
-                                2 检查设置结束engine正常运行
-                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+                                        检查设置成功完成
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        检查设置结束engine正常运行
+                                    </para>
+                                </listitem>
+                            </orderedlist>
                         </entry>
                         <entry>
                         </entry>
@@ -1594,17 +2280,34 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                1 check that if selinux is enabled
-                                httpd_can_network_connect flag is enabled on
-                                http and https ports
-                                2 check that existing httpd configuration were
-                                backed up
-                                3 check that mod_ssl was configured for using
-                                engine apache keys
-                                4 check that Apache was configured as proxy for
-                                the requests to the jboss service
-                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+                                        check that if selinux is enabled
+                                        httpd_can_network_connect flag is
+                                        enabled on http and https ports
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        check that existing httpd configuration
+                                        were backed up
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        check that mod_ssl was configured for
+                                        using engine apache keys
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        check that Apache was configured as
+                                        proxy for the requests to the jboss
+                                        service
+                                    </para>
+                                </listitem>
+                            </orderedlist>
                         </entry>
                         <entry>
                         </entry>
@@ -1640,12 +2343,20 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                1 检查如果启用了对虚拟化的CPU硬件支持那么可以配
-                                置VDSM
-                                2 如果bios禁用了或者CPU不支持对虚拟化CPU硬件支
-                                持那么不可以配置VDSM
-                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+                                        检查如果启用了对虚拟化的CPU硬件支持那么
+                                        可以配置VDSM
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        如果bios禁用了或者CPU不支持对虚拟化CPU硬
+                                        件支持那么不可以配置VDSM
+                                    </para>
+                                </listitem>
+                            </orderedlist>
                         </entry>
                         <entry>
                         </entry>
