@@ -1,7 +1,8 @@
 <?xml version='1.0' encoding='utf-8' ?>
-<!DOCTYPE appendix PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-<!ENTITY % BOOK_ENTITIES SYSTEM "Test_Case.ent">
-%BOOK_ENTITIES;
+<!DOCTYPE appendix PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+    "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+    <!ENTITY % BOOK_ENTITIES SYSTEM "Test_Case.ent">
+    %BOOK_ENTITIES;
 ]>
 <appendix id="appe-Test_Case-Test_Case-Revision_History">
 	<title>Revision History</title>

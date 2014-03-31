@@ -1,19 +1,28 @@
 <?xml version='1.0' encoding='utf-8' ?>
-<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-<!ENTITY % BOOK_ENTITIES SYSTEM "Test_Case.ent">
-%BOOK_ENTITIES;
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+    "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+    <!ENTITY % BOOK_ENTITIES SYSTEM "Test_Case.ent">
+    %BOOK_ENTITIES;
 ]>
+
 <article>
-	<xi:include href="Article_Info.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<para>
-	   功能测试只是测试整个周期中微弱的一个环节。	
-	</para>
-	<xi:include href="evaluation-testcase.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="installing-testcase.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="function-testcase.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="userportal-testcase.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="upstream-testday-testcase.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Revision_History.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<index />
+    <xi:include href="Article_Info.xml"
+        xmlns:xi="http://www.w3.org/2001/XInclude" />
+    <para>
+        功能测试只是测试整个周期中微弱的一个环节。	
+    </para>
+    <xi:include href="evaluation-testcase.xml"
+        xmlns:xi="http://www.w3.org/2001/XInclude" />
+    <xi:include href="installing-testcase.xml"
+        xmlns:xi="http://www.w3.org/2001/XInclude" />
+    <xi:include href="function-testcase.xml"
+        xmlns:xi="http://www.w3.org/2001/XInclude" />
+    <xi:include href="userportal-testcase.xml"
+        xmlns:xi="http://www.w3.org/2001/XInclude" />
+    <xi:include href="upstream-testday-testcase.xml"
+        xmlns:xi="http://www.w3.org/2001/XInclude" />
+    <xi:include href="Revision_History.xml"
+        xmlns:xi="http://www.w3.org/2001/XInclude" />
+    <index />
 </article>
 
