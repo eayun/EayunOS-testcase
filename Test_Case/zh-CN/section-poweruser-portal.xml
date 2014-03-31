@@ -65,80 +65,324 @@
                         <entry>29</entry>
                         <entry>
                             <para>
+                                添加IdM域及在IdM上添加用户（具体方法参看场景文档第二、三节）
                             </para>
                             <orderedlist numeration="arabic">
                                 <listitem>
                                     <para>
-                                        ssh engine 修改HOSTNAME=XXX.eayunos.com
+
                                     </para>
                                 </listitem>
                                 <listitem>
                                     <para>
-                                        vi /etc/resolv.conf 添加nameserver ip
-                                        (Active Directory所在的机器)
+
                                     </para>
                                 </listitem>
                                 <listitem>
                                     <para>
-                                        登录AD
-                                    </para>
-                                </listitem>
-                                <listitem>
-                                    <para>
-                                        在“服务器管理器”->“正向查找区域”右键
-                                        “eayunos.com”,选择“新建主机”输入名称、
-                                        ip（engine的名称和ip）,点击“添加主机”
-                                    </para>
-                                </listitem>
-                                <listitem>
-                                    <para>
-                                        .在“服务器管理器”->“反向查找区域”右键
-                                        “192.168.192.in-addr.arp”,选择“新建指
-                                        针”，输入主机ip及名称（engine的ip及名
-                                        称）
-                                    </para>
-                                </listitem>
-                                <listitem>
-                                    <para>
-                                        ssh engine
-                                    </para>
-                                </listitem>
-                                <listitem>
-                                    <para>
-                                        vi /var/tmp/password将密码写入文件，输
-                                        入命令：
-                                        /etc/init.d/ovirt-engine restart
-                                    </para>
-                                </listitem>
-                                <listitem>
-                                    <para>
-                                        输入命令：
-                                        engine-manage-domains -action=add \
-                                        -domain=eayunos.com -user=name \
-                                        -provider=ActiveDirectory \
-                                        -passwordFile=/var/tmp/password
-                                        (其中name为所添加的用户名)
-                                    </para>
-                                </listitem>
-                                <listitem>
-                                    <para>
-                                        再输入命令：
-                                        engine-manage-domains -action=edit \
-                                        -domain=eayunos.com -user=name \
-                                        -provider=ActiveDirectory \
-                                        -passwordFile=/var/tmp/password \
-                                        -addPermissions
-                                        （此步骤为用户添加权限，也可以浏管理员
-                                        身份登录engine为添加的用户添加权限）
-                                        /etc/init.d/ovirt-engine restart
+
                                     </para>
                                 </listitem>
                             </orderedlist>
                         </entry>
                         <entry>
                             <para>
-                                使用添加的用户登录engine系统，用户可以进行该用
-                                户权限内的操作
+				添加域成功，添加用户成功；
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                    </row>
+		    <row>
+                       <entry>30</entry>
+                        <entry>
+                            <para>
+                                对用户在数据中心层分配PowerUserRole：
+                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+					 在EayunOS虚拟化管理系统树形面板，点击【展开所有】，选择“Default”数据中心。
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+					在“Default”数据中心详细面板下，点击【添加】添加一个已经存在的用户，在“添加权限”窗口，“搜索区域”输入域（本实验eayunos.com），点击【执行】。
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+					在“分配角色”下拉菜单内选择“PowerUserRole”，点击【确定】，在权限列表下显示该用户，权限标记为PowerUserRole。但该用户对该数据中心下的虚拟机没有继承PowerUserRole权限
+                                    </para>
+                                </listitem>
+                            </orderedlist>
+                        </entry>
+                        <entry>
+                            <para>
+                                使用该用户登录系统（用户门户），进入系统后可以看到数据中心下有的模板及资源等但没有该数据中心下的虚拟机。
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                    </row>
+		    <row>
+                       <entry>31</entry>
+                        <entry>
+                            <para>
+                                在数据中心下的现有虚拟机为用户分配PowerUserRole权限
+                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+                                         在EayunOS虚拟化管理平台树形面板，点击“Default”数据中心下的【虚拟机】，在“虚拟机列表”下显示所有虚拟机，选择其中一个。
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        点击该虚拟机，显示虚拟机的详细面板，点击【权限】，点击【添加】，显示“添加权限”窗口，在搜索区域添加域和用户名，点击【执行】。
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        “分配角色”下拉菜单中选择PowerUserRole，点击【确定】。
+                                    </para>
+                                </listitem>
+				<listitem>
+				    <para>
+					在权限列表下显示添加的用户权限为PowerUserRole。
+				    </para>
+				</listitem>
+                            </orderedlist>
+                        </entry>
+                        <entry>
+                            <para>
+                                使用该用户登录系统（用户门户），进入系统后可以看到分配给该用户的虚拟机
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                    </row>
+                    <row>
+                       <entry>32</entry>
+                        <entry>
+                            <para>
+                                使用PowerUserRole权限的用户登录系统，创建Linux虚拟机
+                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+                                         
+                                    </para>
+                                </listitem>
+                            </orderedlist>
+                        </entry>
+                        <entry>
+                            <para>
+                                虚拟机创建成功
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                    </row>
+                    <row>
+                       <entry>33</entry>
+                        <entry>
+                            <para>
+                                使用PowerUserRole权限的用户登录系统，创建Windows虚拟机
+                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+
+                                    </para>
+                                </listitem>
+                            </orderedlist>
+                        </entry>
+                        <entry>
+                            <para>
+                                虚拟机创建成功
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                    </row>
+                    <row>
+                       <entry>34</entry>
+                        <entry>
+                            <para>
+                                使用PowerUserRole权限的用户登录系统，创建Windows模板
+                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+
+                                    </para>
+                                </listitem>
+                            </orderedlist>
+                        </entry>
+                        <entry>
+                            <para>
+                                模板创建成功
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                    </row>
+                    <row>
+                       <entry>35</entry>
+                        <entry>
+                            <para>
+                                使用PowerUserRole权限的用户登录系统，创建Linux模板
+                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+
+                                    </para>
+                                </listitem>
+                            </orderedlist>
+                        </entry>
+                        <entry>
+                            <para>
+                                模板创建成功
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                    </row>
+                    <row>
+                       <entry>36</entry>
+                        <entry>
+                            <para>
+                                使用PowerUserRole权限的用户登录系统，通过控制台连接虚拟机，使用虚拟机
+                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+
+                                    </para>
+                                </listitem>
+                            </orderedlist>
+                        </entry>
+                        <entry>
+                            <para>
+                                连接虚拟机成功可以正常使用虚拟机
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                    </row>
+                    <row>
+                       <entry>37</entry>
+                        <entry>
+                            <para>
+                                使用PowerUserRole权限的用户（user）登录系统，完成创建虚拟机操作后，返回到admin登录管理系统验证，虚拟机的权限；admin登录管理系统，在虚拟机列表下找到创建的虚拟机，点击该虚拟机详细面板下【权限】，查看权限信息
+                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+
+                                    </para>
+                                </listitem>
+                            </orderedlist>
+                        </entry>
+                        <entry>
+                            <para>
+                                user用户权限显示UserVm Manager
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                    </row>
+                    <row>
+                       <entry>38</entry>
+                        <entry>
+                            <para>
+                                使用PowerUserRole权限的用户（user）登录系统，完成创建模板操作后，返回到admin登录管理系统验证，模板的权限；admin登录管理系统，在模板列表下找到创建的模板，点击该模板详细面板下【权限】，查看权限信息
+                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+
+                                    </para>
+                                </listitem>
+                            </orderedlist>
+                        </entry>
+                        <entry>
+                            <para>
+                                user用户权限显示PowerUserRole权限；admin管理员显示UserRole权限；只有这两个用户可以使用该模板，其它用户不能使用
                             </para>
                         </entry>
                         <entry>
