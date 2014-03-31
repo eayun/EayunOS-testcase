@@ -3,7 +3,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "Test_Case.ent">
 %BOOK_ENTITIES;
 ]>
-<sect1><title>安装测试</title>
+<section><title>安装测试</title>
 <informaltable  frame='all'>	
 <tgroup cols='8' align='left' colsep='1' rowsep='1'>
   <colspec colname='c1'/>
@@ -218,5 +218,4 @@ engine-setup (VDSM 项选择yes,配置过程中配置项设置不同选项会有
   其他注意事项：
   </para>
 </note>
-</sect1>
-
+</section>

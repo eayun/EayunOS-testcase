@@ -3,7 +3,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "Test_Case.ent">
 %BOOK_ENTITIES;
 ]>
-<sect1><title>功能测试</title>
+<section><title>功能测试</title>
 <informaltable  frame='all'>	
 <tgroup cols='8' align='left' colsep='1' rowsep='1'>
   <colspec colname='c1'/>
@@ -3771,5 +3771,4 @@ ssh登录到manager节点，开启服务
   其他注意事项：
   </para>
 </note>
-</sect1>
-
+</section>
