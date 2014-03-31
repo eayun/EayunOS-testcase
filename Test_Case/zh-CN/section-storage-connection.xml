@@ -1,0 +1,124 @@
+
+    <section>
+        <title>
+            Manage Storage Connections
+        </title>
+
+        <informaltable  frame='topbot'>
+            <tgroup cols='5' align='left' colsep='1' rowsep='1'>
+                <colspec colname='c1' colwidth='5*'/>
+                <colspec colname='c2' colwidth='20*'/>
+                <colspec colname='c3' colwidth='10*'/>
+                <colspec colname='c4' colwidth='5*'/>
+                <colspec colname='c5' colwidth='10*'/>
+                <thead>
+                    <row>
+                        <entry>用例编号</entry>
+                        <entry>操作</entry>
+                        <entry>预期结果</entry>
+                        <entry>实际结果</entry>
+                        <entry>备注</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>63</entry>
+                        <entry>
+                            <orderedlist numeration="arabic">
+                                <title>
+                                    NFS - edit in webadmin UI
+                                </title>
+                                <para>
+                                    前提准备：手动复制存储域的内容将其从当前路径
+                                    到目标路径
+                                </para>
+                                <listitem>
+                                    <para>
+                                        Data domain置成维护模式
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        右键编辑存储域
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        修改挂载路径到其他存储服务器
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        编辑NFS高级选项：retransmissions,
+                                        timeout 
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        激活存储域
+                                    </para>
+                                </listitem>
+                            </orderedlist>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                        <entry>
+                        </entry>
+                        <entry>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>64</entry>
+                        <entry>
+                            <orderedlist numeration="arabic">
+                                <title>
+                                    Posix - edit in webadmin UI
+                                </title>
+                                <para>
+                                    前提准备：手动复制存储域的内容将其从当前路径
+                                    到目标路径
+                                </para>
+                                <listitem>
+                                    <para>
+                                        Data domain置成维护模式
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        右键编辑存储域
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        修改挂载路径到其他存储服务器
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        编辑挂载操作
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        激活存储域
+                                    </para>
+                                </listitem>
+                            </orderedlist>
+                        </entry>
+                        <entry>
+                            <para>
+                            </para>
+                        </entry>
+                        <entry>
+                        </entry>
+                        <entry>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+    </section>
+

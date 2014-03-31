@@ -1,0 +1,530 @@
+
+    <section>
+        <title>
+            虚拟机
+        </title>
+
+        <informaltable  frame='topbot'>
+            <tgroup cols='5' align='left' colsep='1' rowsep='1'>
+                <colspec colname='c1' colwidth='5*'/>
+                <colspec colname='c2' colwidth='20*'/>
+                <colspec colname='c3' colwidth='10*'/>
+                <colspec colname='c4' colwidth='5*'/>
+                <colspec colname='c5' colwidth='10*'/>
+                <thead>
+                    <row>
+                        <entry>用例编号</entry>
+                        <entry>操作</entry>
+                        <entry>预期结果</entry>
+                        <entry>实际结果</entry>
+                        <entry>备注</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                    <entry>33</entry>
+                    <entry>
+                        <para>
+                            前提：虚拟化平台至少有一个Host及ISO domain
+                            创建Red Hat Enterprise Linux server
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    登录虚拟化系统，在左侧树形面板下点击
+                                    Expand All,选择Default数据中心下Default集群
+                                    下点击VMs , 在右侧虚拟机列表下点击菜单栏内
+                                    的New VM,输入名称、内存大小、选择操作系统为
+                                    RedHat Enterprise Linux6.X X64、其他项保持
+                                    默认设置，点击OK 
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    弹出“New Virtual Machine-Guide Me”窗口，提
+                                    示配置虚拟机磁盘，设置磁盘大小，网络接口默
+                                    认VirtIO，点击OK（根据需要可以再添加磁盘）
+                                    点击configure Later，创建的虚拟机显示在虚拟
+                                    机列表下,安装操作系统（若采用run once方式安
+                                    装添加CD则不需要changeCD）
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+                            创建的虚拟机成功，虚拟机可以正常使用
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>34</entry>
+                    <entry>
+                        <para>
+                            前提：虚拟化平台至少有一个Host及ISO domain
+                            创建Windows虚拟机（win7 64）
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    登录虚拟化系统，在左侧树形面板下点击
+                                    Expand All,选择Default数据中心下Default集群
+                                    下点击VMs , 在右侧虚拟机列表下点击菜单栏内
+                                    的New VM,输入名称、内存大小、选择操作系统为
+                                    windows7 X64、Optimized for项选择Desktop其
+                                    他项保持默认设置，点击OK 
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    弹出“New Virtual Machine-Guide Me”窗口，提
+                                    示配置虚拟机磁盘，设置磁盘大小，网络接口默
+                                    认VirtIO，点击OK（根据需要可以再添加磁盘）
+                                    点击configure Later，创建的虚拟机显示在虚拟
+                                    机列表下,安装操作系统（安装到选择自定义项时
+                                    在管理平台上changeCD添加驱动，回到安装界面
+                                    刷新界面可以看到安装的磁盘，再到管理平台
+                                    changeCD加载系统安装盘，开始正常安装操作系
+                                    统）（安装完系统后changeCD）（若采用
+                                    run once方式安装添加CD则不需要changeCD）
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+                            创建的虚拟机成功，虚拟机可以正常使用
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            创建Windows系统的虚拟机
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>35</entry>
+                    <entry>
+                        <para>
+                            登录虚拟机（前提：已安装SPICE）
+
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    在虚拟机列表下选择运行的虚拟机，点击
+                                    console按钮（绿色电脑图标）
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+                            登录虚拟机
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>36</entry>
+                    <entry>
+                        <para>
+                            shut down 虚拟机
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    在虚拟机列表下选择运行的虚拟机，点击菜单内
+                                    的shut down或者右键菜单中选择shut down
+
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+                            虚拟机状态变为Down   
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>37</entry>
+                    <entry>
+                        <para>
+                            power off虚拟机
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    1 在虚拟机列表下选择运行的虚拟机，右键菜单
+                                    中选择power off
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+                            虚拟机关机Down   
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>38</entry>
+                    <entry>
+                        <para>
+                            删除虚拟机
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    在虚拟机列表下选择状态为Down的虚拟机（或将
+                                    要删除的虚拟机关机）
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击Remove，弹出Remove Virtual Machine（s）
+                                    窗口
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击OK
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+                            虚拟机被删除
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>39</entry>
+                    <entry>
+                        <para>
+                            暂停虚拟机
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    在虚拟机列表下选择运行的虚拟机，点击菜单内
+                                    的suspend或者右键菜单中选择suspend
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    虚拟机暂停状态Paused
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>40</entry>
+                    <entry>
+                        <para>
+                            虚拟机创建快照
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    在虚拟机列表下选中运行的虚拟机
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在虚拟机详细面板菜单Snapshots下点击Create,
+                                    在弹出的界面输入描述，保存，点击OK
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>41</entry>
+                    <entry>
+                        <para>
+                            使用快照恢复虚拟机
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    在虚拟机列表里选择指定虚拟机
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    将虚拟机关机状态powered down
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在虚拟机详细面板中点击菜单内的Snapshots，选
+                                    择待恢复的快照
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击Preview,虚拟机状态由Image Locked->Down
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击Preview,虚拟机状态由Image Locked->Down
+                                </para>
+                            </listitem>
+
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+                            虚拟机恢复到快照
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>42</entry>
+                    <entry>
+                        <para>
+                            导入虚拟机（已创建Export存储域）
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    在虚拟机列表下，选中待导入的虚拟机，关闭这
+                                    些虚拟机
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击Export，打开Export Template窗口，选择
+                                    ForceOverride
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击OK
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+                            虚拟机被导入到Export存储域
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>43</entry>
+                    <entry>
+                        <para>
+                            导出虚拟机（已创建Export存储域）
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    在左侧树形面板下找到Export存储域
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在详细面板下选择Export存储域内的虚拟机导入
+                                    列表
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    选中这些虚拟机，点击Import，在
+                                    Import virtual machine（s）窗口内选择
+                                    Destination Cluster和Storage
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    选择Collapse All Snapshots
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击OK
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+                            虚拟机被导出
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+    </section>
+

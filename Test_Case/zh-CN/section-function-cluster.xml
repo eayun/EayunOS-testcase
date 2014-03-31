@@ -1,0 +1,213 @@
+
+    <section>
+        <title>
+            集群
+        </title>
+
+        <informaltable  frame='topbot'>
+            <tgroup cols='5' align='left' colsep='1' rowsep='1'>
+                <colspec colname='c1' colwidth='5*'/>
+                <colspec colname='c2' colwidth='20*'/>
+                <colspec colname='c3' colwidth='10*'/>
+                <colspec colname='c4' colwidth='5*'/>
+                <colspec colname='c5' colwidth='10*'/>
+                <thead>
+                    <row>
+                        <entry>用例编号</entry>
+                        <entry>操作</entry>
+                        <entry>预期结果</entry>
+                        <entry>实际结果</entry>
+                        <entry>备注</entry>
+                    </row>
+                </thead>
+                <tbody>
+                <row>
+                    <entry>8</entry>
+                    <entry>
+                        <para>
+                            创建集群
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    若在配置数据中心完成的最后一步显示
+                                    New Data Center-Guide me可以直接点击
+                                    Configure Cluster，若不是则可以点击菜单栏内
+                                    的Guide me显示New Data Center me点击
+                                    Configure Cluster
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在New Cluster下General项内输入名称及描述
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    CPU Name下选择能最好描述Host的CPU（注
+                                    意默认Cluster下不需要这步）
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    设置Optinization及Resilience Policy、
+                                    Cluster Policy根据实际需要
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击OK，在New Data Center-Guide me下可以继
+                                    续添加Cluster也可以配置Host也可以选择稍后再
+                                    配置
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+                            创建集群成功
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>9</entry>
+                    <entry>
+                        <para>
+                            编辑集群
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    登录虚拟化系统，在左侧树形面板下点击
+                                    Expand All,点击System,在右侧详细面板点击
+                                    Clusters,选择待编辑的集群
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击edit，编辑选项
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击OK
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+                            集群修改成功
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>10</entry>
+                    <entry>
+                        <para>
+                            添加一个存在的集群
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    删除某一数据中心
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在左侧树形面板下点击Expand All ，点击
+                                    System，在右侧详细面板点击Clusters ,选中被
+                                    删除数据中心遗留下的Cluster，点击edit，编辑
+                                    重新设置，选择数据中心等
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击OK
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+                            集群被成功添加进其它数据中心   
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>11</entry>
+                    <entry>
+                        <para>
+                            删除集群
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    登录虚拟化系统，在左侧树形面板下点击
+                                    Expand All,点击System,在右侧详细面板点击
+                                    Clusters,选择待删除的集群
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击Remove，编辑选项
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击OK
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+                            集群被成功删除
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+    </section>
+

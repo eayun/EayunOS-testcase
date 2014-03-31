@@ -1,0 +1,762 @@
+
+    <section>
+        <title>
+            虚拟机磁盘
+        </title>
+
+        <informaltable  frame='topbot'>
+            <tgroup cols='5' align='left' colsep='1' rowsep='1'>
+                <colspec colname='c1' colwidth='5*'/>
+                <colspec colname='c2' colwidth='20*'/>
+                <colspec colname='c3' colwidth='10*'/>
+                <colspec colname='c4' colwidth='5*'/>
+                <colspec colname='c5' colwidth='10*'/>
+                <thead>
+                    <row>
+                        <entry>用例编号</entry>
+                        <entry>操作</entry>
+                        <entry>预期结果</entry>
+                        <entry>实际结果</entry>
+                        <entry>备注</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                    <entry>67</entry>
+                    <entry>
+                        <para>
+                            ADD虚拟机磁盘（Internal、External）
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    在虚拟机列表下，指定虚拟机
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在该虚拟机详细面板下点击Disks
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击菜单内的Add
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在Add Virtual Disk下配置，配置完成后点击OK
+
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+                            Disk列表下显示新添加的磁盘   
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>68</entry>
+                    <entry>
+                        <para>
+                            Move数据域之间磁盘迁移（前提：该数据中心下至少有两
+                            个Data Domain）
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    在虚拟机列表下，指定虚拟机（独立虚拟机并且
+                                    非虚拟机池内分离出来的虚拟机状态为运行状态）
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在该虚拟机详细面板下点击Disks
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    选中该列表显示的磁盘，点击菜单内的Move
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在Move Disk（s）,下选择目标Data Domain
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击OK
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            迁移失败
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            测试迁移磁盘功能
+
+                            独立虚拟机并且非虚拟机池内分离出来的虚拟机状态为运
+                            行状态的虚拟机
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>69</entry>
+                    <entry>
+                        <para>
+                            Move数据域之间磁盘迁移（前提：该数据中心下至少有两
+                            个Data Domain）
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    在虚拟机列表下，指定虚拟机（独立虚拟机并且
+                                    非虚拟机池内分离出来的虚拟机状态状态为关闭
+                                    状态）
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在该虚拟机详细面板下点击Disks
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    选中该列表显示的磁盘，点击菜单内的Move
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在Move Disk（s）,下选择目标Data Domain
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击OK
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            磁盘迁移成功
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            测试迁移磁盘功能
+
+                            独立虚拟机并且非虚拟机池内分离出来的虚拟机状态状态
+                            为关闭状态的虚拟机
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>70</entry>
+                    <entry>
+                        <para>
+                            Move数据域之间磁盘迁移（前提：该数据中心下至少有两
+                            个Data Domain）
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    在虚拟机列表下，指定虚拟机（虚拟机池内的虚
+                                    拟机状态为运行状态）
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在该虚拟机详细面板下点击Disks
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    选中该列表显示的磁盘，点击菜单内的Move
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在Move Disk（s）,下选择目标Data Domain
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击OK
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            虚拟机池内运行状态的虚拟机不能迁移
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            测试迁移磁盘功能
+
+                            虚拟机池内的虚拟机状态为运行状态的虚拟机 
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>71</entry>
+                    <entry>
+                        <para>
+                            Move数据域之间磁盘迁移（前提：该数据中心下至少有两
+                            个Data Domain）
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    在虚拟机列表下，指定虚拟机（虚拟机池内分离
+                                    的虚拟机状态为关闭状态）
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在该虚拟机详细面板下点击Disks
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    选中该列表显示的磁盘，点击菜单内的Move
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在Move Disk（s）,下选择目标Data Domain
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击OK
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            不能迁移，目标存储域为空且不能编辑
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            测试迁移磁盘功能
+
+                            虚拟机池内分离的虚拟机状态为关闭状态的虚拟机
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>73</entry>
+                    <entry>
+                        <para>
+                            Move数据域之间磁盘迁移（前提：该数据中心下至少有两
+                            个Data Domain）
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    在虚拟机列表下，指定虚拟机（虚拟机池内分离
+                                    的虚拟机状态为运行状态）
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在该虚拟机详细面板下点击Disks
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    选中该列表显示的磁盘，点击菜单内的Move
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在Move Disk（s）,下选择目标Data Domain
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击OK
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            不能迁移，目标存储域为空且不能编辑
+                            提示运行虚拟机不能迁移
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            测试迁移磁盘功能
+
+                            虚拟机池内分离的虚拟机状态为运行状态的虚拟机
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>74</entry>
+                    <entry>
+                        <para>
+                            Move数据域之间磁盘迁移（前提：该数据中心下至少有两
+                            个Data Domain）
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    在虚拟机列表下，指定虚拟机（模板创建的虚拟
+                                    机）
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在该虚拟机详细面板下点击Disks
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    选中该列表显示的磁盘，点击菜单内的Move
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在Move Disk（s）,下选择目标Data Domain
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击OK
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            不能迁移
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            测试迁移磁盘功能
+
+                            模板创建的虚拟机
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>75</entry>
+                    <entry>
+                        <para>
+                            Move数据域之间磁盘迁移（前提：该数据中心下至少有两
+                            个Data Domain）
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    在虚拟机列表下，指定虚拟机（创建过快照的虚
+                                    拟机）
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在该虚拟机详细面板下点击Disks
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    选中该列表显示的磁盘，点击菜单内的Move
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在Move Disk（s）,下选择目标Data Domain
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击OK
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            迁移失败
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            测试迁移磁盘功能
+                            创建快照的虚拟机
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>76</entry>
+                    <entry>
+                        <para>
+                            Edit 虚拟机磁盘
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    在虚拟机列表下，指定虚拟机
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在该虚拟机详细面板下点击Disks
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在Disk列表下选中Disk
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击菜单内的Edit，设置完毕后点击OK
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+                            磁盘编辑完成
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>77</entry>
+                    <entry>
+                        <para>
+                            Remove虚拟机磁盘（关闭状态的虚拟机）
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    在虚拟机列表下，指定虚拟机
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在该虚拟机详细面板下点击Disks
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在Disk列表下选中Disk
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击菜单内的Remove，在Remove Disk（s）框选
+                                    中Remove permanently
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击OK
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+                            磁盘删除成功
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>78</entry>
+                    <entry>
+                        <para>
+                            Active虚拟机磁盘（虚拟机磁盘为非Active状态）
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    在虚拟机列表下，指定虚拟机
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在该虚拟机详细面板下点击Disks
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在Disk列表下选中Disk
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击菜单内的Active
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+                            磁盘被激活
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>79</entry>
+                    <entry>
+                        <para>
+                            Deactive虚拟机磁盘
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    在虚拟机列表下，指定虚拟机
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在该虚拟机详细面板下点击Disks
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在Disk列表下选中Disk
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击菜单内的Deactive
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+                            使磁盘无效，标志变为Inactive
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>80</entry>
+                    <entry>
+                        <para>
+                            Scan Alignment虚拟机磁盘
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    在虚拟机列表下，指定虚拟机
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在该虚拟机详细面板下点击Disks
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在Disk列表下选中Disk，将磁盘Deactive
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    右键该磁盘，选择菜单内的Scan Alignment
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            不确定此功能在什么情况下使用
+                            虚拟机关机磁盘变为Inactive状态下也不可点
+                            目前只有数据中心宕掉后的虚拟机此项可点
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>81</entry>
+                    <entry>
+                        <para>
+                            创建共享磁盘（Internal）
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    在虚拟机列表下，指定某一虚拟机
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在该虚拟机详细面板下点击Disks
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击Add，选择Internal,填充磁盘大小，描述等
+                                    信息，设置共享
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击OK，磁盘创建完成，会有一个小手的标志代
+                                    表是共享磁盘
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在虚拟机列表下，指定其他虚拟机
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在该虚拟机详细面板下点击Disks
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击Add，在Add Virtual Disk，选中
+                                    Attach Disk，在显示磁盘列表下选中共享磁盘，
+                                    点击OK
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    磁盘共享给该虚拟机
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+                            磁盘实现共享
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+    </section>
+

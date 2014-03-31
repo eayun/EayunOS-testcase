@@ -1,0 +1,263 @@
+
+    <section>
+        <title>
+            虚拟机池
+        </title>
+
+        <informaltable  frame='topbot'>
+            <tgroup cols='5' align='left' colsep='1' rowsep='1'>
+                <colspec colname='c1' colwidth='5*'/>
+                <colspec colname='c2' colwidth='20*'/>
+                <colspec colname='c3' colwidth='10*'/>
+                <colspec colname='c4' colwidth='5*'/>
+                <colspec colname='c5' colwidth='10*'/>
+                <thead>
+                    <row>
+                        <entry>用例编号</entry>
+                        <entry>操作</entry>
+                        <entry>预期结果</entry>
+                        <entry>实际结果</entry>
+                        <entry>备注</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                    <entry>62</entry>
+                    <entry>
+                        <para>
+                            创建虚拟机池（前提：已有模板）
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    在管理系统平台详细面板下点击Pools，打开
+                                    New Pool窗口
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    设置Host Cluster、Template、操作系统、
+                                    optimized for、VMs的数量、
+                                    Maximum number of VMs per user及名称描述等
+                                    信息
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击Show Advanced Options，填充每项内的信息
+                                    等
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    完成全部设置后，点击OK，创建虚拟机池
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+                            虚拟机列表下显示创建的虚拟机，数量为虚拟机池设置的
+                            数量，同时显示特殊标识，区别于单独的虚拟机
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>63</entry>
+                    <entry>
+                        <para>
+                            Prestarting Virtual Machines in a Pool
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    点击Pools，在虚拟机池列表下，选定虚拟机池
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击Edit ，打开Edit Pool窗口
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    Prestarted VMs这项输入启动虚拟机的数量
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    pool 项下的Pool Type确保设置为Automatic
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击OK
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+                            虚拟机列表下显示启动的虚拟机池内的指定数量的虚拟机
+                            状态为UP
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>64</entry>
+                    <entry>
+                        <para>
+                            添加虚拟机到虚拟机池
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    点击Pools，在虚拟机池列表下，选定虚拟机池
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击Edit ，打开Edit Pool窗口
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    Increase number of VMs in pool by这项输入增
+                                    加的虚拟机的数量
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击OK
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+                            虚拟机列表先显示创建增加的虚拟机
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>65</entry>
+                    <entry>
+                        <para>
+                            从虚拟机池中分离虚拟机
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    点击Pools，在虚拟机池列表下，选定虚拟机池
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    确保待分离的虚拟机为关闭状态，状态为Down
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在虚拟机池详细面板下，点击
+                                    Virtual Machines，选中列表下的虚拟机，点
+                                    击Detach
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在Detach Virtual Machine（s）对话框，点击OK
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+                            从虚拟机池分离出来，虚拟机图标显示为正常独立的虚拟机
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>66</entry>
+                    <entry>
+                        <para>
+                            删除虚拟机池
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    点击Pools,在虚拟机池列表下，选定虚拟机池
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击Remove ，打开Remove Pool（s）
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击OK
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+                            虚拟机池被删除
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+    </section>
+

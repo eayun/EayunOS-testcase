@@ -1,0 +1,159 @@
+
+    <section>
+        <title>
+            特定用户门户
+        </title>
+
+        <informaltable  frame='topbot'>
+            <tgroup cols='5' align='left' colsep='1' rowsep='1'>
+                <colspec colname='c1' colwidth='5*'/>
+                <colspec colname='c2' colwidth='20*'/>
+                <colspec colname='c3' colwidth='10*'/>
+                <colspec colname='c4' colwidth='5*'/>
+                <colspec colname='c5' colwidth='10*'/>
+                <thead>
+                    <row>
+                        <entry>用例编号</entry>
+                        <entry>操作</entry>
+                        <entry>预期结果</entry>
+                        <entry>实际结果</entry>
+                        <entry>备注</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>28</entry>
+                        <entry>
+                            <para>
+                                搭建Active Directory在系统Windows 2000/2003/2008
+                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+
+                                    </para>
+                                </listitem>
+                            </orderedlist>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>29</entry>
+                        <entry>
+                            <para>
+                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+                                        ssh engine 修改HOSTNAME=XXX.eayunos.com
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        vi /etc/resolv.conf 添加nameserver ip
+                                        (Active Directory所在的机器)
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        登录AD
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        在“服务器管理器”->“正向查找区域”右键
+                                        “eayunos.com”,选择“新建主机”输入名称、
+                                        ip（engine的名称和ip）,点击“添加主机”
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        .在“服务器管理器”->“反向查找区域”右键
+                                        “192.168.192.in-addr.arp”,选择“新建指
+                                        针”，输入主机ip及名称（engine的ip及名
+                                        称）
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        ssh engine
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        vi /var/tmp/password将密码写入文件，输
+                                        入命令：
+                                        /etc/init.d/ovirt-engine restart
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        输入命令：
+                                        engine-manage-domains -action=add \
+                                        -domain=eayunos.com -user=name \
+                                        -provider=ActiveDirectory \
+                                        -passwordFile=/var/tmp/password
+                                        (其中name为所添加的用户名)
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        再输入命令：
+                                        engine-manage-domains -action=edit \
+                                        -domain=eayunos.com -user=name \
+                                        -provider=ActiveDirectory \
+                                        -passwordFile=/var/tmp/password \
+                                        -addPermissions
+                                        （此步骤为用户添加权限，也可以浏管理员
+                                        身份登录engine为添加的用户添加权限）
+                                        /etc/init.d/ovirt-engine restart
+                                    </para>
+                                </listitem>
+                            </orderedlist>
+                        </entry>
+                        <entry>
+                            <para>
+                                使用添加的用户登录engine系统，用户可以进行该用
+                                户权限内的操作
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+    </section>
+

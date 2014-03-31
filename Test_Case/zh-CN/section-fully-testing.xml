@@ -1,0 +1,250 @@
+
+    <section>
+        <title>
+            整合功能
+        </title>
+
+        <section>
+            <title>
+                基本测试
+            </title>
+            <informaltable  frame='topbot'>
+                <tgroup cols='5' align='left' colsep='1' rowsep='1'>
+                    <colspec colname='c1' colwidth='5*'/>
+                    <colspec colname='c2' colwidth='20*'/>
+                    <colspec colname='c3' colwidth='10*'/>
+                    <colspec colname='c4' colwidth='5*'/>
+                    <colspec colname='c5' colwidth='10*'/>
+                    <thead>
+                        <row>
+                            <entry>用例编号</entry>
+                            <entry>操作</entry>
+                            <entry>预期结果</entry>
+                            <entry>实际结果</entry>
+                            <entry>备注</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>84</entry>
+                            <entry>
+                                <para>
+                                    在一个干净系统下运行engine-setup-2
+                                </para>
+                            </entry>
+                            <entry>
+                                <orderedlist numeration="arabic">
+                                    <listitem>
+                                        <para>
+                                            检查整个过程是否成功
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            检查portal入口是否可以进入系统
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            check that the engine is running as
+                                            it was installed using legacy setup
+                                        </para>
+                                    </listitem>
+                                </orderedlist>
+                            </entry>
+                            <entry>
+                            </entry>
+                            <entry>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>85</entry>
+                            <entry>
+                                <para>
+                                    在一个干净系统下安装AIO插件并运行
+                                    engine-setup-2
+                                </para>
+                            </entry>
+                            <entry>
+                                <orderedlist numeration="arabic">
+                                    <listitem>
+                                        <para>
+                                            检查整个过程是否成功
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            检查portal入口是否可以进入系统
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            check that the engine is running as
+                                            it was installed using legacy setup
+                                            with AIO plugin
+                                        </para>
+                                    </listitem>
+                                </orderedlist>
+                            </entry>
+                            <entry>
+                            </entry>
+                            <entry>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>86</entry>
+                            <entry>
+                                <para>
+                                    在一个已安装了engine-setup-2的系统上运行
+                                    engine-cleanup-2
+                                </para>
+                            </entry>
+                            <entry>
+                                <para>
+                                    检查系统被清空
+                                </para>
+                            </entry>
+                            <entry>
+                            </entry>
+                            <entry>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>87</entry>
+                            <entry>
+                                <para>
+                                    版本升级
+                                    安装静态版本在一个可支持的操作系统上（3.2版
+                                    本不支持Fedora 19）现将版本升级为3.3.0
+                                    运行 engine-setup-2
+                                </para>
+                            </entry>
+                            <entry>
+                                <orderedlist numeration="arabic">
+                                    <listitem>
+                                        <para>
+                                            检查安装包是否升级到3.3.0
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            检查DB 是否升级
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            检查配置是否升级
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            检查升级以后portal入口是否可以登录
+                                            系统
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            检查升级以后engine是否可以正常运行
+                                        </para>
+                                    </listitem>
+                                </orderedlist>
+                            </entry>
+                            <entry>
+                            </entry>
+                            <entry>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>88</entry>
+                            <entry>
+                                <para>
+                                    安装beta版本使用engine-setup-2
+                                    升级到最新的engine-setup-2
+                                    运行engine-setup-2
+                                </para>
+                            </entry>
+                            <entry>
+                                <orderedlist numeration="arabic">
+                                    <listitem>
+                                        <para>
+                                            检查安装包是否升级到最新
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            检查DB 是否升级
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            检查配置是否升级
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            检查升级以后portal入口是否可以登录
+                                            系统
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            检查升级以后engine是否可以正常运行
+                                        </para>
+                                    </listitem>
+                                </orderedlist>
+                            </entry>
+                            <entry>
+                            </entry>
+                            <entry>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>89</entry>
+                            <entry>
+                                <para>
+                                    安装beta版本使用legacy engine-setup
+                                    升级ovirt-engine-setup到最新的版本
+                                    运行 engine-setup-2
+                                </para>
+                            </entry>
+                            <entry>
+                                <orderedlist numeration="arabic">
+                                    <listitem>
+                                        <para>
+                                            检查安装包是否升级到最新
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            检查DB 是否升级
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            检查配置是否升级
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            检查升级以后portal入口是否可以登录
+                                            系统
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            检查升级以后engine是否可以正常运行
+                                        </para>
+                                    </listitem>
+                                </orderedlist>
+                            </entry>
+                            <entry>
+                            </entry>
+                            <entry>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </informaltable>
+        </section>
+    </section>
+

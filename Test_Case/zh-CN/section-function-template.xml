@@ -1,0 +1,222 @@
+
+    <section>
+        <title>
+            模板
+        </title>
+
+        <informaltable  frame='topbot'>
+            <tgroup cols='5' align='left' colsep='1' rowsep='1'>
+                <colspec colname='c1' colwidth='5*'/>
+                <colspec colname='c2' colwidth='20*'/>
+                <colspec colname='c3' colwidth='10*'/>
+                <colspec colname='c4' colwidth='5*'/>
+                <colspec colname='c5' colwidth='10*'/>
+                <thead>
+                    <row>
+                        <entry>用例编号</entry>
+                        <entry>操作</entry>
+                        <entry>预期结果</entry>
+                        <entry>实际结果</entry>
+                        <entry>备注</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                    <entry>29</entry>
+                    <entry>
+                        <para>
+                            创建模板（Windows、Linux）
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    在虚拟机列表下，选择指定的虚拟机
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    确认虚拟机状态为Down
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击Make Template打开New Template窗口
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    输入名称，描述等信息
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    选择Host Cluster
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    默认选中
+                                    Allow all users to access this Template
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击OK,创建模板
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+                            虚拟机状态由Image Locke->Down
+                            在Template列表下显示创建的模板状态由Locked->OK
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>30</entry>
+                    <entry>
+                        <para>
+                            删除模板（默认的Blank 模板不允许删除）
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    在模板列表下选中待删除的模板
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击Remove打开Remove Template窗口
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击OK
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+                            模板被删除
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>31</entry>
+                    <entry>
+                        <para>
+                            导出模板（前提：已创建好Export存储域）
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    在模板列表下，选中待导出模板
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击Export，打开Export Template窗口，选择
+                                    ForceOverride
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击OK
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+                            模板导入到Export存储域 
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>32</entry>
+                    <entry>
+                        <para>
+                            导入摸版（已存在Export域）
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    在左侧树形面板下找到Export存储域
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在详细面板下选择Export存储域内的Template
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    选中模板，点击Import，在Import template窗口
+                                    内选择Destination Cluster和Storage
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    清楚Clone All Templates
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    点击OK
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+                            模板导出
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+    </section>
+

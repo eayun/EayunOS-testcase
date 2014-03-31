@@ -1,0 +1,456 @@
+
+    <section>
+        <title>
+            高可用
+        </title>
+
+        <informaltable  frame='topbot'>
+            <tgroup cols='5' align='left' colsep='1' rowsep='1'>
+                <colspec colname='c1' colwidth='5*'/>
+                <colspec colname='c2' colwidth='20*'/>
+                <colspec colname='c3' colwidth='10*'/>
+                <colspec colname='c4' colwidth='5*'/>
+                <colspec colname='c5' colwidth='10*'/>
+                <thead>
+                    <row>
+                        <entry>用例编号</entry>
+                        <entry>操作</entry>
+                        <entry>预期结果</entry>
+                        <entry>实际结果</entry>
+                        <entry>备注</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>30</entry>
+                        <entry>
+                            <para>
+                                前提：配置电源管理禁用Cluster policy(设置为
+                                None)虚拟机配置High Availability（只有服务器版
+                                本的虚拟机可以配置）
+                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+                                        登录系统在左侧树形面板选择
+                                        Expand All->System,在右侧详细面板菜单中
+                                        选择Virtual Mchines 点击Edit 在
+                                        Edit Server Virtual Machine对话框
+                                        High Availability->
+                                        Priority for Run/Migration queue选中
+                                        High，勾选中Highly Available项
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+
+                                    </para>
+                                </listitem>
+                            </orderedlist>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>31</entry>
+                        <entry>
+                            <para>
+                                Host-Initated reboot
+                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+                                        .登录系统在树形面板下选择VMs,高可用的虚
+                                        拟机显示在虚拟机详细列表下
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        .在树形面板选择Hosts，可用的Hosts显示在
+                                        Hosts的详细列表下，选择其中一台Host，点
+                                        击Power Management下拉菜单内选择
+                                        Restart，在Restart Host对话框内点击OK，
+                                        主机状态变为Reboot->Non-Responsive
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        Host正在重启中，观察运行在这个Host上的
+                                        虚拟机，在树形面板下点击VMs,显示虚拟机
+                                        列表，虚拟机在Host重启完成后shut down状
+                                        态 最后虚拟机是在另一台host重启起来
+                                    </para>
+                                </listitem>
+                            </orderedlist>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>32</entry>
+                        <entry>
+                            <para>
+                                Virtual Machine Interruption
+                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+                                        在host上运行多个虚拟机，并把其中一些设
+                                        置为高可用；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        在host上登录终端，使用vdsClient命令，查
+                                        看进程列表；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        根据虚拟机的进程id，使用“kill -9”杀掉虚
+                                        拟机进程；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        观察虚拟机列表，其中高可用虚拟机会立刻
+                                        重新启动，而非高可用虚拟机处于停止状
+                                        态； 
+                                    </para>
+                                </listitem>
+                            </orderedlist>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>33</entry>
+                        <entry>
+                            <para>
+                                Non-Operational Host(Host是SPM)
+                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+                                        查看storage网络的名字和物理接口。在
+                                        “Host"tab中选择要操作的host，点击
+                                        “Network Interfaces”子tab，可以看到其至
+                                        少有一个rhevm网络和一个storage网络。在
+                                        Tree面板中点击“ISCSI-share”，在
+                                        “Storage”tab中选择“ISCSI-share”，点击
+                                        “Edit”打开“Edit Domain”对话框，点击“+”
+                                        显示iSCSI目标；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        通过ssh连接到host，使用ifconfig命令确认
+                                        网络连接正常。根据storage网络的名字，用
+                                        ifdown命令关闭storage网络；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        由于host是SPM的，所以它会立刻自动重启。
+                                        高可用虚拟机会在cluster中其他可用host上
+                                        启动，非高可用虚拟机会暂停。而一旦这台
+                                        host重新运行，原来运行在这条host上的虚
+                                        拟机会重新迁移回这条host运行；
+                                    </para>
+                                </listitem>
+                            </orderedlist>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>34</entry>
+                        <entry>
+                            <para>
+                                Non-Operational Host（Host不是SPM）
+                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+                                        操作步骤同host不是spm的情况；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        与SPM情况不同，host上的所有虚拟机都会迁
+                                        移到其他host上运行；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+
+                                    </para>
+                                </listitem>
+                            </orderedlist>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>35</entry>
+                        <entry>
+                            <para>
+                                Non-responsive host（连接破坏）
+                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+                                        首先查看host的网络信息，然后使用ifdown
+                                        命令关闭其rhevm网络（注意，上一个case是
+                                        关闭storage网络）；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        高可用虚拟机会在其他host上重新启动，非
+                                        高可用虚拟机不会；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+
+                                    </para>
+                                </listitem>
+                            </orderedlist>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>36</entry>
+                        <entry>
+                            <para>
+                                Non-responsive host（不正确保护）
+                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+                                        在Hosts tab中选择要操作的虚拟机，点击
+                                        “Power Management”下拉菜单中的
+                                        “Restart”，来重启host；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        host重启完毕后，高可用虚拟机会立刻重新
+                                        运行，在host重启过程中，高可用虚拟机会
+                                        在其它host上运行。而非高可用虚拟机会始
+                                        终处于关闭状态；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+
+                                    </para>
+                                </listitem>
+                            </orderedlist>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>23</entry>
+                        <entry>
+                            <para>
+                                配置网络（Host）
+                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+
+                                    </para>
+                                </listitem>
+                            </orderedlist>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>23</entry>
+                        <entry>
+                            <para>
+                                配置网络（Host）
+                            </para>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+
+                                    </para>
+                                </listitem>
+                            </orderedlist>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>...</entry>
+                        <entry>
+                            <para>...</para>
+                            <para>...</para>
+                        </entry>
+                        <entry>
+                            <para>...</para>
+                        </entry>
+                        <entry>
+                        </entry>
+                        <entry>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+
+        <note>
+            <para>
+                其他注意事项：
+            </para>
+        </note>
+    </section>
+

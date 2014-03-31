@@ -1,0 +1,81 @@
+
+    <section>
+        <title>
+            EmulatedMachine
+        </title>
+
+        <informaltable  frame='topbot'>
+            <tgroup cols='5' align='left' colsep='1' rowsep='1'>
+                <colspec colname='c1' colwidth='5*'/>
+                <colspec colname='c2' colwidth='20*'/>
+                <colspec colname='c3' colwidth='10*'/>
+                <colspec colname='c4' colwidth='5*'/>
+                <colspec colname='c5' colwidth='10*'/>
+                <thead>
+                    <row>
+                        <entry>用例编号</entry>
+                        <entry>操作</entry>
+                        <entry>预期结果</entry>
+                        <entry>实际结果</entry>
+                        <entry>备注</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>40</entry>
+                        <entry>
+                            <para>
+                                在fedora host的Cluster下，创建虚拟机并运行虚拟机
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+                                虚拟机创建成功并可运行
+                            </para>
+                        </entry>
+                        <entry>
+                        </entry>
+                        <entry>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>41</entry>
+                        <entry>
+                            <para>
+                                在RHEL6 host，创建虚拟机并运行虚拟机
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+                                虚拟机创建成功并可运行
+                            </para>
+                        </entry>
+                        <entry>
+                        </entry>
+                        <entry>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>42</entry>
+                        <entry>
+                            <para>
+                                在fedora host的Cluster下,添加一个RHEL6的node;
+                                在RHEL6 host的Cluster下，添加一个fedora的node
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+                                由于UNSUPPORTED_EMULATION_MODE，
+                                host为NON_OPERATIONAL
+                            </para>
+                        </entry>
+                        <entry>
+                        </entry>
+                        <entry>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+    </section>
+

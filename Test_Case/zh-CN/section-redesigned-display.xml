@@ -1,0 +1,96 @@
+    <section>
+        <title>
+            Redesigned Display Options dialog 
+        </title>
+
+        <informaltable  frame='topbot'>
+            <tgroup cols='5' align='left' colsep='1' rowsep='1'>
+                <colspec colname='c1' colwidth='5*'/>
+                <colspec colname='c2' colwidth='20*'/>
+                <colspec colname='c3' colwidth='10*'/>
+                <colspec colname='c4' colwidth='5*'/>
+                <colspec colname='c5' colwidth='10*'/>
+                <thead>
+                    <row>
+                        <entry>用例编号</entry>
+                        <entry>操作</entry>
+                        <entry>预期结果</entry>
+                        <entry>实际结果</entry>
+                        <entry>备注</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>38</entry>
+                        <entry>
+                            <orderedlist numeration="arabic">
+                                <title>
+                                    Test dialog functionality
+                                </title>
+                                <listitem>
+                                    <para>
+                                        创建2个虚拟机，使用SPICE和VNC访问该虚拟
+                                        机；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        打开Console 操作对话框尝试各种操作组合，
+                                        然后连接虚拟机
+                                    </para>
+                                </listitem>
+                            </orderedlist>
+                        </entry>
+                        <entry>
+                            <para>
+                            </para>
+                        </entry>
+                        <entry>
+                        </entry>
+                        <entry>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>39</entry>
+                        <entry>
+                            <orderedlist numeration="arabic">
+                                <title>
+                                    Testing options persistence
+                                </title>
+                                <listitem>
+                                    <para>
+                                        打开console操作对话框；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        改变一些操作；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        刷新浏览器；
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        再次打开console操作对话框；
+                                    </para>
+                                </listitem>
+                            </orderedlist>
+                        </entry>
+                        <entry>
+                            <para>
+                                检查之前选中的操作被是否被选中
+                            </para>
+                        </entry>
+                        <entry>
+                        </entry>
+                        <entry>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+    </section>
+

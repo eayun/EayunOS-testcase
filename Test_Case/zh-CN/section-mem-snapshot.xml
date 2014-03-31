@@ -1,0 +1,368 @@
+
+    <section>
+        <title>
+            支持内存的快照
+        </title>
+
+        <section>
+            <title>创建快照</title>
+            <informaltable  frame='topbot'>
+                <tgroup cols='5' align='left' colsep='1' rowsep='1'>
+                    <colspec colname='c1' colwidth='5*'/>
+                    <colspec colname='c2' colwidth='20*'/>
+                    <colspec colname='c3' colwidth='10*'/>
+                    <colspec colname='c4' colwidth='5*'/>
+                    <colspec colname='c5' colwidth='10*'/>
+                    <thead>
+                        <row>
+                            <entry>用例编号</entry>
+                            <entry>操作</entry>
+                            <entry>预期结果</entry>
+                            <entry>实际结果</entry>
+                            <entry>备注</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>1</entry>
+                            <entry>
+                                <orderedlist numeration="arabic">
+                                    <listitem>
+                                        <para>
+                                            选中运行状态的虚拟机，点击
+                                            “create snapshot”；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            在弹出的对话框内选中“Save Memory”
+                                            点击OK；  
+                                        </para>
+                                    </listitem>
+                                </orderedlist>
+                            </entry>
+                            <entry>
+                                <para>
+                                    在该云主机详细面板下选择“Snapshots”显示创建
+                                    完成的Snapshot包含Memory
+                                </para>
+                            </entry>
+                            <entry>
+                            </entry>
+                            <entry>
+                                <para>
+
+                                </para>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>2</entry>
+                            <entry>
+                                <orderedlist numeration="arabic">
+                                    <listitem>
+                                        <para>
+                                            选中运行状态的虚拟机，
+                                            点击“create snapshot”；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            在弹出的对话框内不选中“Save Memory”
+                                            点击 OK；
+                                        </para>
+                                    </listitem>
+                                </orderedlist>
+                            </entry>
+                            <entry>
+                                <para>
+                                    在该云主机详细面板下选择“Snapshots”显示创建
+                                    完成的Snapshot不包含Memory
+                                </para>
+                            </entry>
+                            <entry>
+                            </entry>
+                            <entry>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </informaltable>
+        </section>
+
+        <section>
+            <title>
+                预览快照
+            </title>
+
+            <informaltable  frame='topbot'>
+                <tgroup cols='5' align='left' colsep='1' rowsep='1'>
+                    <colspec colname='c1' colwidth='5*'/>
+                    <colspec colname='c2' colwidth='20*'/>
+                    <colspec colname='c3' colwidth='10*'/>
+                    <colspec colname='c4' colwidth='5*'/>
+                    <colspec colname='c5' colwidth='10*'/>
+                    <thead>
+                        <row>
+                            <entry>用例编号</entry>
+                            <entry>操作</entry>
+                            <entry>预期结果</entry>
+                            <entry>实际结果</entry>
+                            <entry>备注</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>3</entry>
+                            <entry>
+                                <orderedlist numeration="arabic">
+                                    <listitem>
+                                        <para>
+                                            选中关闭状态的虚拟机；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            在虚拟机详细面板下选择“Snapshots”列
+                                            表显示该虚拟机所有的快照；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            选中包含Memory的快照点击“Preview”，
+                                            在“Preview Snapshot”对话框内选中
+                                            “Restore Memory”点击OK；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            运行虚拟机；
+                                        </para>
+                                    </listitem>
+                                </orderedlist>
+                            </entry>
+                            <entry>
+                                <orderedlist numeration="arabic">
+                                    <listitem>
+                                        <para>
+                                            查看虚拟机状态由“restoring state”到
+                                            “up”;
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            进入虚拟机检查之前的状态是否被恢复
+                                        </para>
+                                    </listitem>
+                                </orderedlist>
+                            </entry>
+                            <entry>
+                            </entry>
+                            <entry>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>4</entry>
+                            <entry>
+                                <orderedlist numeration="arabic">
+                                    <listitem>
+                                        <para>
+                                            选中关闭状态的虚拟机；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            在虚拟机详细面板下选择“Snapshots”列
+                                            表显示该虚拟机所有的快照；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            选中包含Memory的快照点击“Preview”，
+                                            在“Preview Snapshot”对话框内不选中
+                                            “Restore Memory”点击OK；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            运行虚拟机；
+                                        </para>
+                                    </listitem>
+                                </orderedlist>
+                            </entry>
+                            <entry>
+                                <orderedlist numeration="arabic">
+                                    <listitem>
+                                        <para>
+                                            查看虚拟机状态由“powering up”到“up”;
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            进入虚拟机，虚拟机状态没有变化只是
+                                            刚刚启动
+                                        </para>
+                                    </listitem>
+                                </orderedlist>
+                            </entry>
+                            <entry>
+                            </entry>
+                            <entry>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </informaltable>
+        </section>
+
+        <section>
+            <title>
+                追加快照
+            </title>
+
+            <informaltable  frame='topbot'>
+                <tgroup cols='5' align='left' colsep='1' rowsep='1'>
+                    <colspec colname='c1' colwidth='5*'/>
+                    <colspec colname='c2' colwidth='20*'/>
+                    <colspec colname='c3' colwidth='10*'/>
+                    <colspec colname='c4' colwidth='5*'/>
+                    <colspec colname='c5' colwidth='10*'/>
+                    <thead>
+                        <row>
+                            <entry>用例编号</entry>
+                            <entry>操作</entry>
+                            <entry>预期结果</entry>
+                            <entry>实际结果</entry>
+                            <entry>备注</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>5</entry>
+                            <entry>
+                                <orderedlist numeration="arabic">
+                                    <listitem>
+                                        <para>
+                                            选中关闭状态的虚拟机；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            在虚拟机详细面板下选择“Snapshots”列
+                                            表显示该虚拟机所有的快照；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            选中包含Memory的快照点击“Preview”，
+                                            在“Preview Snapshot”对话框内选中
+                                            “Restore Memory”点击OK；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            修改虚拟机，点击“commit”；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            在快照列表下该快照状态为active并包
+                                            含Memory；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            运行虚拟机（run VM）；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            检查虚拟机状态由“restoring state”到
+                                            “up”；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            进入虚拟机检查状态是否被恢复到快照
+                                            时的状态；    
+                                        </para>
+                                    </listitem>
+                                </orderedlist>
+                            </entry>
+                            <entry>
+                                <para>
+                                    过程中5、7和8步骤中状态正确
+                                </para>
+                            </entry>
+                            <entry>
+                            </entry>
+                            <entry>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>6</entry>
+                            <entry>
+                                <orderedlist numeration="arabic">
+                                    <listitem>
+                                        <para>
+                                            选中关闭状态的虚拟机；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            在虚拟机详细面板下选择“Snapshots”列
+                                            表显示该虚拟机所有的快照；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            选中包含Memory的快照点击“Preview”，
+                                            在“Preview Snapshot”对话框内不选中
+                                            “Restore Memory”点击OK；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            修改虚拟机，点击“commit”；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            在快照列表下该快照状态为active并不
+                                            包含Memory
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            运行虚拟机（Run VM）；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            检查虚拟机状态由“powering up”到
+                                            “up”；
+                                        </para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>
+                                            进入虚拟机检查状态没有变化保留之前状
+                                            态只是重启了虚拟机
+                                        </para>
+                                    </listitem>
+                                </orderedlist>
+                            </entry>
+                            <entry>
+                                <para>
+                                    过程中5、7和8步骤中状态正确
+                                </para>
+                            </entry>
+                            <entry>
+                            </entry>
+                            <entry>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </informaltable>
+        </section>
+    </section>
+
