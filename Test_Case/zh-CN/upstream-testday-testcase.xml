@@ -394,12 +394,14 @@
                                     </listitem>
                                     <listitem>
                                         <para>
-                                            检查虚拟机状态由“powering up”到“up”；
+                                            检查虚拟机状态由“powering up”到
+                                            “up”；
                                         </para>
                                     </listitem>
                                     <listitem>
                                         <para>
-                                            进入虚拟机检查状态没有变化保留之前状态只是重启了虚拟机
+                                            进入虚拟机检查状态没有变化保留之前状
+                                            态只是重启了虚拟机
                                         </para>
                                     </listitem>
                                 </orderedlist>
@@ -448,7 +450,9 @@
                             <orderedlist numeration="arabic">
                                 <listitem>
                                     <para>
-                                        选择包含Memory的快照点击“Preview”，在“Preview Snapshot”对话框内选中“Restore Memory”点击OK；
+                                        选择包含Memory的快照点击“Preview”，在
+                                        “Preview Snapshot”对话框内选中
+                                        “Restore Memory”点击OK；
                                     </para>
                                 </listitem>
                                 <listitem>
@@ -458,17 +462,20 @@
                                 </listitem>
                                 <listitem>
                                     <para>
-                                        采用stateless方式运行虚拟机（Run VM in stateless mode）；
+                                        采用stateless方式运行虚拟机
+                                        （Run VM in stateless mode）；
                                     </para>
                                 </listitem>
                                 <listitem>
                                     <para>
-                                        检查虚拟机状态是由“restoring state”到“up”；
+                                        检查虚拟机状态是由“restoring state”到
+                                        “up”；
                                     </para>
                                 </listitem>
                                 <listitem>
                                     <para>
-                                        进入虚拟机检查虚拟机状态是否被恢复，同时修改虚拟机；
+                                        进入虚拟机检查虚拟机状态是否被恢复，同时
+                                        修改虚拟机；
                                     </para>
                                 </listitem>
                                 <listitem>
@@ -483,12 +490,14 @@
                                 </listitem>
                                 <listitem>
                                     <para>
-                                        检查虚拟机状态是由“restoring state”到“up”；
+                                        检查虚拟机状态是由“restoring state”到
+                                        “up”；
                                     </para>
                                 </listitem>
                                 <listitem>
                                     <para>
-                                        再次进入虚拟机检查状态，虚拟机恢复到第二次修改虚拟机之前的状态；
+                                        再次进入虚拟机检查状态，虚拟机恢复到第二
+                                        次修改虚拟机之前的状态；
                                     </para>
                                 </listitem>
                             </orderedlist>
@@ -509,7 +518,9 @@
                             <orderedlist numeration="arabic">
                                 <listitem>
                                     <para>
-                                        选择包含Memory的快照点击“Preview”，在“Preview Snapshot”对话框内选中“Restore Memory”点击OK；
+                                        选择包含Memory的快照点击“Preview”，在
+                                        “Preview Snapshot”对话框内选中
+                                        “Restore Memory”点击OK；
                                     </para>
                                 </listitem>
                                 <listitem>
@@ -519,17 +530,20 @@
                                 </listitem>
                                 <listitem>
                                     <para>
-                                        采用stateless方式运行虚拟机（Run VM in stateless mode）；
+                                        采用stateless方式运行虚拟机
+                                        （Run VM in stateless mode）；
                                     </para>
                                 </listitem>
                                 <listitem>
                                     <para>
-                                        检查虚拟机状态是由“restoring state”到“up”；
+                                        检查虚拟机状态是由“restoring state”
+                                        到“up”；
                                     </para>
                                 </listitem>
                                 <listitem>
                                     <para>
-                                        进入虚拟机检查虚拟机状态是否被恢复，同时修改虚拟机；
+                                        进入虚拟机检查虚拟机状态是否被恢复，同时
+                                        修改虚拟机；
                                     </para>
                                 </listitem>
                                 <listitem>
@@ -544,12 +558,14 @@
                                 </listitem>
                                 <listitem>
                                     <para>
-                                        检查虚拟机状态是由“restoring state”到“up”；
+                                        检查虚拟机状态是由“restoring state”
+                                        到“up”；
                                     </para>
                                 </listitem>
                                 <listitem>
                                     <para>
-                                        再次进入虚拟机检查状态，虚拟机恢复到第二次修改虚拟机之前的状态；
+                                        再次进入虚拟机检查状态，虚拟机恢复到第二
+                                        次修改虚拟机之前的状态；
                                     </para>
                                 </listitem>
                             </orderedlist>
