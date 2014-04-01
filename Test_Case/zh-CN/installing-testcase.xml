@@ -296,17 +296,61 @@
                             <orderedlist numeration="arabic">
                                 <listitem>
                                     <para>
-                                        
+                                        添加一个新的逻辑网络
+                                        <orderedlist numeration="loweralpha">
+                                            <listitem><para>
+                                                    在&OVIRT;&MANAGER;树形面板中
+                                                    点击【展开所有】
+                                                    （Expand All）按钮，在默认集
+                                                    群下，点击“网络”项。
+                                            </para></listitem>
+                                            <listitem><para>
+                                                    点击“新建”按钮，填写“名称”、
+                                                    “描述”，取消“虚拟机网络”选择
+                                                    项。“集群”选项卡中，将默认集
+                                                    群附加到新建的逻辑网络。
+                                            </para></listitem>
+                                            <listitem><para>
+                                                    点击“确定”按钮，完成逻辑网络
+                                                    的添加。
+                                            </para></listitem>
+                                        </orderedlist>
                                     </para>
                                 </listitem>
                                 <listitem>
                                     <para>
-                                        
+                                        将新建的逻辑网络附加到主机
                                     </para>
-                                </listitem>
-                                <listitem>
                                     <para>
-                                        
+                                        对集群中所有的可用的主机，进行如下操作：
+                                        <orderedlist numeration="loweralpha">
+                                            <listitem><para>
+                                                    选中主机，在下方面板中选择
+                                                    ”网络接口”选项卡，点击“设立
+                                                    主机网络“按钮。
+                                            </para></listitem>
+                                            <listitem><para>
+                                                    在”设立主机网络“对话框中，将
+                                                    右侧”未分配的逻辑网络“中新建
+                                                    立的逻辑网络，拖动到左侧和指
+                                                    定网卡对应的”未分配网络“之中。
+                                            </para></listitem>
+                                            <listitem><para>
+                                                    在新建立的逻辑网络上，点击铅
+                                                    笔形状的编辑按钮，开始设置网
+                                                    络参数。
+                                            </para></listitem>
+                                            <listitem><para>
+                                                    网络参数设置完成之后，回到
+                                                    “设立主机网络”对话框，勾选
+                                                    “包括网络配置”选项，点击“确
+                                                    定”按钮完成配置。
+                                            </para></listitem>
+                                            <listitem><para>
+                                                    点击“确定”按钮，完成逻辑网络
+                                                    的添加。
+                                            </para></listitem>
+                                        </orderedlist>
                                     </para>
                                 </listitem>
                             </orderedlist>
