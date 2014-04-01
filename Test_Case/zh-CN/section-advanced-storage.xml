@@ -171,56 +171,77 @@
             </para>
           </entry>
         </row>
+
         <row>
           <entry>32</entry>
           <entry>
             <para>
-              Virtual Machine Interruption
+              设置共享磁盘
             </para>
             <orderedlist numeration="arabic">
               <listitem>
                 <para>
-                  在host上运行多个虚拟机，并把其中一些设
-                  置为高可用；
+                  在导航面板上点击<keycap>虚拟机</keycap>标签.
                 </para>
               </listitem>
+
               <listitem>
                 <para>
-                  在host上登录终端，使用vdsClient命令，查
-                  看进程列表；
+                  从显示的虚拟机列表上选择待操作的虚拟机, 鼠标单击该虚拟机, 可以看到下
+                  方的详细面板上将会显示该虚拟机的所有信息.
                 </para>
               </listitem>
+
               <listitem>
                 <para>
-                  根据虚拟机的进程id，使用“kill -9”杀掉虚
-                  拟机进程；
+                  在详细信息面板上, 点击<keycap>磁盘</keycap>, 将会显示附加到该虚拟机
+                  上的所有磁盘.
                 </para>
               </listitem>
+
               <listitem>
                 <para>
-                  观察虚拟机列表，其中高可用虚拟机会立刻
-                  重新启动，而非高可用虚拟机处于停止状
-                  态； 
+                  点击<keycap>Disk1</keycap>.
+                </para>
+              </listitem>
+
+              <listitem>
+                <para>
+                  点击详细信息面板左上角的<keycap>编辑</keycap>, 打开<keycap>编辑虚拟磁盘</keycap>窗口.
+                </para>
+              </listitem>
+
+              <listitem>
+                <para>
+                  勾选编辑窗口右侧的<keycap>是可共享的</keycap>, 如图:
+                </para>
+              </listitem>
+
+              <listitem>
+                <para>
+                  点击窗口又下角的<keycap>确定</keycap>设置该磁盘为共享的.
                 </para>
               </listitem>
             </orderedlist>
           </entry>
+
           <entry>
             <para>
-
+              在虚拟机的磁盘列表上, Disk1 多了一个共享的图标.
             </para>
           </entry>
+
           <entry>
             <para>
-
             </para>
           </entry>
+
           <entry>
             <para>
-
             </para>
           </entry>
         </row>
+
         <row>
           <entry>33</entry>
           <entry>
