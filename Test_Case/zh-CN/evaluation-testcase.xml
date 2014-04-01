@@ -67,6 +67,10 @@
     <xi:include href="section-poweruser-portal.xml"
         xmlns:xi="http://www.w3.org/2001/XInclude" />
 
+<!-- 系统管理员不同权限的层级管理 -->
+    <xi:include href="section-manager-ml.xml"
+        xmlns:xi="http://www.w3.org/2001/XInclude" />
+
     <xi:include href="section-highavailability.xml"
         xmlns:xi="http://www.w3.org/2001/XInclude" />
 

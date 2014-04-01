@@ -3,21 +3,27 @@
 ]>
 <authorgroup>
         <author>
-               <firstname>建盛</firstname>
-               <surname>李</surname>
+               <firstname>闫</firstname>
+               <surname>颖</surname>
+               <affiliation><orgname>eayun.inc</orgname><orgdiv></orgdiv></affiliation>
+               <email>ying.yan@eayun.com</email>
+       </author>
+        <author>
+               <firstname>赵</firstname>
+               <surname>超</surname>
+               <affiliation><orgname>eayun.inc</orgname><orgdiv></orgdiv></affiliation>
+               <email>chao.zhao@eayun.com</email>
+       </author>
+        <author>
+               <firstname>李</firstname>
+               <surname>建盛</surname>
                <affiliation><orgname>eayun.inc</orgname><orgdiv></orgdiv></affiliation>
                <email>jiansheng.li@eayun.com</email>
        </author>
         <author>
-               <firstname>敦荣</firstname>
-               <surname>黄</surname>
+               <firstname>黄</firstname>
+               <surname>敦荣</surname>
                <affiliation><orgname>eayun.inc</orgname><orgdiv></orgdiv></affiliation>
                <email>dunrong.huang@eayun.com</email>
-       </author>
-        <author>
-               <firstname>颖</firstname>
-               <surname>阎</surname>
-               <affiliation><orgname>eayun.inc</orgname><orgdiv></orgdiv></affiliation>
-               <email>ying.yan@eayun.com</email>
        </author>
 </authorgroup>
