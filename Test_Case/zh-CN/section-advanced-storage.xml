@@ -313,30 +313,53 @@
           <entry>34</entry>
           <entry>
             <para>
-              Non-Operational Host（Host不是SPM）
+              创建虚拟机的在线快照
             </para>
             <orderedlist numeration="arabic">
               <listitem>
                 <para>
-                  操作步骤同host不是spm的情况；
+                  在导航面板上点击<keycap>虚拟机</keycap>标签.
                 </para>
               </listitem>
-              <listitem>
-                <para>
-                  与SPM情况不同，host上的所有虚拟机都会迁
-                  移到其他host上运行；
-                </para>
-              </listitem>
-              <listitem>
-                <para>
 
+              <listitem>
+                <para>
+                  从显示的虚拟机列表上选择想要创建快照的虚拟机, 鼠标单击该虚拟机,
+                  可以看到下方的详细面板上将会显示该虚拟机的所有信息.
+                </para>
+              </listitem>
+
+              <listitem>
+                <para>
+                  如果该虚拟机是处于关机状态, 则开启它
+                </para>
+              </listitem>
+
+              <listitem>
+                <para>
+                  在详细信息面板上, 点击<keycap>快照</keycap>, 将会显示该虚拟机
+                  的所有快照.
+                </para>
+              </listitem>
+
+              <listitem>
+                <para>
+                  点击<keycap>详细面板</keycap>左上角的<keycap>创建</keycap>,
+                  打开<keycap>创建快照</keycap>窗口, 输入快照的简单描述 snap1.
+                </para>
+              </listitem>
+
+              <listitem>
+                <para>
+                  点击窗口又下角的<keycap>确定</keycap>创建快照
                 </para>
               </listitem>
             </orderedlist>
           </entry>
+
           <entry>
             <para>
-
+              在虚拟机的快照列表下, 可以看到新创建的快照 snap1.
             </para>
           </entry>
           <entry>
