@@ -125,25 +125,96 @@
                                 创建CentOS  Linux Templates
                             </para>
                             <orderedlist numeration="arabic">
-                                <listitem>
+                              <listitem>
+	                            <para>
+	                              启动虚拟机.
+	                            </para>
+                              </listitem>
+
+                              <listitem>
+                                <para>
+                                  sealing 虚拟机, 步骤如下:
+                                </para>
+                                <orderedlist numeration="arabic">
+                                  <listitem>
                                     <para>
-                                        关闭虚拟,确保虚拟机状态Down
+                                      用 ssh 或者 console 登陆虚拟机.
                                     </para>
-                                </listitem>
-                                <listitem>
+                                  </listitem>
+
+                                  <listitem>
                                     <para>
-                                        Sealing 虚拟机（Linux/Windows参照文档
-                                        Administration Guide）
+                                      创建标记文件:
                                     </para>
-                                </listitem>
-                                <listitem>
+                                    <programlisting language="Bash">
+                                      # touch /.unconfigured
+                                    </programlisting>
+                                  </listitem>
+
+                                  <listitem>
                                     <para>
-                                        选中该虚拟机，点击菜单栏Make Template，
-                                        在弹出的“New Template”输入名称，设置“允
-                                        许所有用户访问该模板”及“复制虚拟机权
-                                        限”，点击OK
+                                      删除 ssh host keys:
                                     </para>
-                                </listitem>
+                                    <programlisting language="Bash">
+                                      # rm -rf /etc/ssh/ssh_host_*
+                                    </programlisting>
+                                  </listitem>
+
+                                  <listitem>
+                                    <para>
+                                      在文件 <keycap>/etc/sysconfig/network</keycap> 中设置
+                                      <keycap>HOSTNAME=localhost.localdomain in </keycap>.
+                                    </para>
+                                    <programlisting language="Bash">
+                                    </programlisting>
+                                  </listitem>
+
+                                  <listitem>
+                                    <para>
+                                      删除 MAC 地址配置文件 /etc/udev/rules.d/70-*.
+                                    </para>
+                                    <programlisting language="Bash">
+                                      # rm -rf /etc/udev/rules.d/70-*
+                                    </programlisting>
+                                  </listitem>
+
+                                  <listitem>
+                                    <para>
+                                      在文件 <keycap>/etc/sysconfig/network-scripts/ifcfg-eth*</keycap> 中,
+                                      删除 <keycap>HWADDR=</keycap>的行.
+                                    </para>
+                                  </listitem>
+
+                                  <listitem>
+                                    <para>
+                                      (可选)在下列目录中删除日志文件: <keycap>/var/log</keycap>,
+                                      <keycap>/root</keycap>.
+                                    </para>
+                                    <programlisting language="Bash">
+                                      # rm -rf /var/log/*
+                                      # rm -f /root/anaconda-ks.cfg /root/install.log* 
+                                    </programlisting>
+                                  </listitem>
+                                </orderedlist>
+                              </listitem>
+
+                              <listitem>
+                                <para>
+                                  选中该虚拟机, 点击菜单栏 <keycap>新建模板</keycap>,
+                                  在弹出的<keycap>新建模板</keycap> 窗口中输入<keycap>名称</keycap>,
+                                  <keycap>复制虚拟机权限</keycap>, 其他保留默认, 点击 OK.
+                                </para>
+                              </listitem>
+
+                              <listitem>
+                                <para>
+                                </para>
+                              </listitem>
+
+                              <listitem>
+                                <para>
+                                </para>
+                              </listitem>
                             </orderedlist>
                         </entry>
                         <entry>
