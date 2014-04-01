@@ -373,49 +373,72 @@
             </para>
           </entry>
         </row>
+
         <row>
           <entry>35</entry>
           <entry>
             <para>
-              Non-responsive host（连接破坏）
+              从快照创建虚拟机
             </para>
             <orderedlist numeration="arabic">
               <listitem>
                 <para>
-                  首先查看host的网络信息，然后使用ifdown
-                  命令关闭其rhevm网络（注意，上一个case是
-                  关闭storage网络）；
+                  在导航面板上点击<keycap>虚拟机</keycap>标签.
                 </para>
               </listitem>
-              <listitem>
-                <para>
-                  高可用虚拟机会在其他host上重新启动，非
-                  高可用虚拟机不会；
-                </para>
-              </listitem>
-              <listitem>
-                <para>
 
+              <listitem>
+                <para>
+                  从显示的虚拟机列表上选择刚才创建了快照的虚拟机, 鼠标单击该虚拟机,
+                  可以看到下方的详细面板上将会显示该虚拟机的所有信息.
+                </para>
+              </listitem>
+
+              <listitem>
+                <para>
+                  在详细信息面板上, 点击<keycap>快照</keycap>, 将会显示该虚拟机
+                  的所有快照.
+                </para>
+              </listitem>
+
+              <listitem>
+                <para>
+                  鼠标单击需要的快照, 然后点击<keycap>克隆</keycap>,
+                  打开<keycap>从快照克隆虚拟机</keycap>窗口
+                </para>
+              </listitem>
+
+              <listitem>
+                <para>
+                  输入需要的<keycap>名称</keycap>, <keycap>描述(可选)</keycap>,
+                  <keycap>注释(可选)</keycap>
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  点击窗口又下角的<keycap>确定</keycap>克隆虚拟机.
                 </para>
               </listitem>
             </orderedlist>
           </entry>
+
           <entry>
             <para>
-
+              新创建的虚拟机显示在虚拟机列表中.
             </para>
           </entry>
+
           <entry>
             <para>
-
             </para>
           </entry>
+
           <entry>
             <para>
-
             </para>
           </entry>
         </row>
+
         <row>
           <entry>36</entry>
           <entry>
