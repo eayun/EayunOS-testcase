@@ -70,4 +70,7 @@
     <xi:include href="section-highavailability.xml"
         xmlns:xi="http://www.w3.org/2001/XInclude" />
 
+    <xi:include href="section-advanced-storage.xml"
+        xmlns:xi="http://www.w3.org/2001/XInclude" />
+
 </section>
