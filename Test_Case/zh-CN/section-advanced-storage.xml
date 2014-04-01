@@ -543,94 +543,28 @@
           <entry>23</entry>
           <entry>
             <para>
-              配置网络（Host）
+              给虚拟机直接分配 FC LUNs
             </para>
-            <orderedlist numeration="arabic">
-              <listitem>
-                <para>
-
-                </para>
-              </listitem>
-              <listitem>
-                <para>
-
-                </para>
-              </listitem>
-              <listitem>
-                <para>
-
-                </para>
-              </listitem>
-            </orderedlist>
+            <para>
+              给虚拟机知己分配 FC LUNs 和给虚拟机直接分配 iSCSI LUNs 的操作步骤一样,
+              只不过分配 LUNs 的时候不需要发现 FC LUNs.
+            </para>
           </entry>
+
           <entry>
             <para>
-
+              在虚拟机的磁盘列表上看到分配给该虚拟机的 FC LUN.
             </para>
           </entry>
+
           <entry>
             <para>
-
             </para>
           </entry>
+
           <entry>
             <para>
-
             </para>
-          </entry>
-        </row>
-        <row>
-          <entry>23</entry>
-          <entry>
-            <para>
-              配置网络（Host）
-            </para>
-            <orderedlist numeration="arabic">
-              <listitem>
-                <para>
-
-                </para>
-              </listitem>
-              <listitem>
-                <para>
-
-                </para>
-              </listitem>
-              <listitem>
-                <para>
-
-                </para>
-              </listitem>
-            </orderedlist>
-          </entry>
-          <entry>
-            <para>
-
-            </para>
-          </entry>
-          <entry>
-            <para>
-
-            </para>
-          </entry>
-          <entry>
-            <para>
-
-            </para>
-          </entry>
-        </row>
-        <row>
-          <entry>...</entry>
-          <entry>
-            <para>...</para>
-            <para>...</para>
-          </entry>
-          <entry>
-            <para>...</para>
-          </entry>
-          <entry>
-          </entry>
-          <entry>
           </entry>
         </row>
       </tbody>
