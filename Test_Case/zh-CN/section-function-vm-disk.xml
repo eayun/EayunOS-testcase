@@ -215,7 +215,7 @@
               <listitem>
                 <para>
                   在虚拟机列表下，指定虚拟机（独立虚拟机并且
-                  非虚拟机池内分离出来的虚拟机状态为运行状态）
+                  非虚拟机池内分离出来的虚拟机状态为<keycap>运行</keycap>状态）
                 </para>
               </listitem>
               <listitem>
@@ -270,8 +270,8 @@
               <listitem>
                 <para>
                   在虚拟机列表下，指定虚拟机（独立虚拟机并且
-                  非虚拟机池内分离出来的虚拟机状态状态为关闭
-                  状态）
+                  非虚拟机池内分离出来的虚拟机状态状态为<keycap>关闭</keycap>
+                  状态）.
                 </para>
               </listitem>
               <listitem>
@@ -326,7 +326,7 @@
               <listitem>
                 <para>
                   在虚拟机列表下，指定虚拟机（虚拟机池内的虚
-                  拟机状态为运行状态）
+                  拟机状态为<keycap>运行</keycap>状态）
                 </para>
               </listitem>
               <listitem>
@@ -380,7 +380,7 @@
               <listitem>
                 <para>
                   在虚拟机列表下，指定虚拟机（虚拟机池内分离
-                  的虚拟机状态为关闭状态）
+                  的虚拟机状态为<keycap>关闭</keycap>状态）
                 </para>
               </listitem>
               <listitem>
@@ -434,7 +434,7 @@
               <listitem>
                 <para>
                   在虚拟机列表下，指定虚拟机（虚拟机池内分离
-                  的虚拟机状态为运行状态）
+                  的虚拟机状态为<keycap>运行</keycap>运行）
                 </para>
               </listitem>
               <listitem>
@@ -488,7 +488,7 @@
             <orderedlist numeration="arabic">
               <listitem>
                 <para>
-                  在虚拟机列表下，指定虚拟机（模板创建的虚拟
+                  在虚拟机列表下，指定虚拟机（<keycap>模板创建</keycap>的虚拟
                   机）
                 </para>
               </listitem>
@@ -542,7 +542,7 @@
             <orderedlist numeration="arabic">
               <listitem>
                 <para>
-                  在虚拟机列表下，指定虚拟机（创建过快照的虚
+                  在虚拟机列表下，指定虚拟机（<keycap>创建过快照</keycap>的虚
                   拟机）
                 </para>
               </listitem>
@@ -634,7 +634,7 @@
           <entry>77</entry>
           <entry>
             <para>
-              Remove虚拟机磁盘（关闭状态的虚拟机）
+              Remove虚拟机磁盘（<keycap>关闭状态</keycap>的虚拟机）
             </para>
             <orderedlist numeration="arabic">
               <listitem>
@@ -685,7 +685,7 @@
           <entry>78</entry>
           <entry>
             <para>
-              Active虚拟机磁盘（虚拟机磁盘为非Active状态）
+              Active虚拟机磁盘（虚拟机磁盘为<keycap>非Active</keycap>状态）
             </para>
             <orderedlist numeration="arabic">
               <listitem>
