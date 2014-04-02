@@ -81,12 +81,12 @@
                         <entry>1</entry>
                         <entry>
                             <para>
-				安装Manage：
+                                安装Manage：
                             </para>
                             <orderedlist numeration="arabic">
                                 <listitem>
                                     <para>
-                                        安装EayunOS-4.0-alpha-x86-DVD.iso
+                                        安装eayunOS-20140320163644-x86_64-DVD.iso
                                     </para>
                                 </listitem>
                                 <listitem>
@@ -117,30 +117,76 @@
                         </entry>
                         <entry>
                             <para>
-				打开http://engine-ip可以看见搭建好的环境
+                                打开http://engine-ip可以看见搭建好的环境
                             </para>
                         </entry>
                         <entry>
                             <para>
-
+                                安装测试基本通过，engine-setup运行时出现了几个问
+                                题，见备注。
                             </para>
                         </entry>
                         <entry>
-                            <para>
+                            <orderedlist>
+                                <listitem>
+                                    <formalpara>
+                                        <title>
+                                            需要防火墙服务启动才可以继续
+                                        </title>
+                                        <para>
+                                            All in One安装完成之后，iptables服务
+                                            默认不会自动启动，engine-setup检测防
+                                            火墙设置时不会通过。
+                                        </para>
+                                    </formalpara>
+                                    <formalpara>
+                                        <title>错误信息：</title>
+                                        <para>
+                                            The following firewall managers were detected on this system:                  
+                                            iptables                                                                       
+                                            Firewall manager to configure (iptables):                                      
+                                            [ ERROR ] Invalid value                                                    
+                                        </para>
+                                    </formalpara>
 
-                            </para>
+                                    <formalpara>
+                                        <title>临时解决办法：</title> 
+                                        <para>
+                                            service iptables start
+                                        </para>
+                                    </formalpara>
+                                </listitem>
+                                <listitem>
+                                    <formalpara>
+                                        <title>
+                                            vdsmd服务默认不启动导致的一些问题
+                                        </title>
+                                        <para>
+                                            默认vdsmd没有启动，需要手动启动
+                                            vdsmd。但是问题是engine-setup是选择
+                                            了启用vdsm，这些添加的localhost主机
+                                            是不成功的。删除localhost之后，重新
+                                            添加，需要提前修改
+                                            /etc/centos-release。而且添加主机
+                                            时，选择了自动配置防火墙时，会导致防
+                                            火墙规则发生变化，比如80端口无法访问
+                                            等。
+                                        </para>
+                                    </formalpara>
+                                </listitem>
+                            </orderedlist>
                         </entry>
                     </row>
                     <row>
                         <entry>2</entry>
                         <entry>
                             <para>
-				安装Host：
+                                安装Host：
                             </para>
                             <orderedlist numeration="arabic">
                                 <listitem>
                                     <para>
-                                       安装ovirt-node-iso-3.3.0.999.456.e16.iso
+                                        安装eayunos-node-iso-3.3-1.iso
                                     </para>
                                 </listitem>
                                 <listitem>
@@ -155,7 +201,7 @@
                                 </listitem>
                                 <listitem>
                                     <para>
-   					选择“U.S.English”  按“Enter”键
+                                        选择“U.S.English”  按“Enter”键
                                     </para>
                                 </listitem>
                                 <listitem>
@@ -192,7 +238,7 @@
                         </entry>
                         <entry>
                             <para>
-				host安装好后可以自动在engine上显示出来，同时也可以在engine界面添加该host
+                                host安装好后可以自动在engine上显示出来，同时也可以在engine界面添加该host
                             </para>
                         </entry>
                         <entry>
@@ -201,9 +247,18 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-
-                            </para>
+                            <orderedlist>
+                                <listitem>
+                                    <formalpara>
+                                        <title>
+                                            host上使用bonding无法向管理端注册。
+                                        </title>
+                                        <para>
+                                            只能配置单网卡。
+                                        </para>
+                                    </formalpara>
+                                </listitem>
+                            </orderedlist>
                         </entry>
                     </row>
                     <row>
@@ -216,7 +271,7 @@
                                 <listitem>
                                     <para>
                                         打开浏览器，输入http://ip.com(http://192.168.176.91)
-在门户（Portal）标题下，点击【管理员门户】
+                                        在门户（Portal）标题下，点击【管理员门户】
                                     </para>
                                 </listitem>
                                 <listitem>
@@ -233,12 +288,12 @@
                         </entry>
                         <entry>
                             <para>
-				成功登录了EayunOS虚拟化管理系统
+                                成功登录了EayunOS虚拟化管理系统
                             </para>
                         </entry>
                         <entry>
                             <para>
-
+                                测试通过。
                             </para>
                         </entry>
                         <entry>
@@ -256,7 +311,7 @@
                             <orderedlist numeration="arabic">
                                 <listitem>
                                     <para>
-					在EayunOS虚拟化管理平台树形面板点击【展开所有】按键，在默认的集群下，点击主机项，主机列表下显示可用的EayunOS Hypervisor（host）
+                                        在EayunOS虚拟化管理平台树形面板点击【展开所有】按键，在默认的集群下，点击主机项，主机列表下显示可用的EayunOS Hypervisor（host）
                                     </para>
                                 </listitem>
                                 <listitem>
@@ -278,13 +333,44 @@
                         </entry>
                         <entry>
                             <para>
-
+                                测试通过。
                             </para>
                         </entry>
                         <entry>
                             <para>
+                                添加主机，有2种方式：
+                            <orderedlist>
+                                <listitem>
+                                    <formalpara>
+                                        <title>
+                                            host主动注册，管理端验证
+                                        </title>
+                                        <para>
+                                            host上admin shell中“oVirt Engine”菜
+                                            单下配置管理端ip地址和端口之后，选择
+                                            "Save &amp; Register"，之后在管理端
+                                            进行approval，具体参见左侧的测试流程
+                                        </para>
+                                    </formalpara>
+                                </listitem>
 
-                            </para>
+                                <listitem>
+                                    <formalpara>
+                                        <title>
+                                            管理端主动添加host
+                                        </title>
+                                        <para>
+                                            node光盘安装完成之后，root没有密码，
+                                            也无法登录。为了在管理端手动添加
+                                            host。需要在host的admin shell中
+                                            “oVirt Engine”菜单下配置密码，此密码
+                                            其实是root用户的密码，保存配置之后还
+                                            会自动配置sshd服务允许root登录。
+                                        </para>
+                                    </formalpara>
+                                </listitem>
+                            </orderedlist>
+                        </para>
                         </entry>
                     </row>
                     <row>
@@ -357,12 +443,14 @@
                         </entry>
                         <entry>
                             <para>
-                                
+                                新的逻辑网络创建成功，附加在该网络的host和存储可
+                                以使用这一网络互相通信。
                             </para>
                         </entry>
                         <entry>
                             <para>
-
+                                创建逻辑网络成功，网络连通性暂时没有完整测试。2
+                                台host都是2块网卡，其中一台的空闲网卡没有网线。
                             </para>
                         </entry>
                         <entry>
@@ -380,7 +468,7 @@
                             <orderedlist numeration="arabic">
                                 <listitem>
                                     <para>
-					在EayunOS虚拟化管理平台树形面板点击【展开所有】按键，在默认的数据中心下点击【存储】，可用的存储域显示在列表下，点击【新建域】，显示新建域对话框，配置以下选项：名称、数据中心、存储类型：Data/NFS、使用的主机、输出路径（如：192.168.176.157:/home/export）点击【确定】，新建的存储域显示在存储列表内，状态由Locked->Active 
+                                        在EayunOS虚拟化管理平台树形面板点击【展开所有】按键，在默认的数据中心下点击【存储】，可用的存储域显示在列表下，点击【新建域】，显示新建域对话框，配置以下选项：名称、数据中心、存储类型：Data/NFS、使用的主机、输出路径（如：192.168.176.157:/home/export）点击【确定】，新建的存储域显示在存储列表内，状态由Locked->Active 
                                     </para>
                                 </listitem>
                             </orderedlist>
@@ -405,7 +493,7 @@
                         <entry>6</entry>
                         <entry>
                             <para>
-                              	配置存储（创建iscsi存储）：
+                                配置存储（创建iscsi存储）：
                             </para>
                             <orderedlist numeration="arabic">
                                 <listitem>
@@ -422,7 +510,7 @@
                         </entry>
                         <entry>
                             <para>
-
+                                测试通过。
                             </para>
                         </entry>
                         <entry>
@@ -492,7 +580,7 @@
                         </entry>
                         <entry>
                             <para>
-
+                                测试通过。
                             </para>
                         </entry>
                         <entry>
@@ -537,7 +625,7 @@
                         </entry>
                         <entry>
                             <para>
-				（同安装基础系统）
+                                （同安装基础系统）
                             </para>
                         </entry>
                         <entry>
@@ -606,12 +694,12 @@
                             <orderedlist numeration="arabic">
                                 <listitem>
                                     <para>
-					在EayunOS虚拟化管理平台树形面板，点击【展开所有】，在默认的集群下，点击【主机】，在主机的列表下显示可用的主机。
+                                        在EayunOS虚拟化管理平台树形面板，点击【展开所有】，在默认的集群下，点击【主机】，在主机的列表下显示可用的主机。
                                     </para>
                                 </listitem>
                                 <listitem>
                                     <para>
-					选中主机，点击【维护】，主机状态由“Preparing for Maintenance”->“Maintenance”。
+                                        选中主机，点击【维护】，主机状态由“Preparing for Maintenance”->“Maintenance”。
                                     </para>
                                 </listitem>
                                 <listitem>
@@ -624,7 +712,7 @@
                         </entry>
                         <entry>
                             <para>
-                                 本地存储域被创建，并且自动创建了本地数据中心和本地集群
+                                本地存储域被创建，并且自动创建了本地数据中心和本地集群
                             </para>
                         </entry>
                         <entry>
