@@ -30,35 +30,167 @@
           <entry>67</entry>
           <entry>
             <para>
-              ADD虚拟机磁盘（Internal、External）
+              添加内部的虚拟机磁盘
             </para>
             <orderedlist numeration="arabic">
               <listitem>
                 <para>
-                  在虚拟机列表下，指定虚拟机
+                  在<keycap>虚拟机标签</keycap>列表下, 指定虚拟机.
                 </para>
               </listitem>
               <listitem>
                 <para>
-                  在该虚拟机详细面板下点击Disks
+                  在该虚拟机详细面板下点击<keycap>磁盘</keycap>.
                 </para>
               </listitem>
               <listitem>
                 <para>
-                  点击菜单内的Add
+                  点击菜单内的<keycap>添加</keycap>.
                 </para>
               </listitem>
               <listitem>
                 <para>
-                  在Add Virtual Disk下配置，配置完成后点击OK
-
+                  设置<keycap>大小</keycap>, <keycap>描述</keycap>, 点击确定
                 </para>
               </listitem>
             </orderedlist>
           </entry>
           <entry>
             <para>
-              Disk列表下显示新添加的磁盘   
+              <keycap>磁盘</keycap>列表下显示新添加的磁盘.
+            </para>
+          </entry>
+          <entry>
+            <para>
+
+            </para>
+          </entry>
+          <entry>
+            <para>
+
+            </para>
+          </entry>
+        </row>
+        <row>
+          <entry>67.1</entry>
+          <entry>
+            <para>
+              添加附加的虚拟机磁盘
+            </para>
+            <orderedlist numeration="arabic">
+              <listitem>
+                <para>
+                  点击<keycap>磁盘</keycap>标签.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  点击<keycap>添加</keycap>.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  在<keycap>添加虚拟磁盘</keycap>窗口, 设置<keycap>大小</keycap>,
+                  <keycap>别名</keycap>(Disk1), <keycap>描述</keycap>, 点击确定.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  在<keycap>虚拟机标签</keycap>列表下, 指定虚拟机.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  在该虚拟机详细面板下点击<keycap>磁盘</keycap>.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  点击菜单内的<keycap>添加</keycap>.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  勾选<keycap>附加磁盘</keycap>, 勾选 Disk1, 点击确定.
+                </para>
+              </listitem>
+            </orderedlist>
+          </entry>
+          <entry>
+            <para>
+              <keycap>磁盘</keycap>列表下显示新添加的磁盘 Disk1.
+            </para>
+          </entry>
+          <entry>
+            <para>
+
+            </para>
+          </entry>
+          <entry>
+            <para>
+
+            </para>
+          </entry>
+        </row>
+        <row>
+          <entry>67.2</entry>
+          <entry>
+            <para>
+              添加外部的虚拟机磁盘
+            </para>
+            <orderedlist numeration="arabic">
+              <listitem>
+                <para>
+                  在<keycap>虚拟机标签</keycap>列表下, 指定虚拟机.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  在该虚拟机详细面板下点击<keycap>磁盘</keycap>.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  点击菜单内的<keycap>添加</keycap>.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  勾选<keycap>外部(直接 LUN)</keycap>.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  设置<keycap>别名</keycap>.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  点击<keycap>发现目标</keycap>, 填写 <keycap>iSCSI 的地址</keycap>,
+                  和<keycap>端口</keycap>, 点击发现.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  在列出的<keycap>目标</keycap>列表中, 选择要登陆的目标,
+                  点击<keycap>登陆</keycap>.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  点击登陆后的目标的<keycap>+</keycap>, 展开目标的 LUN.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  勾选要加入的 LUN, 点击<keycap>确定</keycap>.
+                </para>
+              </listitem>
+            </orderedlist>
+          </entry>
+          <entry>
+            <para>
+              <keycap>磁盘</keycap>列表下显示新添加的 LUN.
             </para>
           </entry>
           <entry>
