@@ -58,6 +58,9 @@
     <xi:include href="section-createvm.xml"
         xmlns:xi="http://www.w3.org/2001/XInclude" />
 
+    <xi:include href="section-createvmpool.xml"
+        xmlns:xi="http://www.w3.org/2001/XInclude" />
+
     <xi:include href="section-vm-livemigration.xml"
         xmlns:xi="http://www.w3.org/2001/XInclude" />
 

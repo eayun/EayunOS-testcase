@@ -47,6 +47,9 @@
                                         的虚拟机显示在虚拟机列表下,runonce运行虚拟机，安装操作系统。
                                     </para>
                                 </listitem>
+				<listitem>
+				   <para>安装完操作系统后，安装RHEV-toolsSetup工具</para>
+				</listitem>
                             </orderedlist>
                         </entry>
                         <entry>
@@ -98,6 +101,9 @@
                                         作系统）
                                     </para>
                                 </listitem>
+				<listitem>
+				    <para>安装完操作系统后，安装RHEV-toolsSetup工具</para>
+				</listitem>
                             </orderedlist>
                         </entry>
                         <entry>
