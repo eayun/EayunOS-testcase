@@ -67,23 +67,6 @@
                             <para>
                                 添加IdM域及在IdM上添加用户（具体方法参看场景文档第二、三节）
                             </para>
-                            <orderedlist numeration="arabic">
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                            </orderedlist>
                         </entry>
                         <entry>
                             <para>
@@ -92,7 +75,7 @@
                         </entry>
                         <entry>
                             <para>
-
+                                OK
                             </para>
                         </entry>
                         <entry>
@@ -132,7 +115,7 @@
                         </entry>
                         <entry>
                             <para>
-
+                                fail,为数据中心分配PowerUserRole,用户登录系统并没有看到分配的数据中心下的资源，而是其它没有分配给该用户的数据中心的资源(不是每次都出现)
                             </para>
                         </entry>
                         <entry>
@@ -177,7 +160,7 @@
                         </entry>
                         <entry>
                             <para>
-
+                                OK
                             </para>
                         </entry>
                         <entry>
@@ -192,13 +175,6 @@
                             <para>
                                 使用PowerUserRole权限的用户登录系统，创建Linux虚拟机
                             </para>
-                            <orderedlist numeration="arabic">
-                                <listitem>
-                                    <para>
-                                         
-                                    </para>
-                                </listitem>
-                            </orderedlist>
                         </entry>
                         <entry>
                             <para>
@@ -207,12 +183,12 @@
                         </entry>
                         <entry>
                             <para>
-
+                               fail,在有些数据中心下，创建虚拟机出现提示“无权限操作”。
                             </para>
                         </entry>
                         <entry>
                             <para>
-
+                               
                             </para>
                         </entry>
                     </row>
@@ -222,13 +198,6 @@
                             <para>
                                 使用PowerUserRole权限的用户登录系统，创建Windows虚拟机
                             </para>
-                            <orderedlist numeration="arabic">
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                            </orderedlist>
                         </entry>
                         <entry>
                             <para>
@@ -237,7 +206,7 @@
                         </entry>
                         <entry>
                             <para>
-
+                               fail,在有些数据中心下，创建虚拟机出现提示“无权限操作”。
                             </para>
                         </entry>
                         <entry>
@@ -252,13 +221,6 @@
                             <para>
                                 使用PowerUserRole权限的用户登录系统，创建Windows模板
                             </para>
-                            <orderedlist numeration="arabic">
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                            </orderedlist>
                         </entry>
                         <entry>
                             <para>
@@ -282,13 +244,6 @@
                             <para>
                                 使用PowerUserRole权限的用户登录系统，创建Linux模板
                             </para>
-                            <orderedlist numeration="arabic">
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                            </orderedlist>
                         </entry>
                         <entry>
                             <para>
@@ -312,13 +267,6 @@
                             <para>
                                 使用PowerUserRole权限的用户登录系统，通过控制台连接虚拟机，使用虚拟机
                             </para>
-                            <orderedlist numeration="arabic">
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                            </orderedlist>
                         </entry>
                         <entry>
                             <para>
@@ -327,7 +275,7 @@
                         </entry>
                         <entry>
                             <para>
-
+                               OK
                             </para>
                         </entry>
                         <entry>
@@ -342,13 +290,6 @@
                             <para>
                                 使用PowerUserRole权限的用户（user）登录系统，完成创建虚拟机操作后，返回到admin登录管理系统验证，虚拟机的权限；admin登录管理系统，在虚拟机列表下找到创建的虚拟机，点击该虚拟机详细面板下【权限】，查看权限信息
                             </para>
-                            <orderedlist numeration="arabic">
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                            </orderedlist>
                         </entry>
                         <entry>
                             <para>
@@ -357,7 +298,7 @@
                         </entry>
                         <entry>
                             <para>
-
+                               OK
                             </para>
                         </entry>
                         <entry>
@@ -372,13 +313,6 @@
                             <para>
                                 使用PowerUserRole权限的用户（user）登录系统，完成创建模板操作后，返回到admin登录管理系统验证，模板的权限；admin登录管理系统，在模板列表下找到创建的模板，点击该模板详细面板下【权限】，查看权限信息
                             </para>
-                            <orderedlist numeration="arabic">
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                            </orderedlist>
                         </entry>
                         <entry>
                             <para>
