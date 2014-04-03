@@ -542,7 +542,7 @@
             <orderedlist numeration="arabic">
               <listitem>
                 <para>
-                  在虚拟机列表下，指定虚拟机（<keycap>创建过快照</keycap>的虚
+                  在虚拟机列表下，指定虚拟机（<keycap>从快照创建</keycap>的虚
                   拟机）
                 </para>
               </listitem>
@@ -575,13 +575,13 @@
           </entry>
           <entry>
             <para>
-              迁移失败
+              迁移成功
             </para>
           </entry>
           <entry>
             <para>
               测试迁移磁盘功能
-              创建快照的虚拟机
+              从快照创建的虚拟机
             </para>
           </entry>
         </row>
