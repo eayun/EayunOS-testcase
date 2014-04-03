@@ -66,7 +66,7 @@
                 <colspec colname='c2' colwidth='20*'/>
                 <colspec colname='c3' colwidth='10*'/>
                 <colspec colname='c4' colwidth='5*'/>
-                <colspec colname='c5' colwidth='10*'/>
+                <colspec colname='c5' colwidth='20*'/>
                 <thead>
                     <row>
                         <entry>用例编号</entry>
@@ -605,7 +605,7 @@
                 <colspec colname='c2' colwidth='20*'/>
                 <colspec colname='c3' colwidth='10*'/>
                 <colspec colname='c4' colwidth='5*'/>
-                <colspec colname='c5' colwidth='10*'/>
+                <colspec colname='c5' colwidth='20*'/>
                 <thead>
                     <row>
                         <entry>用例编号</entry>
@@ -717,13 +717,70 @@
                         </entry>
                         <entry>
                             <para>
-
+                                测试通过。
                             </para>
                         </entry>
                         <entry>
-                            <para>
+                            <orderedlist>
+                                <listitem>
+                                    <formalpara>
+                                        <title>
+                                            本地存储路径权限错误
+                                        </title>
+                                        <para>
+                                            ”配置本地存储“中指定本地存储路径时，
+                                            由于node iso安装之后绝大部分空间单独
+                                            划分了一个逻辑卷/dev/HostVG/Data，挂
+                                            载在/data目录下。在该目录下新建一个
+                                            目录作为本地存储的路径时，会出现权限
+                                            问题
+                                        </para>
+                                    </formalpara>
+                                    <formalpara>
+                                        <title>错误信息：</title>
+                                        <para><screen>
+                                            Traceback (most recent call last):                                             
+                                            File "/usr/share/vdsm/storage/hsm.py", line 2367, in connectStorageServer
+                                                conObj.connect() 
+                                            File "/usr/share/vdsm/storage/storageServer.py", line 482, in connect
+                                                self.checkTarget()
+                                            File "/usr/share/vdsm/storage/storageServer.py", line 468, in checkTarget
+                                                fileSD.validateDirAccess(self._path)
+                                            File "/usr/share/vdsm/storage/fileSD.py", line 59, in validateDirAccess
+                                                raise se.StorageServerAccessPermissionError(dirPath)                       
+                                            StorageServerAccessPermissionError: Permission settings on the specified path do not allow access to the storage. Verify permission settings on the specified storage path.: 'path = /data/Local'
+                                        </screen></para>
+                                    </formalpara>
 
-                            </para>
+                                    <formalpara>
+                                        <title>说明：</title> 
+                                        <para>
+                                            权限要求如下（/usr/share/vdsm/storage/fileSD.py:53-56）：                      
+                                            <screen>
+                                                supervdsm.getProxy().validateAccess(                                           
+                                                constants.QEMU_PROCESS_USER,                                           
+                                                (constants.DISKIMAGE_GROUP,                                            
+                                                constants.METADATA_GROUP), dirPath,                                   
+                                                (os.R_OK | os.X_OK))                                                   
+                                            </screen>
+
+                                            对应用户（/usr/lib64/python2.6/site-packages/vdsm/constants.py:35-41）：       
+                                            <screen>
+                                                VDSM_USER = 'vdsm'                                                             
+                                                VDSM_GROUP = 'kvm'                                                             
+                                                DISKIMAGE_USER = 'vdsm'                                                        
+                                                DISKIMAGE_GROUP = 'qemu'                                                       
+                                                METADATA_USER = 'vdsm'                                                         
+                                                METADATA_GROUP = 'kvm'                                                         
+                                                QEMU_PROCESS_USER = 'qemu'                                                     
+                                            </screen>
+
+                                            红帽的evaluation guide中提示，本地存储输入：/data/images/rhev，这个路径的权 
+                                            限是没有问题的
+                                        </para>
+                                    </formalpara>
+                                </listitem>
+                            </orderedlist>
                         </entry>
                     </row>
                     <row>
