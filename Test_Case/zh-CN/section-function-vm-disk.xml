@@ -819,6 +819,104 @@
           </entry>
         </row>
         <row>
+          <entry>80.1</entry>
+          <entry>
+            <para>
+              磁盘热添加
+            </para>
+            <orderedlist numeration="arabic">
+              <listitem>
+                <para>
+                  在<keycap>虚拟机列表</keycap>, 指定<keycap>运行的</keycap>虚拟机.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  在该虚拟机<keycap>详细面板下</keycap>点击<keycap>磁盘</keycap>.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  点击<keycap>添加</keycap>.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  设置磁盘<keycap>大小</keycap>, 点击确定.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  选中添加的磁盘, 点击<keycap>激活</keycap>.
+                </para>
+              </listitem>
+            </orderedlist>
+          </entry>
+          <entry>
+            <para>
+              在磁盘列表上多了一个磁盘, 登陆进虚拟机, 可以看到虚拟机里多了一个磁盘.
+            </para>
+          </entry>
+          <entry>
+            <para>
+            </para>
+          </entry>
+          <entry>
+            <para>
+
+            </para>
+          </entry>
+        </row>
+        <row>
+          <entry>80.2</entry>
+          <entry>
+            <para>
+              磁盘热删除
+            </para>
+            <orderedlist numeration="arabic">
+              <listitem>
+                <para>
+                  在<keycap>虚拟机列表</keycap>, 指定<keycap>运行的</keycap>虚拟机.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  在该虚拟机<keycap>详细面板下</keycap>点击<keycap>磁盘</keycap>.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  选中待删除的磁盘, 点击<keycap>取消激活</keycap>.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  点击<keycap>删除</keycap>
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  在弹出的窗口上选中<keycap>永久性的删除</keycap>, 点击<keycap>确定</keycap>.
+                </para>
+              </listitem>
+            </orderedlist>
+          </entry>
+          <entry>
+            <para>
+              在磁盘列表上该磁盘消失了, 登陆进虚拟机, 相关的磁盘显示被拔出.
+            </para>
+          </entry>
+          <entry>
+            <para>
+            </para>
+          </entry>
+          <entry>
+            <para>
+
+            </para>
+          </entry>
+        </row>
+        <row>
           <entry>81</entry>
           <entry>
             <para>
