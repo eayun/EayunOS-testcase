@@ -102,17 +102,18 @@
                                 </listitem>
                                 <listitem>
                                     <para>
-                                        点击Login
+                                        点击Login。
                                     </para>
                                 </listitem>
                             </orderedlist>
                         </entry>
                         <entry>
                             <para>
-                                进入系统会直接连接虚拟机
+                                弹出打开虚拟机的窗口，点击打开直接连接该虚拟机
                             </para>
                         </entry>
                         <entry>
+                            <para>OK</para>
                         </entry>
                         <entry>
                             <para>
@@ -139,25 +140,73 @@
                                 </listitem>
                                 <listitem>
                                     <para>
-                                        若该用户下有多个虚拟机不选中
+                                        若该用户下有虚拟机数量大于1选中
                                         “Connect Automatically”
                                     </para>
                                 </listitem>
                                 <listitem>
                                     <para>
-                                        点击Login
+                                        点击Login。
                                     </para>
                                 </listitem>
                             </orderedlist>
                         </entry>
                         <entry>
                             <para>
-                                进入系统
+                                进入系统，并没有直接连接某个虚拟机
                             </para>
                         </entry>
                         <entry>
+                            <para>OK</para>
                         </entry>
                         <entry>
+                            <para>
+
+                            </para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>3</entry>
+                        <entry>
+                            <orderedlist numeration="arabic">
+                                <listitem>
+                                    <para>
+                                        浏览器中输入engine地址，打开网页，点击
+                                        User Portal
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        在弹出登录框中输入用户名、密码、在Domain
+                                        下拉菜单上选择用户对应的正确的domain
+                                        （如admin -> ）
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        若该用户下有虚拟机数量大于1，不选中
+                                        “Connect Automatically”
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>
+                                        点击Login。
+                                    </para>
+                                </listitem>
+                            </orderedlist>
+                        </entry>
+                        <entry>
+                            <para>
+                                进入系统，并没有直接连接某个虚拟机
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>OK</para>
+                        </entry>
+                        <entry>
+                            <para>
+
+                            </para>
                         </entry>
                     </row>
                 </tbody>
@@ -188,7 +237,7 @@
                 </thead>
                 <tbody>
                     <row>
-                        <entry>3</entry>
+                        <entry>4</entry>
                         <entry>
                             <para>
                                 浏览器中输入engine地址，打开网页，选择页面下语言
@@ -206,7 +255,7 @@
                         </entry>
                     </row>
                     <row>
-                        <entry>4</entry>
+                        <entry>5</entry>
                         <entry>
                             <para>
                                 浏览器中输入engine地址，打开网页，选择页面下语
@@ -251,7 +300,7 @@
                 </thead>
                 <tbody>
                     <row>
-                        <entry>5</entry>
+                        <entry>6</entry>
                         <entry>
                             <orderedlist numeration="arabic">
                                 <title>
@@ -297,7 +346,7 @@
                         </entry>
                     </row>
                     <row>
-                        <entry>6</entry>
+                        <entry>7</entry>
                         <entry>
                             <orderedlist numeration="arabic">
                                 <title>
@@ -358,7 +407,7 @@
                 </thead>
                 <tbody>
                     <row>
-                        <entry>7</entry>
+                        <entry>8</entry>
                         <entry>
                             <orderedlist numeration="arabic">
                                 <listitem>
@@ -412,25 +461,28 @@
                 </thead>
                 <tbody>
                     <row>
-                        <entry>8</entry>
+                        <entry>9</entry>
                         <entry>
                             <para>
                                 选择一个单独虚拟机（非虚拟机池内的），点击
-                                “运行”绿色箭头按钮
+                                “运行”绿色箭头按钮，运行虚拟机
                             </para>
                         </entry>
                         <entry>
                             <para>
-                                连接进入虚拟机
+                                虚拟机运行起来，显示红色向下箭头，虚拟机启动完成后（Machine is Ready）
                             </para>
                         </entry>
                         <entry>
+                            <para>
+                                OK
+                            </para>
                         </entry>
                         <entry>
                         </entry>
                     </row>
                     <row>
-                        <entry>9</entry>
+                        <entry>10</entry>
                         <entry>
                             <para>
                                 <orderedlist numeration="arabic">
@@ -441,17 +493,31 @@
                                     </listitem>
                                     <listitem>
                                         <para>
-                                            开启一个虚拟机，虚拟机
+                                            分配了一个虚拟机并开启该虚拟机，虚拟机
                                             Powering up（电源 正在启动)
                                         </para>
                                     </listitem>
-                                    <listitem>
-                                        <para>
-                                            虚拟机启动完成后，虚拟机
-                                            （Machine is Ready）
-                                        </para>
-                                    </listitem>
                                 </orderedlist>
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+                                虚拟机运行起来，虚拟机启动完成后（Machine is Ready）
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+                                OK
+                            </para>
+                        </entry>
+                        <entry>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>11</entry>
+                        <entry>
+                            <para>
+                                鼠标移至运行的虚拟机(Machine is Ready),显示“双击控制台”，双击虚拟机
                             </para>
                         </entry>
                         <entry>
@@ -460,86 +526,71 @@
                             </para>
                         </entry>
                         <entry>
+                            <para>
+                                OK
+                            </para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>12</entry>
+                        <entry>
+                            <para>
+                                选择运行的虚拟机(非虚拟机池分配的虚拟机)，点击红色向下箭头，关闭虚拟机
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+                                虚拟机关闭，显示绿色向上箭头
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+                                OK
+                            </para>
                         </entry>
                         <entry>
                         </entry>
                     </row>
                     <row>
-                        <entry>2</entry>
+                        <entry>13</entry>
                         <entry>
                             <para>
+                                选择运行的虚拟机（虚拟机池分配的虚拟机），点击红色向下箭头，关闭虚拟机
                             </para>
                         </entry>
                         <entry>
                             <para>
+                                虚拟机关闭后，虚拟机被释放，在UserPortal登录的系统中消失
                             </para>
                         </entry>
                         <entry>
+                            <para>
+                                OK
+                            </para>
                         </entry>
                         <entry>
                         </entry>
                     </row>
                     <row>
-                        <entry>2</entry>
+                        <entry>14</entry>
                         <entry>
                             <para>
+                                选择运行的虚拟机（虚拟机池分配的虚拟机），双击虚拟机进入虚拟机内，在虚拟机内进行操作如：创建文件等
+                            </para>
+                            <para>
+                                关闭虚拟机，虚拟机被释放
+                            </para>
+                            <para>
+                                重新分配该虚拟机或进入管理系统，连接该虚拟机，检查之前的操作是否被销毁
                             </para>
                         </entry>
                         <entry>
                             <para>
+                                操作已销毁
                             </para>
                         </entry>
                         <entry>
-                        </entry>
-                        <entry>
-                        </entry>
-                    </row>
-                    <row>
-                        <entry>2</entry>
-                        <entry>
-                            <para>
-                            </para>
-                        </entry>
-                        <entry>
-                            <para>
-                            </para>
-                        </entry>
-                        <entry>
-                        </entry>
-                        <entry>
-                        </entry>
-                    </row>
-                    <row>
-                        <entry>2</entry>
-                        <entry>
-                            <para>
-                            </para>
-                        </entry>
-                        <entry>
-                            <para>
-                            </para>
-                        </entry>
-                        <entry>
-                        </entry>
-                        <entry>
-                        </entry>
-                    </row>
-                    <row>
-                        <entry>...</entry>
-                        <entry>
-                            <orderedlist numeration="arabic">
-                                <listitem>
-                                    <para>...</para>
-                                </listitem>
-                                <listitem>
-                                    <para>...</para>
-                                </listitem>
-                            </orderedlist>
-                        </entry>
-                        <entry>
-                            <para>...</para>
-                        </entry>
-                        <entry>
+                            <para>OK</para>
                         </entry>
                         <entry>
                         </entry>
