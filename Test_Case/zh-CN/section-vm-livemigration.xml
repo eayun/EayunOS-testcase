@@ -233,11 +233,6 @@
                                         Maintenance，试图将该Host变为维护模式
                                     </para>
                                 </listitem>
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
                             </orderedlist>
                         </entry>
                         <entry>
@@ -281,11 +276,6 @@
                                         Maintenance，试图将该Host变为维护模式
                                     </para>
                                 </listitem>
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
                             </orderedlist>
                         </entry>
                         <entry>
@@ -316,23 +306,6 @@
                                 虚拟机动态迁移
                                 （CpuOverCommitDurationMinutes(0,10)）
                             </para>
-                            <orderedlist numeration="arabic">
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                            </orderedlist>
                         </entry>
                         <entry>
                             <para>
@@ -358,23 +331,6 @@
                                 Cluster power saving policy->Evenly_Distributed
                                 虚拟机动态迁移（HighUtilization[50,99]）
                             </para>
-                            <orderedlist numeration="arabic">
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                            </orderedlist>
                         </entry>
                         <entry>
                             <para>
@@ -400,23 +356,6 @@
                                 拟机动态迁移
                                 （CpuOverCommitDurationMinutes(0,10)）
                             </para>
-                            <orderedlist numeration="arabic">
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                            </orderedlist>
                         </entry>
                         <entry>
                             <para>
@@ -441,23 +380,6 @@
                                 定义Cluster power saving policy->Power_Saving虚
                                 拟机动态迁移（HighUtilization[50,99]）
                             </para>
-                            <orderedlist numeration="arabic">
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                            </orderedlist>
                         </entry>
                         <entry>
                             <para>
@@ -482,23 +404,6 @@
                                 定义Cluster power saving policy->Power_Saving虚
                                 拟机动态迁移（LowUtilization[10,49]）
                             </para>
-                            <orderedlist numeration="arabic">
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                            </orderedlist>
                         </entry>
                         <entry>
                             <para>
