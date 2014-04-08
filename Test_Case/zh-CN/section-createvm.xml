@@ -190,17 +190,6 @@
                                       删除 <keycap>HWADDR=</keycap>的行.
                                     </para>
                                   </listitem>
-
-                                  <listitem>
-                                    <para>
-                                      (可选)在下列目录中删除日志文件: <keycap>/var/log</keycap>,
-                                      <keycap>/root</keycap>.
-                                    </para>
-                                    <programlisting language="Bash">
-                                      # rm -rf /var/log/*
-                                      # rm -f /root/anaconda-ks.cfg /root/install.log* 
-                                    </programlisting>
-                                  </listitem>
                                 </orderedlist>
                               </listitem>
 
