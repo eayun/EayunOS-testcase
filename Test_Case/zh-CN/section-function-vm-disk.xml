@@ -62,7 +62,7 @@
           </entry>
           <entry>
             <para>
-
+              <keycap>磁盘</keycap>列表下显示新添加的磁盘.
             </para>
           </entry>
           <entry>
@@ -123,7 +123,7 @@
           </entry>
           <entry>
             <para>
-
+              <keycap>磁盘</keycap>列表下显示新添加的磁盘 Disk1.
             </para>
           </entry>
           <entry>
@@ -195,7 +195,7 @@
           </entry>
           <entry>
             <para>
-
+              <keycap>磁盘</keycap>列表下显示新添加的 LUN.
             </para>
           </entry>
           <entry>
@@ -859,6 +859,7 @@
           </entry>
           <entry>
             <para>
+              在磁盘列表上多了一个磁盘, 登陆进虚拟机, 可以看到虚拟机里多了一个磁盘.
             </para>
           </entry>
           <entry>
@@ -908,6 +909,7 @@
           </entry>
           <entry>
             <para>
+              在磁盘列表上该磁盘消失了, 登陆进虚拟机, 相关的磁盘显示被拔出.
             </para>
           </entry>
           <entry>
