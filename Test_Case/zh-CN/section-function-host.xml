@@ -89,11 +89,6 @@
                                     installing->Reboot->Awaiting->Up
                                 </para>
                             </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
                         </orderedlist>
                     </entry>
                     <entry>
@@ -127,16 +122,6 @@
                                     的edit，在Edit Host界面下的
                                     Power Management,输IPMI的ip地址、用户名及密
                                     码、Type，点击Test，提示success
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-
                                 </para>
                             </listitem>
                         </orderedlist>
@@ -179,11 +164,6 @@
                                     观察实际使用
                                 </para>
                             </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
                         </orderedlist>
                     </entry>
                     <entry>
@@ -224,11 +204,6 @@
                                     Preparing Maintenance->Maintenance
                                 </para>
                             </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
                         </orderedlist>
                     </entry>
                     <entry>
@@ -265,11 +240,6 @@
                                     Host状态Unassigned->Up
                                 </para>
                             </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
                         </orderedlist>
                     </entry>
                     <entry>
@@ -300,16 +270,6 @@
                                 <para>
                                     在Host列表下，选择待删除的Host，将其置成
                                     Maintenance，点击Remove
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-
                                 </para>
                             </listitem>
                         </orderedlist>
@@ -344,16 +304,6 @@
                                     在Host列表下，选择待删除的Host，将其置成
                                     Maintenance，点击Remove，再选中
                                     Force Remove，点击OK
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-
                                 </para>
                             </listitem>
                         </orderedlist>

@@ -256,6 +256,52 @@
                         </para>
                     </entry>
                 </row>
+                <row>
+                    <entry>67</entry>
+                    <entry>
+                        <para>
+                            UserRole用户在用户门户下，使用虚拟机池分配虚拟机
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            分配虚拟机成功同时虚拟机开启
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>68</entry>
+                    <entry>
+                        <para>
+                            UserRole用户在用户门户下，虚拟机释放回虚拟机池
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            关闭虚拟机，虚拟机在用户门户界面下消失，虚拟机释放回虚拟机池。
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
                 </tbody>
             </tgroup>
         </informaltable>

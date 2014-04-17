@@ -41,16 +41,6 @@
                                     勾选中Highly Available项
                                 </para>
                             </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
                         </orderedlist>
                     </entry>
                     <entry>
@@ -236,16 +226,11 @@
                                     其他host上运行；
                                 </para>
                             </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
                         </orderedlist>
                     </entry>
                     <entry>
                         <para>
-
+                            虚拟机自动在另一台主机上运行
                         </para>
                     </entry>
                     <entry>
@@ -277,11 +262,6 @@
                                 <para>
                                     高可用虚拟机会在其他host上重新启动，非高可
                                     用虚拟机不会；
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-
                                 </para>
                             </listitem>
                         </orderedlist>
@@ -322,11 +302,6 @@
                                     行，在host重启过程中，高可用虚拟机会在其它
                                     host上运行。而非高可用虚拟机会始终处于关闭
                                     状态；
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-
                                 </para>
                             </listitem>
                         </orderedlist>

@@ -201,14 +201,14 @@
                                 </listitem>
                                 <listitem>
                                     <para>
-                                      选中数据存储域，,在细节项中，选中<emphasis>数据中心</emphasis>，并进行维护激活等操作
+                                      选中数据存储域，在细节项中，选中<emphasis>数据中心</emphasis>下数据存储域之一（数据存储域不是只有一个），并点击<emphasis>维护</emphasis>按钮，
                                     </para>
                                 </listitem>
                             </orderedlist>
                         </entry>
                         <entry>
                             <para>
-                               数据存储域不是数据中心下唯一的一个数据存储域是可操作的，若是唯一的数据存储是不可操作的。
+                               数据中心下数据存储域不是只有一个时，数据存储域是可以做维护激活等操作。
                             </para>
                         </entry>
                         <entry>
