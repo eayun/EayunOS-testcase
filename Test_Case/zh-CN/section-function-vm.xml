@@ -339,7 +339,7 @@
                     <entry>40</entry>
                     <entry>
                         <para>
-                            虚拟机创建快照
+                            运行状态的虚拟机创建快照
                         </para>
                         <orderedlist numeration="arabic">
                             <listitem>
@@ -353,16 +353,11 @@
                                     在弹出的界面输入描述，保存，点击OK
                                 </para>
                             </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
                         </orderedlist>
                     </entry>
                     <entry>
                         <para>
-
+                            快照创建成功。
                         </para>
                     </entry>
                     <entry>
@@ -378,6 +373,41 @@
                 </row>
                 <row>
                     <entry>41</entry>
+                    <entry>
+                        <para>
+                            关闭状态虚拟机创建快照
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                    在虚拟机列表下选中关闭状态的虚拟机
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    在虚拟机详细面板菜单Snapshots下点击Create,在弹出的界面输入描述，保存，点击OK
+                                </para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para>
+                            快照创建成功
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>42</entry>
                     <entry>
                         <para>
                             使用快照恢复虚拟机
@@ -406,7 +436,7 @@
                             </listitem>
                             <listitem>
                                 <para>
-                                    点击Preview,虚拟机状态由Image Locked->Down
+                                    点击Commit,虚拟机状态由Image Locked->Down
                                 </para>
                             </listitem>
 
@@ -429,7 +459,7 @@
                     </entry>
                 </row>
                 <row>
-                    <entry>42</entry>
+                    <entry>43</entry>
                     <entry>
                         <para>
                             导入虚拟机（已创建Export存储域）
@@ -471,7 +501,7 @@
                     </entry>
                 </row>
                 <row>
-                    <entry>43</entry>
+                    <entry>44</entry>
                     <entry>
                         <para>
                             导出虚拟机（已创建Export存储域）
