@@ -25,34 +25,16 @@
                         <entry>18</entry>
                         <entry>
                             <para>
-                                安装主机
-                            </para>
-                            <orderedlist numeration="arabic">
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                            </orderedlist>
-                        </entry>
-                        <entry>
-                            <para>
-
+                                安装主机(参照安装测试)
                             </para>
                         </entry>
                         <entry>
                             <para>
-
+                                主机安装成功
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
                             </para>
                         </entry>
                         <entry>
@@ -433,27 +415,10 @@
                             <para>
                                 配置ISO Domain（创建一个新的ISO Domain）
                             </para>
-                            <orderedlist numeration="arabic">
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                            </orderedlist>
                         </entry>
                         <entry>
                             <para>
-
+                                ISO Domain创建成功
                             </para>
                         </entry>
                         <entry>

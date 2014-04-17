@@ -340,7 +340,7 @@
 
           <entry>
             <para>
-              在虚拟机的快照列表下, 可以看到新创建的快照 snap1.
+              在虚拟机的快照列表下, 可以看到新创建的快照 snap1.同时快照可以正常使用
             </para>
           </entry>
           <entry>
@@ -353,7 +353,7 @@
           <entry>35</entry>
           <entry>
             <para>
-              从快照创建虚拟机
+              快照恢复虚拟机
             </para>
             <orderedlist numeration="arabic">
               <listitem>

@@ -224,7 +224,7 @@
           </entry>
           <entry>
             <para>
-
+              迁移失败
             </para>
           </entry>
           <entry>
@@ -271,7 +271,7 @@
           </entry>
           <entry>
             <para>
-
+              磁盘迁移成功
             </para>
           </entry>
           <entry>
@@ -317,7 +317,7 @@
           </entry>
           <entry>
             <para>
-
+              虚拟机池内运行状态的虚拟机不能迁移
             </para>
           </entry>
           <entry>
@@ -363,7 +363,7 @@
           </entry>
           <entry>
             <para>
-
+              不能迁移，目标存储域为空且不能编辑
             </para>
           </entry>
           <entry>
@@ -409,12 +409,16 @@
           </entry>
           <entry>
             <para>
-
+              不能迁移，运行虚拟机不能迁移
             </para>
           </entry>
           <entry>
           </entry>
           <entry>
+            <para>
+              测试迁移磁盘功能
+              虚拟机池内分离的虚拟机状态为运行状态的虚拟机
+            </para>
           </entry>
         </row>
         <row>
@@ -455,7 +459,7 @@
           </entry>
           <entry>
             <para>
-
+              磁盘迁移成功
             </para>
           </entry>
           <entry>
@@ -501,7 +505,7 @@
           </entry>
           <entry>
             <para>
-
+              迁移成功
             </para>
           </entry>
           <entry>
@@ -732,6 +736,11 @@
           <entry>
           </entry>
           <entry>
+            <para>
+              不确定此功能在什么情况下使用
+              虚拟机关机磁盘变为Inactive状态下也不可点
+              目前只有数据中心宕掉后的虚拟机此项可点
+            </para>
           </entry>
         </row>
         <row>
@@ -871,11 +880,6 @@
               <listitem>
                 <para>
                   磁盘共享给该虚拟机
-                </para>
-              </listitem>
-              <listitem>
-                <para>
-
                 </para>
               </listitem>
             </orderedlist>

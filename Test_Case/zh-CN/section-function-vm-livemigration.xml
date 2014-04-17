@@ -203,11 +203,6 @@
                                     Maintenance，试图将该Host变为维护模式
                                 </para>
                             </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
                         </orderedlist>
                     </entry>
                     <entry>
@@ -240,12 +235,6 @@
                                 <para>
                                     在Hosts列表下选择其中一个Host，点击菜单
                                     Maintenance，试图将该Host变为维护模式
-
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-
                                 </para>
                             </listitem>
                         </orderedlist>
@@ -265,29 +254,30 @@
                     <entry>
                         <para>
                             定义Cluster power saving policy->Evenly_Distributed
-                            虚拟机动态迁移（CpuOverCommitDurationMinutes(0,10)）
+                            虚拟机动态迁移（CpuOverCommitDurationMinutes(0,10)
+                             虚拟机动态迁移（HighUtilization[50,99]）
                         </para>
                         <orderedlist numeration="arabic">
                             <listitem>
                                 <para>
-
+                                    定义集群策略，CpuOverCommitDurationMinutes设置为2（0,10），HighUtilization 50[50,99]
                                 </para>
                             </listitem>
                             <listitem>
                                 <para>
-
+                                    在一台主机上同时启多台虚拟机（允许手动和自动迁移），同时虚拟机上运行消耗CPU的程序（如：echo "scale=100000;4*a(1)"|bc -l）
                                 </para>
                             </listitem>
                             <listitem>
                                 <para>
-
+                                    观察主机CPU使用情况达到50%([50,99])及以上时，时间为2([1,9])分钟，虚拟机作何反应
                                 </para>
                             </listitem>
                         </orderedlist>
                     </entry>
                     <entry>
                         <para>
-
+                            时间到达2分钟后，虚拟机开始自动迁移
                         </para>
                     </entry>
                     <entry>
@@ -340,24 +330,19 @@
                         <orderedlist numeration="arabic">
                             <listitem>
                                 <para>
-
+                                    选择集群，右键编辑集群，设置CpuOverCommitDurationMinutes为2
                                 </para>
                             </listitem>
                             <listitem>
                                 <para>
-
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-
+                                    在node的vm上面跑程序，使得满足自动迁移的条件。
                                 </para>
                             </listitem>
                         </orderedlist>
                     </entry>
                     <entry>
                         <para>
-
+                            2分钟之后开始迁移。
                         </para>
                     </entry>
                     <entry>
@@ -375,24 +360,19 @@
                         <orderedlist numeration="arabic">
                             <listitem>
                                 <para>
-
+                                    选择集群，右键编辑集群，设置highUtilization80。
                                 </para>
                             </listitem>
                             <listitem>
                                 <para>
-
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-
+                                    在node2上面运行几个vm，总CPU占用率超过80%，单个vm占用率不超过。node1的CPU占用率大于20（下限），低于80%。
                                 </para>
                             </listitem>
                         </orderedlist>
                     </entry>
                     <entry>
                         <para>
-
+                            一段时间后，部分虚拟机被迁移到node1。
                         </para>
                     </entry>
                     <entry>
@@ -410,24 +390,29 @@
                         <orderedlist numeration="arabic">
                             <listitem>
                                 <para>
-
+                                    选择集群，右键编辑集群，设置lowUtilization为10
                                 </para>
                             </listitem>
                             <listitem>
                                 <para>
-
+                                    在集群中node1上任意虚拟机跑程序，使cpu占用率大于10%
                                 </para>
                             </listitem>
                             <listitem>
                                 <para>
-
+                                    将node2上关闭或者打开一些虚拟机，保证node2上存在虚拟机，且cpu占用率低于10%。
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                    如果node2上的虚拟机迁移到node1上面了，手动迁移回来。
                                 </para>
                             </listitem>
                         </orderedlist>
                     </entry>
                     <entry>
                         <para>
-
+                            当node2的cpu占用率低于10%，虚拟机自动迁移到node1,如果手动移动回node2,需要一段时间后才会重新检测，然后再迁移。
                         </para>
                     </entry>
                     <entry>
@@ -437,7 +422,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            node1和node2的selinux应该配置一致，否则无法迁移。
                         </para>
                     </entry>
                 </row>

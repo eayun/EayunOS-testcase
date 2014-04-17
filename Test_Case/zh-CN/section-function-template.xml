@@ -215,6 +215,52 @@
                         </para>
                     </entry>
                 </row>
+                <row>
+                    <entry>33</entry>
+                    <entry>
+                        <para>
+                            导出到另一数据中心后的模板，创建虚拟机
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            虚拟机创建成功，虚拟机可以正常使用
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>34</entry>
+                    <entry>
+                        <para>
+                            批量导入导出模板
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            可以批量导入导出模板，导出的模板可以正常使用
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            批量导出时只能成功一个，其它失败
+                        </para>
+                    </entry>
+                </row>
                 </tbody>
             </tgroup>
         </informaltable>
