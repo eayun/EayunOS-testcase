@@ -62,7 +62,7 @@
           </entry>
           <entry>
             <para>
-              <keycap>磁盘</keycap>列表下显示新添加的磁盘.
+              OK
             </para>
           </entry>
           <entry>
@@ -123,7 +123,7 @@
           </entry>
           <entry>
             <para>
-              <keycap>磁盘</keycap>列表下显示新添加的磁盘 Disk1.
+              OK
             </para>
           </entry>
           <entry>
@@ -146,7 +146,7 @@
               </listitem>
               <listitem>
                 <para>
-                  在该虚拟机详细面板下点击<keycap>磁盘</keycap>.
+                  OK
                 </para>
               </listitem>
               <listitem>
@@ -195,7 +195,7 @@
           </entry>
           <entry>
             <para>
-              <keycap>磁盘</keycap>列表下显示新添加的 LUN.
+              OK
             </para>
           </entry>
           <entry>
@@ -242,12 +242,12 @@
           </entry>
           <entry>
             <para>
-
+              迁移失败
             </para>
           </entry>
           <entry>
             <para>
-              迁移失败
+              OK
             </para>
           </entry>
           <entry>
@@ -298,12 +298,12 @@
           </entry>
           <entry>
             <para>
-
+              磁盘迁移成功
             </para>
           </entry>
           <entry>
             <para>
-              磁盘迁移成功
+              OK
             </para>
           </entry>
           <entry>
@@ -353,12 +353,12 @@
           </entry>
           <entry>
             <para>
-
+              虚拟机池内运行状态的虚拟机不能迁移
             </para>
           </entry>
           <entry>
             <para>
-              虚拟机池内运行状态的虚拟机不能迁移
+              OK
             </para>
           </entry>
           <entry>
@@ -407,13 +407,13 @@
           </entry>
           <entry>
             <para>
-
+              不能迁移，目标存储域为空且不能编辑
             </para>
           </entry>
           <entry>
             <para>
-              不能迁移，目标存储域为空且不能编辑
-            </para>
+                fail 可以迁移。
+            </para>           
           </entry>
           <entry>
             <para>
@@ -461,19 +461,17 @@
           </entry>
           <entry>
             <para>
-
+              不能迁移，运行虚拟机不能迁移
             </para>
           </entry>
           <entry>
             <para>
-              不能迁移，目标存储域为空且不能编辑
-              提示运行虚拟机不能迁移
+              OK
             </para>
           </entry>
           <entry>
             <para>
               测试迁移磁盘功能
-
               虚拟机池内分离的虚拟机状态为运行状态的虚拟机
             </para>
           </entry>
@@ -516,12 +514,12 @@
           </entry>
           <entry>
             <para>
-
+              磁盘迁移成功
             </para>
           </entry>
           <entry>
             <para>
-              磁盘迁移成功
+              fail，提示所选的存储域没有包含vm模板
             </para>
           </entry>
           <entry>
@@ -570,12 +568,12 @@
           </entry>
           <entry>
             <para>
-
+              迁移成功
             </para>
           </entry>
           <entry>
             <para>
-              迁移成功
+              OK
             </para>
           </entry>
           <entry>
@@ -621,7 +619,7 @@
           </entry>
           <entry>
             <para>
-
+              OK
             </para>
           </entry>
           <entry>
@@ -672,7 +670,7 @@
           </entry>
           <entry>
             <para>
-
+              OK
             </para>
           </entry>
           <entry>
@@ -717,7 +715,7 @@
           </entry>
           <entry>
             <para>
-
+              OK
             </para>
           </entry>
           <entry>
@@ -762,7 +760,7 @@
           </entry>
           <entry>
             <para>
-
+                OK
             </para>
           </entry>
           <entry>
@@ -801,8 +799,12 @@
             </orderedlist>
           </entry>
           <entry>
+            <para>     
+            </para>
+          </entry>
+          <entry>
             <para>
-
+              OK
             </para>
           </entry>
           <entry>
@@ -810,11 +812,6 @@
               不确定此功能在什么情况下使用
               虚拟机关机磁盘变为Inactive状态下也不可点
               目前只有数据中心宕掉后的虚拟机此项可点
-            </para>
-          </entry>
-          <entry>
-            <para>
-
             </para>
           </entry>
         </row>
@@ -859,7 +856,7 @@
           </entry>
           <entry>
             <para>
-              在磁盘列表上多了一个磁盘, 登陆进虚拟机, 可以看到虚拟机里多了一个磁盘.
+              OK
             </para>
           </entry>
           <entry>
@@ -909,7 +906,7 @@
           </entry>
           <entry>
             <para>
-              在磁盘列表上该磁盘消失了, 登陆进虚拟机, 相关的磁盘显示被拔出.
+              OK
             </para>
           </entry>
           <entry>
@@ -969,11 +966,6 @@
                   磁盘共享给该虚拟机
                 </para>
               </listitem>
-              <listitem>
-                <para>
-
-                </para>
-              </listitem>
             </orderedlist>
           </entry>
           <entry>
@@ -983,12 +975,11 @@
           </entry>
           <entry>
             <para>
-
+              OK
             </para>
           </entry>
           <entry>
             <para>
-
             </para>
           </entry>
         </row>

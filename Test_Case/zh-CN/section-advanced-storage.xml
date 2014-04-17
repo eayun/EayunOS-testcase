@@ -96,7 +96,7 @@
 
           <entry>
             <para>
-              一个名为 Disk1 的浮动磁盘已经创建好了, 在虚拟机的磁盘列表上能正常显示.
+              OK
             </para>
           </entry>
           <entry>
@@ -165,7 +165,7 @@
           </entry>
           <entry>
             <para>
-              将 Disk1 分配给了虚拟机, 能在虚拟机的磁盘列表上看到 Disk1.
+             OK
             </para>
           </entry>
           <entry>
@@ -235,7 +235,7 @@
 
           <entry>
             <para>
-              在虚拟机的磁盘列表上, Disk1 多了一个共享的图标.
+              OK
             </para>
           </entry>
 
@@ -301,7 +301,7 @@
 
           <entry>
             <para>
-              将共享磁盘 Disk1 分配给了虚拟机, 在该虚拟机的磁盘列表上能看到.
+              OK
             </para>
           </entry>
 
