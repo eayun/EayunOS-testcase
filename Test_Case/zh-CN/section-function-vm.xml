@@ -49,11 +49,6 @@
                                     装添加CD则不需要changeCD）
                                 </para>
                             </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
                         </orderedlist>
                     </entry>
                     <entry>
@@ -63,7 +58,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -104,11 +99,6 @@
                                     run once方式安装添加CD则不需要changeCD）
                                 </para>
                             </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
                         </orderedlist>
                     </entry>
                     <entry>
@@ -118,7 +108,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -141,16 +131,6 @@
                                     console按钮（绿色电脑图标）
                                 </para>
                             </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
                         </orderedlist>
                     </entry>
                     <entry>
@@ -160,7 +140,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -183,16 +163,6 @@
 
                                 </para>
                             </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
                         </orderedlist>
                     </entry>
                     <entry>
@@ -202,7 +172,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -224,16 +194,6 @@
                                     中选择power off
                                 </para>
                             </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
                         </orderedlist>
                     </entry>
                     <entry>
@@ -243,7 +203,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -285,7 +245,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -312,21 +272,16 @@
                                     虚拟机暂停状态Paused
                                 </para>
                             </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
                         </orderedlist>
                     </entry>
                     <entry>
                         <para>
-
+                            虚拟机被暂停
                         </para>
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -357,17 +312,17 @@
                     </entry>
                     <entry>
                         <para>
-                            快照创建成功。
+                            快照创建成功，快照可以正常使用。
                         </para>
                     </entry>
                     <entry>
                         <para>
-
+                            fail
                         </para>
                     </entry>
                     <entry>
                         <para>
-
+                            Tasks列表下显示创建快照失败，但实际上快照创建完成并可以正常工作
                         </para>
                     </entry>
                 </row>
@@ -392,17 +347,17 @@
                     </entry>
                     <entry>
                         <para>
-                            快照创建成功
+                            快照创建成功，快照可以正常使用
                         </para>
                     </entry>
                     <entry>
                         <para>
-                            
+                            fail
                         </para>
                     </entry>
                     <entry>
                         <para>
-                            
+                            Tasks列表下显示创建快照失败，但实际上快照创建完成并可以正常工作
                         </para>
                     </entry>
                 </row>
@@ -449,7 +404,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -491,7 +446,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -544,7 +499,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
