@@ -58,7 +58,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -89,11 +89,6 @@
                                     installing->Reboot->Awaiting->Up
                                 </para>
                             </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
                         </orderedlist>
                     </entry>
                     <entry>
@@ -103,7 +98,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -129,16 +124,6 @@
                                     码、Type，点击Test，提示success
                                 </para>
                             </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
                         </orderedlist>
                     </entry>
                     <entry>
@@ -149,7 +134,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -177,11 +162,6 @@
                             <listitem>
                                 <para>
                                     观察实际使用
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-
                                 </para>
                             </listitem>
                         </orderedlist>
@@ -224,11 +204,6 @@
                                     Preparing Maintenance->Maintenance
                                 </para>
                             </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
                         </orderedlist>
                     </entry>
                     <entry>
@@ -238,7 +213,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -265,11 +240,6 @@
                                     Host状态Unassigned->Up
                                 </para>
                             </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
                         </orderedlist>
                     </entry>
                     <entry>
@@ -279,7 +249,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -302,16 +272,6 @@
                                     Maintenance，点击Remove
                                 </para>
                             </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
                         </orderedlist>
                     </entry>
                     <entry>
@@ -321,7 +281,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -346,16 +306,6 @@
                                     Force Remove，点击OK
                                 </para>
                             </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
                         </orderedlist>
                     </entry>
                     <entry>
@@ -365,7 +315,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
