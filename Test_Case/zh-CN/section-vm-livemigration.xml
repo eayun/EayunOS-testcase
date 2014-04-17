@@ -200,7 +200,7 @@
                         </entry>
                         <entry>
                             <para>
-                                
+                                OK
                             </para>
                         </entry>
                         <entry>
@@ -231,11 +231,6 @@
                                     <para>
                                         在Hosts列表下选择其中一个Host，点击菜单
                                         Maintenance，试图将该Host变为维护模式
-                                    </para>
-                                </listitem>
-                                <listitem>
-                                    <para>
-
                                     </para>
                                 </listitem>
                             </orderedlist>
@@ -315,75 +310,34 @@
                                 Cluster power saving policy->Evenly_Distributed
                                 虚拟机动态迁移
                                 （CpuOverCommitDurationMinutes(0,10)）
-                            </para>
-                            <orderedlist numeration="arabic">
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                                <listitem>
-                                    <para>
-
-                                    </para>
-                                </listitem>
-                            </orderedlist>
-                        </entry>
-                        <entry>
-                            <para>
-
-                            </para>
-                        </entry>
-                        <entry>
-                            <para>
-
-                            </para>
-                        </entry>
-                        <entry>
-                            <para>
-                                测试自动迁移    
-                            </para>
-                        </entry>
-                    </row>
-                    <row>
-                        <entry>14</entry>
-                        <entry>
-                            <para>
-                                定义
-                                Cluster power saving policy->Evenly_Distributed
                                 虚拟机动态迁移（HighUtilization[50,99]）
                             </para>
                             <orderedlist numeration="arabic">
                                 <listitem>
                                     <para>
-
+                                        定义集群策略，CpuOverCommitDurationMinutes设置为2（0,10），HighUtilization 50[50,99]
                                     </para>
                                 </listitem>
                                 <listitem>
                                     <para>
-
+                                        在一台主机上同时启多台虚拟机（允许手动和自动迁移），同时虚拟机上运行消耗CPU的程序（如：echo "scale=100000;4*a(1)"|bc -l）
                                     </para>
                                 </listitem>
                                 <listitem>
                                     <para>
-
+                                        观察主机CPU使用情况达到50%([50,99])及以上时，时间为2([1,9])分钟，虚拟机作何反应
                                     </para>
                                 </listitem>
                             </orderedlist>
                         </entry>
                         <entry>
                             <para>
-
+                                时间到达2分钟后，虚拟机开始自动迁移
                             </para>
                         </entry>
                         <entry>
                             <para>
-
+                                OK
                             </para>
                         </entry>
                         <entry>
@@ -420,7 +374,7 @@
                         </entry>
                         <entry>
                             <para>
-
+                                OK
                             </para>
                         </entry>
                         <entry>
@@ -456,7 +410,7 @@
                         </entry>
                         <entry>
                             <para>
-
+                                OK
                             </para>
                         </entry>
                         <entry>
@@ -502,6 +456,7 @@
                         </entry>
                         <entry>
                             <para>
+                                fail
                             </para> 
                         </entry>
                         <entry>
