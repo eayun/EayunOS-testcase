@@ -534,7 +534,7 @@
 
           <entry>
             <para>
-              在虚拟机的磁盘列表上看到分配给该虚拟机的 LUN.
+              OK
             </para>
           </entry>
 
@@ -564,7 +564,7 @@
 
           <entry>
             <para>
-              在虚拟机的磁盘列表上看到分配给该虚拟机的 FC LUN.
+              OK
             </para>
           </entry>
 
