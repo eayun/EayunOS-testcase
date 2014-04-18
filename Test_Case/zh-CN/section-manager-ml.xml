@@ -73,7 +73,7 @@
                         </entry>
                         <entry>
                             <para>
-
+                                OK
                             </para>
                         </entry>
                         <entry>
@@ -128,7 +128,7 @@
                         </entry>
                         <entry>
                             <para>
-
+                                OK
                             </para>
                         </entry>
                         <entry>
@@ -171,7 +171,7 @@
                         </entry>
                         <entry>
                             <para>
-
+                                OK
                             </para>
                         </entry>
                         <entry>
@@ -201,21 +201,19 @@
                                 </listitem>
                                 <listitem>
                                     <para>
-                                      选中数据存储域，,在细节项中，选中<emphasis>数据中心</emphasis>，并点击<emphasis>维护</emphasis>按钮，
-                                      这次将会看到错误消息的对话框：“执行动作时出错：没有授权用户执行这个动作。”这表明用户仅有对ISO存储域的
-                                      管理权限，而对存储域是无效的。
+                                      选中数据存储域，在细节项中，选中<emphasis>数据中心</emphasis>下数据存储域之一（数据存储域不是只有一个），并点击<emphasis>维护</emphasis>按钮，
                                     </para>
                                 </listitem>
                             </orderedlist>
                         </entry>
                         <entry>
                             <para>
-                               数据存储域是不可操作的。
+                               数据中心下数据存储域不是只有一个时，数据存储域是可以做维护激活等操作。
                             </para>
                         </entry>
                         <entry>
                             <para>
-
+                                OK
                             </para>
                         </entry>
                         <entry>
@@ -252,7 +250,7 @@
                         </entry>
                         <entry>
                             <para>
-
+                                OK
                             </para>
                         </entry>
                         <entry>
@@ -290,7 +288,7 @@
                         </entry>
                         <entry>
                             <para>
-
+                                OK
                             </para>
                         </entry>
                         <entry>
@@ -353,7 +351,7 @@
                         </entry>
                         <entry>
                             <para>
-
+                                OK
                             </para>
                         </entry>
                         <entry>

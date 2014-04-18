@@ -41,26 +41,16 @@
                                     勾选中Highly Available项
                                 </para>
                             </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
                         </orderedlist>
                     </entry>
                     <entry>
                         <para>
-
+            
                         </para>
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -108,7 +98,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -157,7 +147,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -209,7 +199,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            fail
                         </para>
                     </entry>
                     <entry>
@@ -236,21 +226,16 @@
                                     其他host上运行；
                                 </para>
                             </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
                         </orderedlist>
                     </entry>
                     <entry>
                         <para>
-
+                            虚拟机自动在另一台主机上运行
                         </para>
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -279,11 +264,6 @@
                                     用虚拟机不会；
                                 </para>
                             </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
                         </orderedlist>
                     </entry>
                     <entry>
@@ -293,7 +273,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -324,11 +304,6 @@
                                     状态；
                                 </para>
                             </listitem>
-                            <listitem>
-                                <para>
-
-                                </para>
-                            </listitem>
                         </orderedlist>
                     </entry>
                     <entry>
@@ -338,7 +313,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
