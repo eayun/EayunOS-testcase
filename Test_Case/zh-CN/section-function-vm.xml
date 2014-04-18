@@ -508,6 +508,29 @@
                         </para>
                     </entry>
                 </row>
+                <row>
+                    <entry>45</entry>
+                    <entry>
+                        <para>
+                            批量导入导出虚拟机
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            可以批量导入导出虚拟机，虚拟机可以正常使用
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            fail
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            批量导出虚拟机时，只能成功一个，其它的虚拟机都失败
+                        </para>
+                    </entry>
+                </row>
                 </tbody>
             </tgroup>
         </informaltable>
