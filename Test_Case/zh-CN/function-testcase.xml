@@ -87,5 +87,7 @@
 
     <xi:include href="section-function-event-notifier.xml"
         xmlns:xi="http://www.w3.org/2001/XInclude" />
+    <xi:include href="section-function-network.xml"
+        xmlns:xi="http://www.w3.org/2001/XInclude" />
 
 </section>
