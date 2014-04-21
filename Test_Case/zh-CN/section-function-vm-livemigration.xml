@@ -57,15 +57,8 @@
                         </para>
                     </entry>
                     <entry>
-                        <para>
-
-                        </para>
                     </entry>
                     <entry>
-                        <para>
-                            配置设置为“允许手动和自动迁移”
-                            测试手动迁移
-                        </para>
                     </entry>
                 </row>
                 <row>
@@ -104,15 +97,8 @@
                         </para>
                     </entry>
                     <entry>
-                        <para>
-
-                        </para>
                     </entry>
                     <entry>
-                        <para>
-                            配置设置为“仅允许手动迁移”
-                            测试手动迁移
-                        </para>
                     </entry>
                 </row>
                 <row>
@@ -151,15 +137,8 @@
                         </para>
                     </entry>
                     <entry>
-                        <para>
-
-                        </para>
                     </entry>
                     <entry>
-                        <para>
-                            配置设置为“不允许迁移”
-                            测试手动迁移
-                        </para>
                     </entry>
                 </row>
                 <row>
@@ -198,15 +177,8 @@
                         </para>
                     </entry>
                     <entry>
-                        <para>
-
-                        </para>
                     </entry>
                     <entry>
-                        <para>
-                            配置设置为“允许手动和自动迁移”
-                            测试自动迁移
-                        </para>
                     </entry>
                 </row>
                 <row>
@@ -244,16 +216,8 @@
                         </para>
                     </entry>
                     <entry>
-                        <para>
-
-                        </para>
                     </entry>
                     <entry>
-                        <para>
-                            配置设置为“仅允许手动迁移”
-
-                            测试自动迁移
-                        </para>
                     </entry>
                 </row>
                 <row>
@@ -292,16 +256,8 @@
                         </para>
                     </entry>
                     <entry>
-                        <para>
-
-                        </para>
                     </entry>
                     <entry>
-                        <para>
-                            配置设置为“不允许迁移”
-
-                            测试自动迁移
-                        </para>
                     </entry>
                 </row>
                 <row>
@@ -335,14 +291,8 @@
                         </para>
                     </entry>
                     <entry>
-                        <para>
-
-                        </para>
                     </entry>
                     <entry>
-                        <para>
-                            测试自动迁移
-                        </para>
                     </entry>
                 </row>
                 <row>
@@ -376,14 +326,8 @@
                         </para>
                     </entry>
                     <entry>
-                        <para>
-
-                        </para>
                     </entry>
                     <entry>
-                        <para>
-                            测试自动迁移
-                        </para>
                     </entry>
                 </row>
                 <row>
@@ -417,14 +361,8 @@
                         </para>
                     </entry>
                     <entry>
-                        <para>
-
-                        </para>
                     </entry>
                     <entry>
-                        <para>
-                            测试自动迁移
-                        </para>
                     </entry>
                 </row>
                 <row>
@@ -458,14 +396,8 @@
                         </para>
                     </entry>
                     <entry>
-                        <para>
-
-                        </para>
                     </entry>
                     <entry>
-                        <para>
-
-                        </para>
                     </entry>
                 </row>
                 <row>

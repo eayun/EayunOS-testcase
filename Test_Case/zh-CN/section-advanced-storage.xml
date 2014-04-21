@@ -93,15 +93,9 @@
               一个名为 Disk1 的浮动磁盘已经创建好了, 在虚拟机的磁盘列表上能正常显示.
             </para>
           </entry>
-
           <entry>
-            <para>
-              一个名为 Disk1 的浮动磁盘已经创建好了, 在虚拟机的磁盘列表上能正常显示.
-            </para>
           </entry>
           <entry>
-            <para>
-            </para>
           </entry>
         </row>
 
@@ -164,13 +158,8 @@
             </para>
           </entry>
           <entry>
-            <para>
-              将 Disk1 分配给了虚拟机, 能在虚拟机的磁盘列表上看到 Disk1.
-            </para>
           </entry>
           <entry>
-            <para>
-            </para>
           </entry>
         </row>
 
@@ -234,14 +223,9 @@
           </entry>
 
           <entry>
-            <para>
-              在虚拟机的磁盘列表上, Disk1 多了一个共享的图标.
-            </para>
           </entry>
 
           <entry>
-            <para>
-            </para>
           </entry>
         </row>
 
@@ -300,15 +284,9 @@
           </entry>
 
           <entry>
-            <para>
-              将共享磁盘 Disk1 分配给了虚拟机, 在该虚拟机的磁盘列表上能看到.
-            </para>
           </entry>
 
           <entry>
-            <para>
-
-            </para>
           </entry>
         </row>
 
@@ -366,14 +344,8 @@
             </para>
           </entry>
           <entry>
-            <para>
-              在虚拟机的快照列表下, 可以看到新创建的快照 snap1.
-            </para>
           </entry>
           <entry>
-            <para>
-
-            </para>
           </entry>
         </row>
 
@@ -432,14 +404,9 @@
           </entry>
 
           <entry>
-            <para>
-              新创建的虚拟机显示在虚拟机列表中.
-            </para>
           </entry>
 
           <entry>
-            <para>
-            </para>
           </entry>
         </row>
 
@@ -533,14 +500,9 @@
           </entry>
 
           <entry>
-            <para>
-              在虚拟机的磁盘列表上看到分配给该虚拟机的 LUN.
-            </para>
           </entry>
 
           <entry>
-            <para>
-            </para>
           </entry>
         </row>
 
@@ -563,14 +525,9 @@
           </entry>
 
           <entry>
-            <para>
-              在虚拟机的磁盘列表上看到分配给该虚拟机的 FC LUN.
-            </para>
           </entry>
 
           <entry>
-            <para>
-            </para>
           </entry>
         </row>
       </tbody>

@@ -61,14 +61,8 @@
             </para>
           </entry>
           <entry>
-            <para>
-              <keycap>磁盘</keycap>列表下显示新添加的磁盘.
-            </para>
           </entry>
           <entry>
-            <para>
-
-            </para>
           </entry>
         </row>
         <row>
@@ -122,14 +116,8 @@
             </para>
           </entry>
           <entry>
-            <para>
-              <keycap>磁盘</keycap>列表下显示新添加的磁盘 Disk1.
-            </para>
           </entry>
           <entry>
-            <para>
-
-            </para>
           </entry>
         </row>
         <row>
@@ -194,14 +182,8 @@
             </para>
           </entry>
           <entry>
-            <para>
-              <keycap>磁盘</keycap>列表下显示新添加的 LUN.
-            </para>
           </entry>
           <entry>
-            <para>
-
-            </para>
           </entry>
         </row>
         <row>
@@ -246,17 +228,8 @@
             </para>
           </entry>
           <entry>
-            <para>
-              迁移失败
-            </para>
           </entry>
           <entry>
-            <para>
-              测试迁移磁盘功能
-
-              独立虚拟机并且非虚拟机池内分离出来的虚拟机状态为运
-              行状态的虚拟机
-            </para>
           </entry>
         </row>
         <row>
@@ -302,17 +275,8 @@
             </para>
           </entry>
           <entry>
-            <para>
-              磁盘迁移成功
-            </para>
           </entry>
           <entry>
-            <para>
-              测试迁移磁盘功能
-
-              独立虚拟机并且非虚拟机池内分离出来的虚拟机状态状态
-              为关闭状态的虚拟机
-            </para>
           </entry>
         </row>
         <row>
@@ -357,16 +321,8 @@
             </para>
           </entry>
           <entry>
-            <para>
-              虚拟机池内运行状态的虚拟机不能迁移
-            </para>
           </entry>
           <entry>
-            <para>
-              测试迁移磁盘功能
-
-              虚拟机池内的虚拟机状态为运行状态的虚拟机 
-            </para>
           </entry>
         </row>
         <row>
@@ -411,16 +367,8 @@
             </para>
           </entry>
           <entry>
-            <para>
-              不能迁移，目标存储域为空且不能编辑
-            </para>
           </entry>
           <entry>
-            <para>
-              测试迁移磁盘功能
-
-              虚拟机池内分离的虚拟机状态为关闭状态的虚拟机
-            </para>
           </entry>
         </row>
         <row>
@@ -465,17 +413,8 @@
             </para>
           </entry>
           <entry>
-            <para>
-              不能迁移，目标存储域为空且不能编辑
-              提示运行虚拟机不能迁移
-            </para>
           </entry>
           <entry>
-            <para>
-              测试迁移磁盘功能
-
-              虚拟机池内分离的虚拟机状态为运行状态的虚拟机
-            </para>
           </entry>
         </row>
         <row>
@@ -520,16 +459,8 @@
             </para>
           </entry>
           <entry>
-            <para>
-              磁盘迁移成功
-            </para>
           </entry>
           <entry>
-            <para>
-              测试迁移磁盘功能
-
-              模板创建的虚拟机
-            </para>
           </entry>
         </row>
         <row>
@@ -574,15 +505,8 @@
             </para>
           </entry>
           <entry>
-            <para>
-              迁移成功
-            </para>
           </entry>
           <entry>
-            <para>
-              测试迁移磁盘功能
-              从快照创建的虚拟机
-            </para>
           </entry>
         </row>
         <row>
@@ -806,16 +730,8 @@
             </para>
           </entry>
           <entry>
-            <para>
-              不确定此功能在什么情况下使用
-              虚拟机关机磁盘变为Inactive状态下也不可点
-              目前只有数据中心宕掉后的虚拟机此项可点
-            </para>
           </entry>
           <entry>
-            <para>
-
-            </para>
           </entry>
         </row>
         <row>
@@ -858,14 +774,8 @@
             </para>
           </entry>
           <entry>
-            <para>
-              在磁盘列表上多了一个磁盘, 登陆进虚拟机, 可以看到虚拟机里多了一个磁盘.
-            </para>
           </entry>
           <entry>
-            <para>
-
-            </para>
           </entry>
         </row>
         <row>
@@ -908,14 +818,8 @@
             </para>
           </entry>
           <entry>
-            <para>
-              在磁盘列表上该磁盘消失了, 登陆进虚拟机, 相关的磁盘显示被拔出.
-            </para>
           </entry>
           <entry>
-            <para>
-
-            </para>
           </entry>
         </row>
         <row>

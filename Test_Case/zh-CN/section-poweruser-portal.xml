@@ -74,14 +74,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                OK
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-
-                            </para>
                         </entry>
                     </row>
 		    <row>
@@ -114,14 +108,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                fail,为数据中心分配PowerUserRole,用户登录系统并没有看到分配的数据中心下的资源，而是其它没有分配给该用户的数据中心的资源(不是每次都出现)
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-
-                            </para>
                         </entry>
                     </row>
 		    <row>
@@ -159,14 +147,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                OK
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-
-                            </para>
                         </entry>
                     </row>
                     <row>
@@ -182,14 +164,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                               fail,在有些数据中心下，创建虚拟机出现提示“无权限操作”。
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-                               
-                            </para>
                         </entry>
                     </row>
                     <row>
@@ -205,14 +181,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                               fail,在有些数据中心下，创建虚拟机出现提示“无权限操作”。
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-
-                            </para>
                         </entry>
                     </row>
                     <row>
@@ -228,14 +198,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                OK
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-
-                            </para>
                         </entry>
                     </row>
                     <row>
@@ -251,14 +215,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                OK
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-
-                            </para>
                         </entry>
                     </row>
                     <row>
@@ -274,14 +232,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                               OK
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-
-                            </para>
                         </entry>
                     </row>
                     <row>
@@ -297,14 +249,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                               OK
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-
-                            </para>
                         </entry>
                     </row>
                     <row>
@@ -320,14 +266,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                OK
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-
-                            </para>
                         </entry>
                     </row>
                 </tbody>

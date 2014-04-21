@@ -121,60 +121,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                安装测试基本通过，engine-setup运行时出现了几个问
-                                题，见备注。
-                            </para>
                         </entry>
                         <entry>
-                            <orderedlist>
-                                <listitem>
-                                    <formalpara>
-                                        <title>
-                                            需要防火墙服务启动才可以继续
-                                        </title>
-                                        <para>
-                                            All in One安装完成之后，iptables服务
-                                            默认不会自动启动，engine-setup检测防
-                                            火墙设置时不会通过。
-                                        </para>
-                                    </formalpara>
-                                    <formalpara>
-                                        <title>错误信息：</title>
-                                        <para>
-                                            The following firewall managers were detected on this system:                  
-                                            iptables                                                                       
-                                            Firewall manager to configure (iptables):                                      
-                                            [ ERROR ] Invalid value                                                    
-                                        </para>
-                                    </formalpara>
-
-                                    <formalpara>
-                                        <title>临时解决办法：</title> 
-                                        <para>
-                                            service iptables start
-                                        </para>
-                                    </formalpara>
-                                </listitem>
-                                <listitem>
-                                    <formalpara>
-                                        <title>
-                                            vdsmd服务默认不启动导致的一些问题
-                                        </title>
-                                        <para>
-                                            默认vdsmd没有启动，需要手动启动
-                                            vdsmd。但是问题是engine-setup是选择
-                                            了启用vdsm，这些添加的localhost主机
-                                            是不成功的。删除localhost之后，重新
-                                            添加，需要提前修改
-                                            /etc/centos-release。而且添加主机
-                                            时，选择了自动配置防火墙时，会导致防
-                                            火墙规则发生变化，比如80端口无法访问
-                                            等。
-                                        </para>
-                                    </formalpara>
-                                </listitem>
-                            </orderedlist>
                         </entry>
                     </row>
                     <row>
@@ -242,23 +190,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-
-                            </para>
                         </entry>
                         <entry>
-                            <orderedlist>
-                                <listitem>
-                                    <formalpara>
-                                        <title>
-                                            host上使用bonding无法向管理端注册。
-                                        </title>
-                                        <para>
-                                            只能配置单网卡。
-                                        </para>
-                                    </formalpara>
-                                </listitem>
-                            </orderedlist>
                         </entry>
                     </row>
                     <row>
@@ -292,14 +225,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                测试通过。
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-
-                            </para>
                         </entry>
                     </row>
                     <row>
@@ -332,45 +259,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                测试通过。
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-                                添加主机，有2种方式：
-                            <orderedlist>
-                                <listitem>
-                                    <formalpara>
-                                        <title>
-                                            host主动注册，管理端验证
-                                        </title>
-                                        <para>
-                                            host上admin shell中“oVirt Engine”菜
-                                            单下配置管理端ip地址和端口之后，选择
-                                            "Save &amp; Register"，之后在管理端
-                                            进行approval，具体参见左侧的测试流程
-                                        </para>
-                                    </formalpara>
-                                </listitem>
-
-                                <listitem>
-                                    <formalpara>
-                                        <title>
-                                            管理端主动添加host
-                                        </title>
-                                        <para>
-                                            node光盘安装完成之后，root没有密码，
-                                            也无法登录。为了在管理端手动添加
-                                            host。需要在host的admin shell中
-                                            “oVirt Engine”菜单下配置密码，此密码
-                                            其实是root用户的密码，保存配置之后还
-                                            会自动配置sshd服务允许root登录。
-                                        </para>
-                                    </formalpara>
-                                </listitem>
-                            </orderedlist>
-                        </para>
                         </entry>
                     </row>
                     <row>
@@ -448,15 +338,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                创建逻辑网络成功，网络连通性暂时没有完整测试。2
-                                台host都是2块网卡，其中一台的空闲网卡没有网线。
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-
-                            </para>
                         </entry>
                     </row>
                     <row>
@@ -479,14 +362,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                OK
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-
-                            </para>
                         </entry>
                     </row>
                     <row>
@@ -509,14 +386,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                测试通过。
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-
-                            </para>
                         </entry>
                     </row>
                     <row>
@@ -549,14 +420,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                OK
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-
-                            </para>
                         </entry>
                     </row>
                     <row>
@@ -579,14 +444,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                测试通过。
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-
-                            </para>
                         </entry>
                     </row>
 
@@ -598,7 +457,6 @@
         <title>
             安装EayunOS虚拟化最小系统
         </title>
-
         <informaltable  frame='topbot'>
             <tgroup cols='5' align='left' colsep='1' rowsep='1'>
                 <colspec colname='c1' colwidth='5*'/>
@@ -629,14 +487,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                同安装基础系统
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-
-                            </para>
                         </entry>
                     </row>
                     <row>
@@ -652,14 +504,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                同安装基础系统
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-
-                            </para>
                         </entry>
                     </row>
                     <row>
@@ -675,14 +521,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                OK
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-
-                            </para>
                         </entry>
                     </row>
                     <row>
@@ -716,71 +556,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                测试通过。
-                            </para>
                         </entry>
                         <entry>
-                            <orderedlist>
-                                <listitem>
-                                    <formalpara>
-                                        <title>
-                                            本地存储路径权限错误
-                                        </title>
-                                        <para>
-                                            ”配置本地存储“中指定本地存储路径时，
-                                            由于node iso安装之后绝大部分空间单独
-                                            划分了一个逻辑卷/dev/HostVG/Data，挂
-                                            载在/data目录下。在该目录下新建一个
-                                            目录作为本地存储的路径时，会出现权限
-                                            问题
-                                        </para>
-                                    </formalpara>
-                                    <formalpara>
-                                        <title>错误信息：</title>
-                                        <para><screen>
-                                            Traceback (most recent call last):                                             
-                                            File "/usr/share/vdsm/storage/hsm.py", line 2367, in connectStorageServer
-                                                conObj.connect() 
-                                            File "/usr/share/vdsm/storage/storageServer.py", line 482, in connect
-                                                self.checkTarget()
-                                            File "/usr/share/vdsm/storage/storageServer.py", line 468, in checkTarget
-                                                fileSD.validateDirAccess(self._path)
-                                            File "/usr/share/vdsm/storage/fileSD.py", line 59, in validateDirAccess
-                                                raise se.StorageServerAccessPermissionError(dirPath)                       
-                                            StorageServerAccessPermissionError: Permission settings on the specified path do not allow access to the storage. Verify permission settings on the specified storage path.: 'path = /data/Local'
-                                        </screen></para>
-                                    </formalpara>
-
-                                    <formalpara>
-                                        <title>说明：</title> 
-                                        <para>
-                                            权限要求如下（/usr/share/vdsm/storage/fileSD.py:53-56）：                      
-                                            <screen>
-                                                supervdsm.getProxy().validateAccess(                                           
-                                                constants.QEMU_PROCESS_USER,                                           
-                                                (constants.DISKIMAGE_GROUP,                                            
-                                                constants.METADATA_GROUP), dirPath,                                   
-                                                (os.R_OK | os.X_OK))                                                   
-                                            </screen>
-
-                                            对应用户（/usr/lib64/python2.6/site-packages/vdsm/constants.py:35-41）：       
-                                            <screen>
-                                                VDSM_USER = 'vdsm'                                                             
-                                                VDSM_GROUP = 'kvm'                                                             
-                                                DISKIMAGE_USER = 'vdsm'                                                        
-                                                DISKIMAGE_GROUP = 'qemu'                                                       
-                                                METADATA_USER = 'vdsm'                                                         
-                                                METADATA_GROUP = 'kvm'                                                         
-                                                QEMU_PROCESS_USER = 'qemu'                                                     
-                                            </screen>
-
-                                            红帽的evaluation guide中提示，本地存储输入：/data/images/rhev，这个路径的权 
-                                            限是没有问题的
-                                        </para>
-                                    </formalpara>
-                                </listitem>
-                            </orderedlist>
                         </entry>
                     </row>
                     <row>
@@ -796,14 +573,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                OK
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-
-                            </para>
                         </entry>
                     </row>
                     <row>
@@ -819,14 +590,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                OK
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-
-                            </para>
                         </entry>
                     </row>
                 </tbody>

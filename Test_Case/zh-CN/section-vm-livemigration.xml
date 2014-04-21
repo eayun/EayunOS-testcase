@@ -55,15 +55,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                虚拟机迁移成功（从一Host迁移到该集群下另一Host）
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-                                配置设置为“允许手动和自动迁移”
-                                测试手动迁移
-                            </para>
                         </entry>
                     </row>
                     <row>
@@ -102,16 +95,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                虚拟机迁移成功（从一Host迁移到该集群下另一Host）
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-                                配置设置为“仅允许手动迁移”
-
-                                测试手动迁移
-                            </para>
                         </entry>
                     </row>
                     <row>
@@ -150,16 +135,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                虚拟机没有迁移提示不能迁移
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-                                配置设置为“不允许迁移”
-
-                                测试手动迁移
-                            </para>
                         </entry>
                     </row>
                     <row>
@@ -199,16 +176,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                虚拟机自动迁移
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-                                配置设置为“允许手动和自动迁移”
-
-                                测试自动迁移
-                            </para>
                         </entry>
                     </row>
                     <row>
@@ -247,17 +216,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                Host不能变为维护模式，提示该Host上有不能迁移的
-                                虚拟机
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-                                配置设置为“仅允许手动迁移”
-
-                                测试自动迁移
-                            </para>
                         </entry>
                     </row>
                     <row>
@@ -296,17 +256,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                                Host不能变为维护模式，提示该Host上有不能迁移的
-                                虚拟机
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-                                配置设置为“不允许迁移”
-
-                                测试自动迁移
-                            </para>
                         </entry>
                     </row>
                     <row>
@@ -342,14 +293,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-                                测试自动迁移    
-                            </para>
                         </entry>
                     </row>
                     <row>
@@ -384,14 +329,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-                                测试自动迁移
-                            </para>
                         </entry>
                     </row>
                     <row>
@@ -421,14 +360,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-                                测试自动迁移
-                            </para>
                         </entry>
                     </row>
                     <row>
@@ -457,14 +390,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-                                测试自动迁移
-                            </para>
                         </entry>
                     </row>
                     <row>
@@ -503,13 +430,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                            </para> 
                         </entry>
                         <entry>
-                            <para>
-                              node1和node2的selinux应该配置一致，否则无法迁移。
-                            </para>
                         </entry>
                     </row>
                 </tbody>

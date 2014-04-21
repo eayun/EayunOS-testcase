@@ -58,14 +58,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                               OK
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-                                创建Linux系统的虚拟机
-                            </para>
                         </entry>
                     </row>
 
@@ -112,14 +106,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                               OK
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-                                创建Windows系统的虚拟机
-                            </para>
                         </entry>
                     </row>
                     <row>
@@ -209,14 +197,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                               OK
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-                                创建Linux系统的模板
-                            </para>
                         </entry>
                     </row>
                     <row>
@@ -256,14 +238,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                               OK
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-                                创建Windows系统的模板
-                            </para>
                         </entry>
                     </row>
                     <row>
@@ -310,14 +286,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                               OK
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-                                Linux模板创建虚拟机
-                            </para>
                         </entry>
                     </row>
                     <row>
@@ -364,14 +334,8 @@
                             </para>
                         </entry>
                         <entry>
-                            <para>
-                               OK
-                            </para>
                         </entry>
                         <entry>
-                            <para>
-                                Windows模板创建虚拟机
-                            </para>
                         </entry>
                     </row>
                 </tbody>
