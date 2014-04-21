@@ -896,6 +896,128 @@
             </para>
           </entry>
         </row>
+        <row>
+          <entry>81.1</entry>
+          <entry>
+            <para>
+              虚拟机关机下磁盘动态扩容
+            </para>
+            <orderedlist numeration="arabic">
+              <listitem>
+                <para>
+                  在虚拟机列表下，指定某一处于<keycap>关机</keycap>状态的虚拟机
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  在该虚拟机详细面板下点击 Disks
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  选中要扩容的磁盘, 点击编辑.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  在弹出的编辑窗口中, 在扩展大小(GB)中填写需要增加的磁盘容量
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  点击确定保存退出
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  在该虚拟机的磁盘列表下, 查看该磁盘的虚拟大小.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  打开虚拟机, 并登陆, 查看磁盘的大小(linux 可以用 fdisk 查看)
+                </para>
+              </listitem>
+            </orderedlist>
+          </entry>
+          <entry>
+            <para>
+              在磁盘列表下虚拟大小变为扩容后的大小, 登陆虚拟机查看磁盘大小变为扩容后的大小.
+            </para>
+          </entry>
+          <entry>
+            <para>
+
+            </para>
+          </entry>
+          <entry>
+            <para>
+              要想完整使用该功能, 必须在虚拟机内部使用分区扩容工具扩展磁盘分区(比如
+              linux 上的 resize2fs 和 gparted, windows 上的分区魔术师等)
+            </para>
+          </entry>
+        </row>
+        <row>
+          <entry>81.2</entry>
+          <entry>
+            <para>
+              虚拟机开机下磁盘动态扩容
+            </para>
+            <orderedlist numeration="arabic">
+              <listitem>
+                <para>
+                  在虚拟机列表下，指定某一处于<keycap>开机</keycap>状态的虚拟机
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  在该虚拟机详细面板下点击 Disks
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  选中要扩容的磁盘, 点击编辑.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  在弹出的编辑窗口中, 在扩展大小(GB)中填写需要增加的磁盘容量
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  点击确定保存退出
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  在该虚拟机的磁盘列表下, 查看该磁盘的虚拟大小.
+                </para>
+              </listitem>
+              <listitem>
+                <para>
+                  登陆虚拟机, 查看磁盘的大小(linux 可以用 fdisk 查看)
+                </para>
+              </listitem>
+            </orderedlist>
+          </entry>
+          <entry>
+            <para>
+              在磁盘列表下虚拟大小变为扩容后的大小, 登陆虚拟机查看磁盘大小变为扩容后的大小.
+            </para>
+          </entry>
+          <entry>
+            <para>
+
+            </para>
+          </entry>
+          <entry>
+            <para>
+              要想完整使用该功能, 必须在虚拟机内部使用分区扩容工具扩展磁盘分区(比如
+              linux 上的 resize2fs 和 gparted, windows 上的分区魔术师等)
+            </para>
+          </entry>
+        </row>
       </tbody>
     </tgroup>
   </informaltable>
