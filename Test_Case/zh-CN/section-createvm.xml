@@ -48,7 +48,7 @@
                                     </para>
                                 </listitem>
 				<listitem>
-				   <para>安装完操作系统后，安装RHEV-toolsSetup工具</para>
+				   <para>安装完操作系统后，安装 spice-guest-tools 工具</para>
 				</listitem>
                             </orderedlist>
                         </entry>
