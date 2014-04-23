@@ -150,7 +150,7 @@
                     </entry>
                     <entry>
                         <para>
-                            模板导入到Export存储域 
+                            模板导出到Export存储域
                         </para>
                     </entry>
                     <entry>
@@ -168,7 +168,7 @@
                     <entry>32</entry>
                     <entry>
                         <para>
-                            导入摸版（已存在Export域）
+                            导入模板（已存在Export域）
                         </para>
                         <orderedlist numeration="arabic">
                             <listitem>
@@ -189,7 +189,7 @@
                             </listitem>
                             <listitem>
                                 <para>
-                                    清楚Clone All Templates
+                                    清除 Clone All Templates
                                 </para>
                             </listitem>
                             <listitem>
@@ -201,7 +201,7 @@
                     </entry>
                     <entry>
                         <para>
-                            模板导出
+                            模板成功导入到数据存储中
                         </para>
                     </entry>
                     <entry>
