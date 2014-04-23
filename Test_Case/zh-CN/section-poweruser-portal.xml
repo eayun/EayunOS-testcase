@@ -74,8 +74,14 @@
                             </para>
                         </entry>
                         <entry>
+                            <para>
+                                OK
+                            </para>
                         </entry>
                         <entry>
+                            <para>
+                                目前已经使用IDM添加域及用户
+                            </para>
                         </entry>
                     </row>
 		    <row>
@@ -108,8 +114,14 @@
                             </para>
                         </entry>
                         <entry>
+                            <para>
+                                fail
+                            </para>
                         </entry>
                         <entry>
+                            <para>
+                                看不到数据中心下的模板等信息，根本不能进行创建虚拟机等操作
+                            </para>
                         </entry>
                     </row>
 		    <row>
@@ -147,12 +159,62 @@
                             </para>
                         </entry>
                         <entry>
+                            <para>
+                                OK
+                            </para>
                         </entry>
                         <entry>
+                            虚拟机不包括虚拟机池里的虚拟机！！
                         </entry>
                     </row>
                     <row>
-                       <entry>32</entry>
+                        <entry>32</entry>
+                        <entry>
+                            <para>
+                                选择虚拟机池里的虚拟机为用户分配PowerUserRole权限
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+                                提示不能分配，只能分配虚拟机池
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+                                
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+                                这里不知道该不该分配，实际操作提示不允许分配
+                            </para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>33</entry>
+                        <entry>
+                            <para>
+                                选择虚拟机池为用户分配PowerUserRole权限
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+                                PowerUserRole用户登录系统可以看到分配的虚拟机池
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+                                OK
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+                                
+                            </para>
+                        </entry>
+                    </row>
+                    <row>
+                       <entry>34</entry>
                         <entry>
                             <para>
                                 使用PowerUserRole权限的用户登录系统，创建Linux虚拟机
@@ -164,12 +226,18 @@
                             </para>
                         </entry>
                         <entry>
+                            <para>
+                                OK
+                            </para>
                         </entry>
                         <entry>
+                            <para>
+                                前提是分配了模板，目前数据中心分配权限后不能看到模板所以只能单独再把模板分配一次才能用来创建虚拟机
+                            </para>
                         </entry>
                     </row>
                     <row>
-                       <entry>33</entry>
+                       <entry>35</entry>
                         <entry>
                             <para>
                                 使用PowerUserRole权限的用户登录系统，创建Windows虚拟机
@@ -181,12 +249,16 @@
                             </para>
                         </entry>
                         <entry>
+                            <para>
+                                OK
+                            </para>
                         </entry>
                         <entry>
+                            前提是分配了模板，目前数据中心分配权限后不能看到模板所以只能单独再把模板分配一次才能用来创建虚拟机
                         </entry>
                     </row>
                     <row>
-                       <entry>34</entry>
+                       <entry>36</entry>
                         <entry>
                             <para>
                                 使用PowerUserRole权限的用户登录系统，创建Windows模板
@@ -198,12 +270,15 @@
                             </para>
                         </entry>
                         <entry>
+                            <para>
+                                OK
+                            </para>
                         </entry>
                         <entry>
                         </entry>
                     </row>
                     <row>
-                       <entry>35</entry>
+                       <entry>37</entry>
                         <entry>
                             <para>
                                 使用PowerUserRole权限的用户登录系统，创建Linux模板
@@ -215,15 +290,18 @@
                             </para>
                         </entry>
                         <entry>
+                            <para>
+                                OK
+                            </para>
                         </entry>
                         <entry>
                         </entry>
                     </row>
                     <row>
-                       <entry>36</entry>
+                       <entry>38</entry>
                         <entry>
                             <para>
-                                使用PowerUserRole权限的用户登录系统，通过控制台连接虚拟机，使用虚拟机
+                                使用PowerUserRole权限的用户登录系统，通过控制台连接虚拟机，使用虚拟机(PowerUserRole用户自己创建的虚拟机可以连接，关闭开启等操作)
                             </para>
                         </entry>
                         <entry>
@@ -232,12 +310,62 @@
                             </para>
                         </entry>
                         <entry>
+                            <para>
+                                OK
+                            </para>
                         </entry>
                         <entry>
+                            
                         </entry>
                     </row>
                     <row>
-                       <entry>37</entry>
+                        <entry>39</entry>
+                        <entry>
+                            <para>
+                                使用PowerUserRole权限的用户登录系统，使用管理系统分配的虚拟机（开启、关闭、连接）
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+                                提示无权限操作
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+                                OK
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+                                
+                            </para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>40</entry>
+                        <entry>
+                            <para>
+                                使用PowerUserRole权限的用户登录系统，使用管理系统分配的虚拟机进行创建模板
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+                                创建模板成功，使用创建的模板创建虚拟机可以创建虚拟机成功，同时虚拟机可以正常开启、关闭、连接等操作
+                            </para>
+                        </entry>
+                        <entry>
+                            <para>
+                                OK
+                            </para>
+                        </entry>
+                        <Entry>
+                            <para>
+                                
+                            </para>
+                        </Entry>
+                    </row>
+                    <row>
+                       <entry>41</entry>
                         <entry>
                             <para>
                                 使用PowerUserRole权限的用户（user）登录系统，完成创建虚拟机操作后，返回到admin登录管理系统验证，虚拟机的权限；admin登录管理系统，在虚拟机列表下找到创建的虚拟机，点击该虚拟机详细面板下【权限】，查看权限信息
@@ -249,12 +377,15 @@
                             </para>
                         </entry>
                         <entry>
+                            <para>
+                                OK
+                            </para>
                         </entry>
                         <entry>
                         </entry>
                     </row>
                     <row>
-                       <entry>38</entry>
+                       <entry>42</entry>
                         <entry>
                             <para>
                                 使用PowerUserRole权限的用户（user）登录系统，完成创建模板操作后，返回到admin登录管理系统验证，模板的权限；admin登录管理系统，在模板列表下找到创建的模板，点击该模板详细面板下【权限】，查看权限信息
@@ -266,6 +397,9 @@
                             </para>
                         </entry>
                         <entry>
+                            <para>
+                                OK
+                            </para>
                         </entry>
                         <entry>
                         </entry>
