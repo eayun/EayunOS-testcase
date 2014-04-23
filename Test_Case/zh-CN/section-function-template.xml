@@ -229,7 +229,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -252,12 +252,11 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
                         <para>
-                            批量导出时只能成功一个，其它失败
                         </para>
                     </entry>
                 </row>
