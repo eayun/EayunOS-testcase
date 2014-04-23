@@ -33,7 +33,7 @@
                                     若在配置数据中心完成的最后一步显示
                                     New Data Center-Guide me可以直接点击
                                     Configure Cluster，若不是则可以点击菜单栏内
-                                    的Guide me显示New Data Center me点击
+                                    的Guide me显示New Data Center - Guide me点击
                                     Configure Cluster
                                 </para>
                             </listitem>
@@ -50,7 +50,7 @@
                             </listitem>
                             <listitem>
                                 <para>
-                                    设置Optinization及Resilience Policy、
+                                    设置Optimization及Resilience Policy、
                                     Cluster Policy根据实际需要
                                 </para>
                             </listitem>
@@ -137,7 +137,7 @@
                                 <para>
                                     在左侧树形面板下点击Expand All ，点击
                                     System，在右侧详细面板点击Clusters ,选中被
-                                    删除数据中心遗留下的Cluster，点击edit，编辑
+                                    删除数据中心遗留下的Cluster，点击 edit
                                     重新设置，选择数据中心等
                                 </para>
                             </listitem>
@@ -180,7 +180,7 @@
                             </listitem>
                             <listitem>
                                 <para>
-                                    点击Remove，编辑选项
+                                    点击Remove
                                 </para>
                             </listitem>
                             <listitem>
