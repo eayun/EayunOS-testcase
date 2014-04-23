@@ -57,7 +57,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -146,7 +146,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -190,7 +190,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -231,7 +231,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -276,7 +276,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -316,7 +316,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -358,7 +358,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -409,7 +409,8 @@
                     </entry>
                     <entry>
                         <para>
-
+                            对于 Data(Master) 类型的存储域，在数据中心中没有另
+                            外一个数据存储域的情况下无法分离所以失败。其它 OK
                         </para>
                     </entry>
                     <entry>

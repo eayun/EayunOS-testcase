@@ -63,7 +63,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -114,7 +114,8 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK (将预启动的虚拟机关机之后，另外的虚拟机会预启动，
+                            但是取消预启动之后，启动的虚拟机不会自动关闭)
                         </para>
                     </entry>
                     <entry>
@@ -160,7 +161,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -207,7 +208,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK (但是池中的虚拟机列表没有显示名字，很不友好)
                         </para>
                     </entry>
                     <entry>
@@ -247,7 +248,8 @@
                     </entry>
                     <entry>
                         <para>
-
+                            Failed (不 Detach 所有虚拟机是不能删除虚拟机池的，
+                            但是 Detach 掉所有虚拟机之后，池会被自动删除)
                         </para>
                     </entry>
                     <entry>

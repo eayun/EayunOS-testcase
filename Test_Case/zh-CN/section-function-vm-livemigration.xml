@@ -57,6 +57,7 @@
                         </para>
                     </entry>
                     <entry>
+                        OK
                     </entry>
                     <entry>
                     </entry>
@@ -97,6 +98,7 @@
                         </para>
                     </entry>
                     <entry>
+                        OK
                     </entry>
                     <entry>
                     </entry>
@@ -137,6 +139,7 @@
                         </para>
                     </entry>
                     <entry>
+                        OK
                     </entry>
                     <entry>
                     </entry>
@@ -176,6 +179,7 @@
                             虚拟机自动迁移
                         </para>
                     </entry>
+                        OK
                     <entry>
                     </entry>
                     <entry>
@@ -211,6 +215,7 @@
                         </para>
                     </entry>
                     <entry>
+                        OK
                     </entry>
                     <entry>
                     </entry>
@@ -244,6 +249,7 @@
                             Host不能变为维护模式，提示该Host上有不能迁移的虚拟机   
                         </para>
                     </entry>
+                        OK
                     <entry>
                     </entry>
                     <entry>

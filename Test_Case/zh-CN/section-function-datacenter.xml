@@ -58,7 +58,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -101,7 +101,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -144,7 +144,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -187,7 +187,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -230,7 +230,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -273,7 +273,9 @@
                     </entry>
                     <entry>
                         <para>
-
+                          OK (数据中心中有一台主机，强制停止该主机上的 vdsm，
+                          然后在主机页面上确认该主机已重启，才能够得到数据中
+                          心无响应但是有 host 的情况)
                         </para>
                     </entry>
                     <entry>
@@ -316,7 +318,9 @@
                     </entry>
                     <entry>
                         <para>
-
+                          Failed (通过将 host maintanence 之后切换到别的数据
+                          中心中造成没有 Host 但有存储的环境，但数据中心能够
+                          被强制删除。正常点击删除才会提示没有主机）
                         </para>
                     </entry>
                     <entry>
