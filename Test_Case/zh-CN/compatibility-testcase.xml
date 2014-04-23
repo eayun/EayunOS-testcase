@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+    "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+    <!ENTITY % BOOK_ENTITIES SYSTEM "Test_Case.ent">
+    %BOOK_ENTITIES;
+]>
+
+<section>
+    <title>兼容性测试</title>
+    <informaltable  frame='all'>	
+        <tgroup cols='8' align='left' colsep='1' rowsep='1'>
+            <colspec colname='c1'/>
+            <colspec colname='c2'/>
+            <colspec colname='c3'/>
+            <colspec colname='c4'/>
+            <colspec colname='c5'/>
+            <colspec colname='c6'/>
+            <colspec colname='c7'/>
+            <colspec colname='c8'/>
+            <tbody>
+                <row>
+                    <entry>项目编号</entry>
+                    <entry></entry>
+                    <entry>项目名称</entry>
+                    <entry></entry>
+                    <entry>测试日期</entry>
+                    <entry></entry>		
+                    <entry>测试人员</entry>		
+                    <entry></entry>
+                </row>
+                <row>
+                    <entry>测试用例编号</entry>
+                    <entry></entry>
+                    <entry>测试用例名称</entry>
+                    <entry>&OVIRT;场景测试</entry>
+                    <entry>作者</entry>
+                    <entry>阎颖</entry>
+                </row>
+                <row>
+                    <entry>测试用例描述(方法和目的)</entry>
+                    <entry namest="c2" nameend="c8">
+                        <para></para>
+                        <para></para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>测试环境设置</entry>
+                    <entry namest="c2" nameend="c8">
+                        <para></para>
+                    </entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </informaltable>
+
+    <bridgehead>测试步骤</bridgehead>
+
+    <informaltable  frame='topbot'>
+        <tgroup cols='5' align='left' colsep='1' rowsep='1'>
+            <colspec colname='c1' colwidth='5*'/>
+            <colspec colname='c2' colwidth='20*'/>
+            <colspec colname='c3' colwidth='10*'/>
+            <colspec colname='c4' colwidth='5*'/>
+            <colspec colname='c5' colwidth='10*'/>
+            <thead>
+                <row>
+                    <entry>用例编号</entry>
+                    <entry>操作</entry>
+                    <entry>预期结果</entry>
+                    <entry>实际结果</entry>
+                    <entry>备注</entry>
+                </row>
+            </thead>
+            <tbody>
+                <row>
+                    <entry>1</entry>
+                    <entry>
+                        <para>
+                        </para>
+                        <orderedlist numeration="arabic">
+                            <listitem>
+                                <para>
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </orderedlist>
+                    </entry>
+                    <entry>
+                        <para></para>
+                    </entry>
+                    <entry>
+                    </entry>
+                    <entry>
+                    </entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </informaltable>
+</section>

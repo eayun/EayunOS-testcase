@@ -19,6 +19,8 @@
         xmlns:xi="http://www.w3.org/2001/XInclude" />
     <xi:include href="userportal-testcase.xml"
         xmlns:xi="http://www.w3.org/2001/XInclude" />
+    <xi:include href="compatibility-testcase.xml"
+        xmlns:xi="http://www.w3.org/2001/XInclude" />
     <xi:include href="upstream-testday-testcase.xml"
         xmlns:xi="http://www.w3.org/2001/XInclude" />
     <xi:include href="Revision_History.xml"
