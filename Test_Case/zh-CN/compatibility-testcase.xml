@@ -76,27 +76,98 @@
                     <entry>1</entry>
                     <entry>
                         <para>
+                            Windows操作系统兼容性
                         </para>
-                        <orderedlist numeration="arabic">
-                            <listitem>
-                                <para>
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para>
-                                </para>
-                            </listitem>
-                            <listitem>
-                                <para></para>
-                            </listitem>
-                        </orderedlist>
+                        <para>
+                            测试EayunOS虚拟化系统支持Windows操作系统（Windows7、Windows8、Windows2003、WindowsXP，根据系统支持的实际情况补充用例可以将每个操作系统写成单独的用例）
+                        </para>
                     </entry>
                     <entry>
-                        <para></para>
+                        <para>在该操作系统下可以正常使用EayunOS虚拟化系统</para>
                     </entry>
                     <entry>
+                        
                     </entry>
                     <entry>
+                    
+                    </entry>
+                </row>
+                <row>
+                    <entry>2</entry>
+                    <entry>
+                        <para>
+                            Linux操作系统兼容性
+                        </para>
+                        <para>
+                            测试EayunOS虚拟化系统支持Linux操作系统（Ubuntu、CentOS、Fedora，根据系统支持的实际情况补充用例可以将每个操作系统写成单独的用例）
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            在该操作系统下可以正常使用EayunOS虚拟化系统
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>3</entry>
+                    <entry>
+                        <para>
+                            浏览器兼容测试
+                        </para>
+                        <para>
+                            测试使用IE浏览器
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            windows操作系统支持IE浏览器，Linux操作系统不支持
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            
+                        </para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>4</entry>
+                    <entry>
+                        <para>
+                            浏览器兼容测试
+                        </para>
+                        <para>
+                            测试使用Firefox浏览器
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            Linux操作系统支持Firefox浏览器，Windows在Firefox上不能使用SPICE插件
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            
+                        </para>
                     </entry>
                 </row>
             </tbody>
