@@ -45,10 +45,13 @@
                         </entry>
                         <entry>
                             <para>
-                               OK
+                               
                             </para>
                         </entry>
                         <entry>
+                            <para>
+                                OK
+                            </para>
                         </entry>
                         <entry>
                         </entry>
@@ -189,8 +192,14 @@
                             </para>
                         </entry>
                         <entry>
+                            <para>
+                                fail虚拟机自动在另一台主机上运行，但主机没有重新启动起来
+                            </para>
                         </entry>
                         <entry>
+                            <para>
+                                第一种情况：高可用时配置另一块网卡，断开网络后SPM主机没有自动重启起来，这个是manager问题。第二种情况：在第一种情况的基础上手动重启SPM主机，重启失败，网络出现问题！！原因：manager网络配置的信息在node上面没有保存记录下来，因此网络配置后重启node失败！
+                            </para>
                         </entry>
                     </row>
                     <row>
@@ -219,8 +228,14 @@
                             </para>
                         </entry>
                         <entry>
+                            <para>
+                                OK
+                            </para>
                         </entry>
                         <entry>
+                            <para>
+                                
+                            </para>
                         </entry>
                     </row>
                     <row>
@@ -252,6 +267,9 @@
                             </para>
                         </entry>
                         <entry>
+                            <para>
+                                OK
+                            </para>
                         </entry>
                         <entry>
                         </entry>
@@ -286,6 +304,9 @@
                             </para>
                         </entry>
                         <entry>
+                            <para>
+                                OK
+                            </para>
                         </entry>
                         <entry>
                         </entry>
