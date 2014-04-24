@@ -55,8 +55,10 @@
                             </para>
                         </entry>
                         <entry>
+                                虚拟机迁移成功（从一Host迁移到该集群下另一Host）
                         </entry>
                         <entry>
+                                配置设置为“允许 迁移成 手动和自动迁移”测试手动迁移
                         </entry>
                     </row>
                     <row>
@@ -95,8 +97,10 @@
                             </para>
                         </entry>
                         <entry>
+                                虚拟机迁移成功（从一Host迁移到该集群下另一Host）
                         </entry>
                         <entry>
+                                配置设置为“仅允 许手动迁移” 测 试手动迁移
                         </entry>
                     </row>
                     <row>
@@ -135,8 +139,10 @@
                             </para>
                         </entry>
                         <entry>
+                                虚拟机没有迁移提示不能迁移
                         </entry>
                         <entry>
+                                配置设置为“不允 许迁移” 测试手 动迁移
                         </entry>
                     </row>
                     <row>
@@ -177,9 +183,11 @@
                         </entry>
                         <entry>
                             <para>
+                                虚拟机自动迁移
                             </para>
                         </entry>
                         <entry>
+                                配置设置为“允许手动和自动迁移”测试自动迁移
                         </entry>
                     </row>
                     <row>
@@ -213,8 +221,11 @@
                             </para>
                         </entry>
                         <entry>
+                                Host不能变为维护模式，提示该Host上有不能迁移的
+                                虚拟机
                         </entry>
                         <entry>
+                                配置设置为“仅允 许手动迁移” 测 试自动迁移
                         </entry>
                     </row>
                     <row>
@@ -253,8 +264,11 @@
                             </para>
                         </entry>
                         <entry>
+                                Host不能变为维护模式，提示该Host上有不能迁移的
+                                虚拟机
                         </entry>
                         <entry>
+                                配置设置为“不允 许迁移” 测试自 动迁移
                         </entry>
                     </row>
                     <row>
@@ -292,6 +306,7 @@
                         </entry>
                         <entry>
                             <para>
+                              时间到达2分钟后，虚拟机开始自动迁移
                             </para>
                         </entry>
                         <entry>
