@@ -60,9 +60,11 @@
                             <listitem>
                                 <para>
                                     ssh登录到manager节点，开启服务
-                                    # chkconfig --add engine-notifierd
-                                    # chkconfig engine-notifierd o n
-                                    # service engi ne-notifierd restart
+                                    <screen>
+# chkconfig --add ovirt-engine-notifier
+# chkconfig ovirt-engine-notifier on
+# service ovirt-engine-notifier restart
+                                    </screen>
                                 </para>
                             </listitem>
                         </orderedlist>

@@ -45,7 +45,8 @@
                     </entry>
                     <entry>
                         <para>
-
+                          设置成功。选择虚拟机，在详情面板下常规标签内“高度可
+                          用的”显示为“是”
                         </para>
                     </entry>
                     <entry>
@@ -93,7 +94,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            高可用的虚拟机在另外的 Host 启动
                         </para>
                     </entry>
                     <entry>
@@ -142,7 +143,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            高可用虚拟机在另外的 Host 启动，非高可用的则不会。
                         </para>
                     </entry>
                     <entry>
@@ -268,7 +269,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            高可用虚拟机在另外的 Host 启动，非高可用的则不会。
                         </para>
                     </entry>
                     <entry>
@@ -308,7 +309,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            高可用虚拟机在另外的 Host 启动，非高可用的则不会。
                         </para>
                     </entry>
                     <entry>
