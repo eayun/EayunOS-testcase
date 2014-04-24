@@ -58,7 +58,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -108,10 +108,13 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
+                        <para>
+                            创建Windows系统的虚拟机
+                        </para>
                     </entry>
                 </row>
                 <row>
@@ -137,7 +140,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -169,7 +172,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -200,7 +203,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -242,7 +245,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -278,7 +281,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -314,7 +317,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            fail
                         </para>
                     </entry>
                     <entry>
@@ -349,12 +352,12 @@
                     </entry>
                     <entry>
                         <para>
-
+                            fail
                         </para>
                     </entry>
                     <entry>
                         <para>
-
+                            Tasks列表下显示创建快照失败，但实际上快照创建完成并可以正常工作
                         </para>
                     </entry>
                 </row>
@@ -401,7 +404,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -414,18 +417,18 @@
                     <entry>43</entry>
                     <entry>
                         <para>
-                            导出虚拟机（已创建Export存储域）
+                            导入虚拟机（已创建Export存储域）
                         </para>
                         <orderedlist numeration="arabic">
                             <listitem>
                                 <para>
-                                    在虚拟机列表下，选中待导出的虚拟机，关闭这
+                                    在虚拟机列表下，选中待导入的虚拟机，关闭这
                                     些虚拟机
                                 </para>
                             </listitem>
                             <listitem>
                                 <para>
-                                    点击Export，打开Export Virtual Machine(s)窗口，选择
+                                    点击Export，打开Export Template窗口，选择
                                     ForceOverride
                                 </para>
                             </listitem>
@@ -438,12 +441,12 @@
                     </entry>
                     <entry>
                         <para>
-                            虚拟机被导出到Export存储域
+                            虚拟机被导入到Export存储域
                         </para>
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -456,7 +459,7 @@
                     <entry>44</entry>
                     <entry>
                         <para>
-                            导入虚拟机（已创建Export存储域）
+                            导出虚拟机（已创建Export存储域）
                         </para>
                         <orderedlist numeration="arabic">
                             <listitem>
@@ -491,12 +494,12 @@
                     </entry>
                     <entry>
                         <para>
-                            虚拟机被导入到数据存储域中
+                            虚拟机被导出
                         </para>
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -519,7 +522,7 @@
                     </entry>
                     <entry>
                         <para>
-
+                            fail
                         </para>
                     </entry>
                     <entry>
