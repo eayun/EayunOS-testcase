@@ -58,7 +58,7 @@
                     </entry>
                     <entry>
                         <para>
-                            
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -108,12 +108,12 @@
                     </entry>
                     <entry>
                         <para>
-                            
+                            OK
                         </para>
                     </entry>
                     <entry>
                         <para>
-
+                            创建Windows系统的虚拟机
                         </para>
                     </entry>
                 </row>
@@ -140,7 +140,7 @@
                     </entry>
                     <entry>
                         <para>
-                            
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -172,7 +172,7 @@
                     </entry>
                     <entry>
                         <para>
-                            
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -203,7 +203,7 @@
                     </entry>
                     <entry>
                         <para>
-                            
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -245,7 +245,7 @@
                     </entry>
                     <entry>
                         <para>
-                            
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -281,7 +281,7 @@
                     </entry>
                     <entry>
                         <para>
-                            
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -317,12 +317,12 @@
                     </entry>
                     <entry>
                         <para>
-                            
+                            fail
                         </para>
                     </entry>
                     <entry>
                         <para>
-                            
+                            Tasks列表下显示创建快照失败，但实际上快照创建完成并可以正常工作
                         </para>
                     </entry>
                 </row>
@@ -352,12 +352,12 @@
                     </entry>
                     <entry>
                         <para>
-                            
+                            fail
                         </para>
                     </entry>
                     <entry>
                         <para>
-                            
+                            Tasks列表下显示创建快照失败，但实际上快照创建完成并可以正常工作
                         </para>
                     </entry>
                 </row>
@@ -404,7 +404,7 @@
                     </entry>
                     <entry>
                         <para>
-                            
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -446,7 +446,7 @@
                     </entry>
                     <entry>
                         <para>
-                            
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -499,7 +499,7 @@
                     </entry>
                     <entry>
                         <para>
-                            
+                            OK
                         </para>
                     </entry>
                     <entry>
@@ -522,12 +522,12 @@
                     </entry>
                     <entry>
                         <para>
-                            
+                            fail
                         </para>
                     </entry>
                     <entry>
                         <para>
-                            
+                            批量导出虚拟机时，只能成功一个，其它的虚拟机都失败
                         </para>
                     </entry>
                 </row>
