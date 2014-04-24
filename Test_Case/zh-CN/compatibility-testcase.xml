@@ -170,6 +170,29 @@
                         </para>
                     </entry>
                 </row>
+                <row>
+                    <entry>5</entry>
+                    <entry>
+                        <para>
+                            不同分辨率下(测试所有分辨率)，使用EayunOS虚拟化管理系统
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            显示正确
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            
+                        </para>
+                    </entry>
+                    <entry>
+                        <para>
+                            
+                        </para>
+                    </entry>
+                </row>
             </tbody>
         </tgroup>
     </informaltable>
