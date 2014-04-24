@@ -200,7 +200,8 @@
                     </entry>
                     <entry>
                         <para>
-
+                          Failed. SPM 机器没有立刻重启，SPM 角色会换到集群中
+                          另外的主机上，然后其它同用例 59。
                         </para>
                     </entry>
                     <entry>
@@ -236,7 +237,9 @@
                     </entry>
                     <entry>
                         <para>
-
+                          OK。但和集群的 Resilience 策略相关。并不是所有虚拟
+                          机都会迁移，而是集群的 Resilience 策略选择决定的。
+                          可能不迁移，只迁移高可用，或者全部都迁移。
                         </para>
                     </entry>
                     <entry>
