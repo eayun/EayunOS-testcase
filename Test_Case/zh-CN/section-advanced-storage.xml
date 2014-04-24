@@ -94,6 +94,7 @@
             </para>
           </entry>
           <entry>
+              一个名为 Disk1 的浮动磁盘已经创建好了, 在虚拟机的磁盘列表上能正常显示.
           </entry>
           <entry>
           </entry>
@@ -158,6 +159,7 @@
             </para>
           </entry>
           <entry>
+              将 Disk1 分配给了虚拟机, 能在虚拟机的磁盘列表上看到 Disk1.
           </entry>
           <entry>
           </entry>
@@ -223,6 +225,7 @@
           </entry>
 
           <entry>
+              在虚拟机的磁盘列表上, Disk1 多了一个共享的图标.
           </entry>
 
           <entry>
@@ -284,6 +287,7 @@
           </entry>
 
           <entry>
+            将共享磁盘 Disk1 分配给了虚拟机, 在该虚拟机的磁盘列表上能看到.
           </entry>
 
           <entry>
@@ -344,6 +348,8 @@
             </para>
           </entry>
           <entry>
+              在虚拟机的快照列表下, 需要刷新才能看到新创建的快照 snap1.同时快照可以正常使用.
+              (#BUG)创建完成后没有在列表下显示, 需要按 F5 刷新才能看到.
           </entry>
           <entry>
           </entry>
@@ -404,6 +410,7 @@
           </entry>
 
           <entry>
+              新创建的虚拟机显示在虚拟机列表中.
           </entry>
 
           <entry>
@@ -500,6 +507,7 @@
           </entry>
 
           <entry>
+              在虚拟机的磁盘列表上看到分配给该虚拟机的 LUN.
           </entry>
 
           <entry>
@@ -525,6 +533,7 @@
           </entry>
 
           <entry>
+            没有环境, 暂时没有测试.
           </entry>
 
           <entry>
