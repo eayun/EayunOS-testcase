@@ -519,12 +519,11 @@
                     </entry>
                     <entry>
                         <para>
-
+                            OK
                         </para>
                     </entry>
                     <entry>
                         <para>
-                            批量导出虚拟机时，只能成功一个，其它的虚拟机都失败
                         </para>
                     </entry>
                 </row>
