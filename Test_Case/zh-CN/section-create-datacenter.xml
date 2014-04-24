@@ -79,7 +79,7 @@
                         </entry>
                         <entry>
                             <para>
-
+                                数据中心列表下显示创建的数据中心
                             </para>
                         </entry>
                         <entry>
@@ -138,7 +138,7 @@
                         </entry>
                         <entry>
                             <para>
-
+                                创建的集群会显示在数据中心Cluster列表下
                             </para>
                         </entry>
                         <entry>
@@ -185,7 +185,7 @@
                         </entry>
                         <entry>
                             <para>
-
+                                创建Host成功状态为Up可用
                             </para>
                         </entry>
                         <entry>
@@ -310,7 +310,7 @@
                         </entry>
                         <entry>
                             <para>
-
+                                存储列表下显示创建的存储域状态Active
                             </para>
                         </entry>
                         <entry>
@@ -355,7 +355,7 @@
                         </entry>
                         <entry>
                             <para>
-
+                                存储列表下显示创建的存储域状态Active
                             </para>
                         </entry>
                         <entry>
@@ -400,7 +400,7 @@
                         </entry>
                         <entry>
                             <para>
-
+                                存储列表下显示ISO Domain状态Active
                             </para>
                         </entry>
                         <entry>
