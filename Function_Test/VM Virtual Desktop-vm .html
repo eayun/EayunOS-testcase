@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>欢迎使用 Cmd - 在线 Markdown 编辑阅读器</title>
+</head>
+<body>
+<div class="md-section-divider"></div>
+
+<table class="table table-striped-white table-bordered" data-anchor-id="dihu">
+<thead>
+<tr>
+ <th>用例编号</th>
+ <th style="text-align:center;">操作</th>
+ <th style="text-align:center;">预期结果</th>
+ <th>测试结果</th>
+ <th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+ <td>1</td>
+ <td style="text-align:center;">1.登录到Engine管理端，在左侧树形面板中点击【展开所有】按键，在默认数据中心的默认集群下点击【虚拟机】，在右侧的虚拟机详细列表中，点击菜单中的【新建虚拟机】按键   ，在弹出的【新建虚拟机】窗口中，选择操作系统为Windows 7 x64，优化选择为【桌面】输入虚拟机名称（必填），点击【控制台】选择协议【VNC】，其他配置保持默认配置，你也可以根据需要更改相关的配置   ，点击【确定】后，弹出【新建虚拟机-引导操作】窗口，点击【配置虚拟机磁盘】为该虚拟机配置磁盘，在打开的【添加虚拟机磁盘】窗口中，输入添加磁盘的大小（测试用的是4G），其他配置保持默认配置，点击【确定】，回到【新建虚拟机-引导操作】窗口，点击【以后再配置】结束新建虚拟机磁盘操作，关闭窗口，虚拟机创建成功，显示在虚拟机列表中，虚拟机状态变化为image Locked -&gt; Down，虚拟机磁盘的状态变化为Locked -&gt; Up ，选中刚才新建的Windows。虚拟机，点击菜单中的【只运行一次】  ，在弹出的【运行虚拟机】窗口中，勾选附加CD，选择Windows7的ISO镜像，在引导序列中，选择CD-ROM，点击【上移】，点击【确定】运行虚拟机，当询问【您想将 Windows 安装在何处？】时，点击虚拟机菜单中的【更换CD】，选择ovirt-guest-tools.iso，点击【确定】   ，点击【加载驱动程序】，在【选择要安装的驱动程序】窗口中，点击【浏览】，选择driver -&gt; win7 -&gt; x86（32位操作系统选择x86，64位操作系统选择amd64），点击【确定】，选择【Red Hat VirtIO SCSI controller】，点击【下一步】，安装驱动程序，安装驱动完成后，回到【您想将 Windows 安装在何处？】的窗口，点击虚拟机菜单中的【更换CD】，换回Windows7的安装镜像   ，点击【下一步】后，继续安装Windows7操作系统    ，等待，直到虚拟机操作系统安装完成，新用户输入用户名，进入系统</td>
+ <td style="text-align:center;">Windows虚拟机创建安装成功</td>
+ <td>Windows虚拟机创建安装成功</td>
+ <td></td>
+</tr>
+<tr>
+ <td>2</td>
+ <td style="text-align:center;">1.在左侧树形面板中点击【展开所有】按键，在默认数据中心下的默认集群下点击【虚拟机】，在右侧的虚拟机详细列表中，点击菜单中的【新建虚拟机】按键  ，在弹出的【新建虚拟机】窗口中，选择基于模板为Windows7_Template（在上述过程中所创建的模板），输入虚拟机的名称（必填）、描述和注释（选填），其他配置保持默认配置，你也可以根据需要更改相关的配置   ，点击【确定】后，虚拟机创建成功，虚拟机的状态变化为image Locked -&gt; Down，虚拟机磁盘的状态变化为Locked -&gt; Up    ，选择该虚拟机，点击菜单中的运行图标或右键选择【运行】，运行虚拟机，虚拟机的状态变化为Powering Up -&gt; Up   点击菜单中的控制台图标或右键选择【控制台】，能够打开控制台连接到虚拟机，虚拟机能够正常使用</td>
+ <td style="text-align:center;">利用Windows模板创建虚拟机成功</td>
+ <td>利用Windows模板创建虚拟机成功</td>
+ <td></td>
+</tr>
+<tr>
+ <td>3</td>
+ <td style="text-align:center;">1.管理员从管理门户登录到Engine管理端，点击【虚拟机】，在该虚拟机（本实验选择上述创建的Windows 7虚拟机）的【权限】子标签下，点击菜单中的【添加】按键   ，在弹出的【添加权限给用户】窗口中，在【搜索】处输入要赋予权限的用户名，点击【执行】，列表下显示该用户，点击勾选该用户   ，在窗口下方【要分配的角色】下拉列表中选择【UserRole】，点击【确定】  ，成功分配UserRole权限给虚拟机，在该虚拟机的【权限】子标签中显示拥有UserRole权限的用户</td>
+ <td style="text-align:center;">给虚拟机分配UserRole权限成功</td>
+ <td>给虚拟机分配UserRole权限成功</td>
+ <td></td>
+</tr>
+<tr>
+ <td>4</td>
+ <td style="text-align:center;">打开浏览器，输入<a target="_blank" href="http://[FQDN]">http://[FQDN]</a> （如：<a target="_blank" href="http://192.172.16.113.test.com">http://192.172.16.113.test.com</a>）   ，在门户标题中选择用户门户，输入用户名、密码，选择用户所在的域，点击【登录】    ，成功登录到用户门户，看到分配给该用户的虚拟机列表，选择要连接的虚拟机（本实验选择上述实验所创建的Windows 7虚拟机）   。在【基本视图】下双击虚拟机；或在【基本视图】下点击右侧的控制台【连接】按键；或在【扩展视图】下点击console图标，打开控制台，连接到虚拟机</td>
+ <td style="text-align:center;">连接虚拟机成功</td>
+ <td>连接虚拟机成功</td>
+ <td></td>
+</tr>
+</tbody></table>
+
+</body>
+</html>
