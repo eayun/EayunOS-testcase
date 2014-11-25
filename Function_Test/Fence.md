@@ -24,7 +24,9 @@
   * 主机配置了电源管理
   * 在Engine上，执行以下命令，添加other_dc选项，使其可以通过另一个数据中心执行Fence
 
-```curl -X PUT -H "Accept: application/xml" -H "Content-type: application/xml" -u [Username:Password] --insecure -d '<host><power_management type="ipmilan"><pm_proxies><pm_proxy><type>dc</type></pm_proxy><pm_proxy><type>cluster</type></pm_proxy><pm_proxy><type>other_dc</type></pm_proxy></pm_proxies><agents><agent type="ipmilan"><address>192.168.3.160</address><username>ADMIN</username><options/><order>1</order></agent></agents></power_management></host>' https://192.168.3.234:443/api/hosts/[host_id]```
+```xml
+curl -X PUT -H "Accept: application/xml" -H "Content-type: application/xml" -u [Username:Password] --insecure -d '<host><power_management type="ipmilan"><pm_proxies><pm_proxy><type>dc</type></pm_proxy><pm_proxy><type>cluster</type></pm_proxy><pm_proxy><type>other_dc</type></pm_proxy></pm_proxies><agents><agent type="ipmilan"><address>192.168.3.160</address><username>ADMIN</username><options/><order>1</order></agent></agents></power_management></host>' https://192.168.3.234:443/api/hosts/[host_id]
+```
 
 |用例编号|测试目的|操作|预期结果|实际结果|备注|
 |--------|--------|----|--------|--------|----|
