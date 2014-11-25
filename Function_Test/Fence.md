@@ -27,6 +27,8 @@
 ```xml
 curl -X PUT -H "Accept: application/xml" -H "Content-type: application/xml" -u [Username:Password] --insecure -d '<host><power_management type="ipmilan"><pm_proxies><pm_proxy><type>dc</type></pm_proxy><pm_proxy><type>cluster</type></pm_proxy><pm_proxy><type>other_dc</type></pm_proxy></pm_proxies><agents><agent type="ipmilan"><address>192.168.3.160</address><username>ADMIN</username><options/><order>1</order></agent></agents></power_management></host>' https://192.168.3.234:443/api/hosts/[host_id]
 ```
+  * 配置完成后，点击选择主机，点击菜单中的【编辑 -> 电源管理】，可以看到电源管理中的【源】选项中，多了一个选项为【other_dc】
+
 
 |用例编号|测试目的|操作|预期结果|实际结果|备注|
 |--------|--------|----|--------|--------|----|
