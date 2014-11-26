@@ -8,8 +8,8 @@
 |28|创建Host|<ol><li>若在配置集群完成的最后一步显示 New Data Center-Guide me可以直接点击Configure Host，若不是则可以点击菜单栏内的Guide me,在对话框内点击Configure Host</li><li>在New Host对话框，进行配置，输入名称、 描述、Ip地址密码，SSH Fingerprint等，还可设置电源管理</li><li>点击OK，在Host列表下可以看到状态 installing-\>Reboot-\>Awaiting-\>Up</li></ol>|创建Host成功状态为Up可用|||
 |29|配置网络（Cluster）|||||
 |30|配置网络（Host）|||||
-|31|配置存储（NFS） |<ul><li>前提：</li></ul><ol><li>已经存在一个NFS存储</li></ol><ol><li>在左侧树形面板下点击Expand All，在System下选择数据中心点击Storage，在详细面板菜单下点击New Domain</li><li>在New Domain对话框内输入名称、选择存储域类型、Export Path等信息</li><li>点击OK,创建的存储域显示在存储列表下状态由Locked-\>Active</li></ol>|存储列表下显示创建的存储域状态Active|||
-|32|配置存储（iSCSI）|<ul><li>前提：</li></ul><ol><li>已经存在一个iSCSI存储</li></ol><ol><li>在左侧树形面板下点击Expand All，在System下选择数据中心点击Storage，在详细面板菜单下点击New Domain</li><li>在New Domain对话框内输入名称、选择存储域类型、Export Path等信息</li><li>点击OK，创建的存储域显示在存储列表下状态由Locked-\>Active<br/><br/>|存储列表下显示创建的存储域状态Active|||
+|31|配置存储（NFS） |<ul><li>前提：</li></ul><ol><li>已经存在一个NFS存储</li></ol><ul><li>操作：</li></ul><ol><li>在左侧树形面板下点击Expand All，在System下选择数据中心点击Storage，在详细面板菜单下点击New Domain</li><li>在New Domain对话框内输入名称、选择存储域类型、Export Path等信息</li><li>点击OK,创建的存储域显示在存储列表下状态由Locked-\>Active</li></ol>|存储列表下显示创建的存储域状态Active|||
+|32|配置存储（iSCSI）|<ul><li>前提：</li></ul><ol><li>已经存在一个iSCSI存储</li></ol><ul><li>操作：</li></ul><ol><li>在左侧树形面板下点击Expand All，在System下选择数据中心点击Storage，在详细面板菜单下点击New Domain</li><li>在New Domain对话框内输入名称、选择存储域类型、Export Path等信息</li><li>点击OK，创建的存储域显示在存储列表下状态由Locked-\>Active<br/><br/>|存储列表下显示创建的存储域状态Active|||
 |33|配置ISO Domain（创建一个存在的 ISO Domain）|<ol><li>在左侧树形面板下点击Expand All，在System下选择数据中心，在右侧的数据中心列表下选择该数据中心，显示详细面板</li><li>在详细面板下选择Storage，点击菜单栏内的 Attach ISO，选择ISO Domain，点击OK</li><li>ISO Domain显示在存储列表下状态由 Locked-\>Active</li></ol>|存储列表下显示ISO Domain状态Active|||
 |34|配置ISO Domain（创建一个新的ISO Domain）||ISO Domain创建成功|||
 
