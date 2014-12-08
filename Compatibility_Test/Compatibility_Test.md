@@ -8,11 +8,11 @@
 
 **测试步骤**
 
-|用例编号|操作|预期结果|实际结果|备注|
-|--------|----|--------|--------|----|
-|195|Windows操作系统兼容性<br/><br/>测试EayunOS虚拟化系统支持Windows操作系统（Windows7、Windows8、Windows2003、WindowsXP，根据系统支持的实际情况补充用例可以将每个操作系统写成单独的用例）|在该操作系统下可以正常使用EayunOS虚拟化系统|||
-|196|Linux操作系统兼容性<br/><br/>测试EayunOS虚拟化系统支持Linux操作系统（Ubuntu、CentOS、Fedora，根据系统支持的实际情况补充用例可以将每个操作系统写成单独的用例）|在该操作系统下可以正常使用EayunOS虚拟化系统|||
-|197|浏览器兼容测试<br/><br/>测试使用IE浏览器|windows操作系统支持IE浏览器，Linux操作系统不支持|||
-|198|浏览器兼容测试<br/><br/>测试使用Firefox浏览器|Linux操作系统支持Firefox浏览器，Windows在Firefox上不能使用SPICE插件|||
-|199|不同分辨率下(测试所有分辨率)，使用EayunOS虚拟化管理系统|显示正确|||
+|用例编号|测试目的|操作|预期结果|实际结果|备注|
+|--------|--------|----|--------|--------|----|
+|195     |Windows操作系统兼容性|测试EayunOS虚拟化系统支持Windows操作系统（Windows7、Windows8、Windows2003、WindowsXP，根据系统支持的实际情况补充用例可以将每个操作系统写成单独的用例）|在该操作系统下可以正常使用EayunOS虚拟化系统|||
+|196     |Linux操作系统兼容性|测试EayunOS虚拟化系统支持Linux操作系统（Ubuntu、CentOS、Fedora，根据系统支持的实际情况补充用例可以将每个操作系统写成单独的用例）|在该操作系统下可以正常使用EayunOS虚拟化系统|||
+|197     |浏览器兼容测试|测试使用IE浏览器|windows操作系统支持IE浏览器，Linux操作系统不支持|||
+|198     |浏览器兼容测试|测试使用Firefox浏览器|Linux操作系统支持Firefox浏览器，Windows在Firefox上不能使用SPICE插件|||
+|199     |不同分辨率下(测试所有分辨率)，使用EayunOS虚拟化管理系统|显示正确|||
 
