@@ -65,10 +65,10 @@
 <tr>
  <td>311</td>
  <td>
-     前提条件：已经给不同的用户分配了不同的权限<br/>
+     前提条件：已经给用户分配了权限<br/>
      <br/>
      <ol style="list-style-type:square">
-     <li>验证存储管理（StorageAdmin）角色</li> <br/>
+     验证存储管理（StorageAdmin）角色 <br/>
      <ol style="list-style-type:decimal">
          <li> 用存储管理的角色登录管理门户 <br/>
          </li>
