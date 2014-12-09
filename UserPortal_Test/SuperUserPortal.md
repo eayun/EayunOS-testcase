@@ -54,19 +54,30 @@
              </ol>
              然后点击【Add】按钮。在"用户"的详细面板中显示了新添加的用户（本实验xyy）
          </li><br/>
-         <li>登录EayunOS虚拟化管理服务控制台</li><br/>
-              <ol style="list-style-type:square">
-                 <li>将密码添加到/var/tmp/password(可以指定其它路径，本实验采用该路径)
-                 </li>
-                 <li>输入以下命令：<br/>
-                 engine-manage-domains edit --domain=zhaochao.eayunos.eayun.com                          --provider=ipa --user=xyy --password-file=/var/tmp/password                             --add-permissions
-                 </li>
-                 <li>重启ovirt engine使得修改生效：<br/>
-                 #service ovirt-engine restart</li>
-                 <li>登录管理系统，可以在用户列表下看到新添加的用户，该用户权限为
-                 SuperUser</li><br/>
-              </ol>
-        
+        <li>两种方式：</li>
+	         1. 在命令行添加SuperUser权限：
+		               <ol style="list-style-type:square">
+			                        <li>登录EayunOS虚拟化管理服务控制台</li>
+						                 <li>将密码添加到/var/tmp/password(可以指定其它路径，本实验采用该路径)<br/> 若不添加--password-file选项，则会以交互方式输入密码。
+								                  </li>
+										                   <li>输入以下命令：<br/>
+												                    engine-manage-domains edit --domain=zhaochao.eayunos.eayun.com                          --provider=ipa --user=xyy --password-file=/var/tmp/password                             --add-permissions
+														                     </li>
+																                      <li>重启ovirt engine使得修改生效：<br/>
+																		                       #service ovirt-engine restart</li>
+																				                        <li>登录管理系统，可以在用户列表下看到新添加的用户，该用户权限为
+																							                 SuperUser</li><br/>
+																									               </ol>
+																										                2. 登录EayunOS虚拟化管理系统为用户添加权限：
+																												              <ol style="list-style-type:square">
+																													                       <li>点击右上角的【配置】按键
+																															                        </li>
+																																		                 <li>在弹出的【配置】窗口中，点击右侧的【系统权限】标签，在右侧的列表处，点击菜单中的【添加】按键 
+																																				                  </li>
+																																						                   <li>在弹出的【为用户添加系统权限】窗口中，选择搜索域和命名空间，点击【执行】 
+																																								                    <li>执行结束后，在列表中列出该域下的所有用户，勾选需要添加权限的用户</li>
+																																										                     <li>在【要分配的角色】下拉菜单中选择要分配的角色，点击【确定】</li>
+																																												                   </ol>
      </ol>
  </td>
  <td>EayunOS虚拟化系统中，用户列表中显示添加的用户，该用户可以通过用户门户登录系统
