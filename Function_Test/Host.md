@@ -9,5 +9,5 @@
 |102     |维护主机|<ol><li>在虚拟化管理系统左侧树形面板下选择 Expand All-\>System在右侧详细面板中选择 Hosts，选择待维护的host，点击菜单内的Maintenance,弹出Maintenance Host(s)确认框， 点击OK</li><li>列表下该Host状态 Preparing Maintenance-\>Maintenance</li></ol>|主机进入维护模式|||
 |103     |激活主机|<ol><li>在Host列表下，选择已被设置成Maintenance模式的Host，点击菜单内的Active</li><li>Host状态Unassigned-\>Up</li></ol>|主机激活成功|||
 |104     |删除主机|<ul><li>前提：</li></ul><ol><li>主机不是non-responsive、没有磁盘卷、主机本身不是存储域（本地数存储就属于这种情况）</li><ol><ul><li>操作：</li></ul><ol><li>在Host列表下，选择待删除的Host，将其置成 Maintenance，点击Remove</li></ol>|Host成功被删除|||
-|105     |强制删除主机|<ul><li>前提：</li></ul><ol><li>主机是non-responsive、没有磁盘 卷、主机本身不是存储域（本地数存储就属于这种情况） 中任意一种</li></ol><ul><li>操作：</li></ul><ol><li>在Host列表下，选择待删除的Host，将其置成Maintenance，点击Remove，再选中Force Remove，点击OK</li></ol>|Host成功被删除|||
+|105     |强制删除主机|<ul><li>前提：</li></ul><ol><li>主机是non-responsive、没有磁盘卷、主机本身不是存储域（本地数存储就属于这种情况） 中任意一种</li></ol><ul><li>操作：</li></ul><ol><li>在Host列表下，选择待删除的Host，将其置成Maintenance，点击Remove，再选中Force Remove，点击OK</li></ol>|Host成功被删除|||
 
