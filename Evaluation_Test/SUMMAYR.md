@@ -5,7 +5,7 @@
   * [部署普通主机]
   * [配置网络]
   * [配置存储]
-* [实验二 虚拟机的创建和使用](../../Function_Test/VM_Create_Used.md)
+* [实验二 虚拟机的创建和使用](../Function_Test/VM_Create_Used.md)
   * [创建Linux虚拟机]
   * [创建Linux虚拟机模板]
   * [创建基于模板的虚拟机(模板版本）]
@@ -18,17 +18,17 @@
 * [实验三 虚拟机的迁移]
   * [定义集群策略]
   * [虚拟机的动态迁移](../Function_Test/VM_Live_Migrate.md)
-* [实验四 超级用户门户](UserPortal_Test/SuperUserPortal.md)
+* [实验四 超级用户门户](../UserPortal_Test/SuperUserPortal.md)
   * [域控管理](../Function_Test/Engine_Manage_Domains.md)
   * [在IPA目录添加新用户]
   * [PowerUserRole权限分配]
   * [在现有的虚拟机上分配PowerUserRole权限]
   * [登录超级用户门户]
-  * [创建Linux桌面版虚拟机](UserPortal_Test/VM_Linux_Create.md)
+  * [创建Linux桌面版虚拟机](../UserPortal_Test/VM_Linux_Create.md)
   * [打开虚拟机控制台]
   * [虚拟机制作模板]
   * [验证虚拟机及模板权限]
-* [实验五 多级权限管理](UserPortal_Test/Multiple_Permission_Manage.md)
+* [实验五 多级权限管理](../UserPortal_Test/Multiple_Permission_Manage.md)
   * [为存储域分配存储管理员角色]
   * [虚拟机管理员]
   * [用户权限验证]
