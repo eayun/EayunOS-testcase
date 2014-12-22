@@ -5,7 +5,7 @@
   * [部署普通主机]
   * [配置网络]
   * [配置存储]
-* [实验二 虚拟机的创建和使用](Function_Test/VM_Create_Used.md)
+* [实验二 虚拟机的创建和使用](../Function_Test/VM_Create_Used.md)
   * [创建Linux虚拟机]
   * [创建Linux虚拟机模板]
   * [创建基于模板的虚拟机(模板版本）]
