@@ -13,8 +13,8 @@
   * [克隆虚拟机]
   * [虚拟机重启]
   * [编辑运行中的虚拟机]
-  * [虚拟机的Affinity组](Evaluation_Test/AffinityGroups.md)
-  * [Host Usb](Evaluation_Test/Host_Usb.md)
+  * [虚拟机的Affinity组](AffinityGroups.md)
+  * [Host Usb](Host_Usb.md)
 * [实验三 虚拟机的迁移]
   * [定义集群策略]
   * [虚拟机的动态迁移](Function_Test/VM_Live_Migrate.md)
@@ -42,13 +42,13 @@
   * [配置ISO域]
 * [实验七 高可用场景]
   * [配置电源管理]
-  * [主机的健康检查](Evaluation_Test/PMHealthCheck.md)
+  * [主机的健康检查](PMHealthCheck.md)
   * [配置虚拟机高可用](Function_Test/VM_HA.md)
   * [主机重启]
   * [虚拟机中断]
   * [主机无响应]
-  * [主机的Fence](Evaluation_Test/Fence.md)
-  * [Engine的高可用](Evaluation_Test/HostedEngine_HA.md)
+  * [主机的Fence](Fence.md)
+  * [Engine的高可用](HostedEngine_HA.md)
   * [Engine的维护模式]
 * [实验八 虚拟桌面](Function_Test/Virtual_Desktop.md)
   * [创建一个Windows虚拟机]
@@ -64,8 +64,8 @@
   * [创建一个浮动磁盘](Function_Test/FloatingDisk_Create.md)
   * [创建一个可共享的虚拟机磁盘](Function_Test/ShareDisk_Create.md)
   * [给虚拟机分配LUNs](Function_Test/LUNs_To_VM.md)
-  * [虚拟机备份](Evaluation_Test/VM_Backup.md)
-  * [数据域的导入](Evaluation_Test/ImportStorageDomain.md)
+  * [虚拟机备份](VM_Backup.md)
+  * [数据域的导入](ImportStorageDomain.md)
 * [实验十一 报表门户]
   * [登录报表门户]
   * [使用报表门户]
