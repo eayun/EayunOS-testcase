@@ -1,5 +1,6 @@
 # 创建Linux虚拟机
 * 摘要
+
   在EayunOS4.1的版本中，新增了一些虚拟机的支持。
 
 ## 创建Red Hat Enterprise Linux 7虚拟机
