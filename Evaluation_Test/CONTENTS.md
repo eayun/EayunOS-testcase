@@ -24,7 +24,7 @@
   * [PowerUserRole权限分配](PowerUserRole_DataCenter.md)
   * [在现有的虚拟机上分配PowerUserRole权限](PowerUserRole_VM.md)
   * [登录超级用户门户]()
-  * [创建Linux桌面版虚拟机](../UserPortal_Test/VM_Linux_Create.md)
+  * [创建Linux桌面版虚拟机](VM_Linux_Create.md)
   * [打开虚拟机控制台]()
   * [虚拟机制作模板]()
   * [验证虚拟机及模板权限](Permission_Verify.md)
@@ -43,7 +43,7 @@
 * [实验七 高可用场景]
   * [配置电源管理](PM_Configure.md)
   * [主机的健康检查](PMHealthCheck.md)
-  * [配置虚拟机高可用](../Function_Test/VM_HA.md)
+  * [配置虚拟机高可用](VM_HA.md)
   * [主机的Fence](Fence.md)
   * [Engine的高可用](HostedEngine_HA.md)
   * [Engine的维护模式]
