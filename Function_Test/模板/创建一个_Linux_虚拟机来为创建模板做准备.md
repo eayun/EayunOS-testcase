@@ -1,1 +1,5 @@
 #创建一个 Linux 虚拟机来为创建模板做准备
+| 编号 | 测试项 | 测试目的 | 测试步骤 | 预期结果 | 实际结果 |
+|--------- | ---------- | ------------ | ------------ | ------------ | ------------ |
+|**0070500**|手动封装Linux虚拟机为创建虚拟机做准备|防止基于模板创建的虚拟机配置文件冲突问题|1.用ssh或者console登陆虚拟机，创建标记文件：` # touch /.unconfigured`<br/>2.删除 ssh host keys：`# rm -rf /etc/ssh/ssh_host_*`<br/>3.在文件/etc/sysconfig/network 中设置`HOSTNAME=localhost.localdomain`。<br/>4.删除配置文件 /etc/udev/rules.d/70-\*：`# rm -rf /etc/udev/rules.d/70-*`<br/>5.在文件 /etc/sysconfig/network-scripts/ifcfg-eth\* 中，删除 HWADDR= 所在一行。<br/>6.删除所有位于 /var/log 下的日志和位于 /root 下的安装日志，此步骤不是必须的。<br/>7.关闭虚拟机：`# poweroff `|虚拟机封装成功||
+|**0070501**|使用 sys-unconfig 封装Linux虚拟机为创建虚拟机做准备|防止基于模板创建的虚拟机配置文件冲突问题|1.用ssh或者console登陆虚拟机。<br/>2.删除 ssh host keys：`# rm -rf /etc/ssh/ssh_host_*`<br/>3.在文件/etc/sysconfig/network 中设置`HOSTNAME=localhost.localdomain`。<br/>4.删除配置文件 /etc/udev/rules.d/70-\*：`# rm -rf /etc/udev/rules.d/70-*`<br/>5.在文件 /etc/sysconfig/network-scripts/ifcfg-eth\* 中，删除 HWADDR= 所在一行。<br/>6.删除所有位于 /var/log 下的日志和位于 /root 下的安装日志，此步骤不是必须的。<br/>7.运行以下命令：`# sys-unconfig `|虚拟机封装成功||
