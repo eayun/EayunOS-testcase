@@ -43,7 +43,7 @@
 
 这个功能使创建卷与为存在的卷添加brick变的更加简单也使的为每个主机显示bricks列表变的更加有意义。现在直接选择比打字写出路径变的更加的简单。下面是添加brick的新窗口。
 
-   ![New-add-brick-screen](../images/New-add-brick-screen)
+   ![New-add-brick-screen](../images/New-add-brick-screen.png)
 
 ###详细设计
 
