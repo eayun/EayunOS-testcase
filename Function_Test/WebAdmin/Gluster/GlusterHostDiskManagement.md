@@ -1,56 +1,7 @@
 #使用Gluster管理主机和磁盘
-###主机设备管理
-####总结
+
 这个功能可以控制主机上的磁盘和存储设备，在Gluster集群中，可以识别bricks。配置包括
 <ol><li> 确定磁盘和存储设备不存在文件系统</li><li>使用这些brick设备通过新的逻辑卷创建新的brick或者通过扩大逻辑卷来扩大存在的brick</li><li>如果有必要可以选择xfs或其他文件系统格式对逻辑卷</li><li>更新这个条目的逻>辑卷</li><li>挂载这个逻辑卷</li></ol>
-这个功能可以适用于新添加的主机或新添加的磁盘和现有主机的存储设备中
-####研发者
-* 功能研发者：Balamurugan Arumugam
-* GUI组件研发者：Ramesh Nachimuthu
-* Engine组件研发者：Ramesh Nachimuthu
-* VDSM研发者:Timothy Asir
-* QA研发者：
-
-####当前状态
-* 状态：已完成
-* 最新更新日期：
-
-###细节描述
-####存储设备列表
-在主机详细面板下添加了一个“储存设备“新的选项卡，这个选项卡将会列出错有选中主机的存储设备,所有可以供给gluster卷使用的空存储设备都将被放在列表最上面，剩下已经被使用的设备将出现一个象征锁，并且放到列表的最下边。
-
-   ![Storage_Devive_SubTab](../images/Storage_Devive_SubTab.png)
-
-####创建brick
-在创建卷的时候存在添加brick选项卡，点击选项卡将会弹出添加brick的页面，用户可以选择他想要的存储设备来创建brick。
-   
-   ![Create_Brick_Dailog](../images/Create_Brick_Dailog.png)
-
-当用户点击OK会发生以下事情
-
-  1. New Physical Volume(PV) will be created with the selected storage
-  2. New Volume group (VG) will be created with PV created in step 1
-  3. New Thin Pool will be created in the VG
-  4. New Logical Volume (LV)  will be created in the Thin Pool.
-  5. LV created in step 4 will be formatted using XFS file system with the required performance configurations
-  6. LV will be mounted on the folder /rhs-bricks/'<brick-name>.'
-
-####扩展Brick
-
-在储存设备选项卡里存在一个扩展brick的选项，这个选项能够帮助你扩展存在的LV以及在LV里的文件系统。这是一个在线操作，在使用卷的brick的时候不会出现任何中断。
-
-####改变brick的选择
-
-这个功能使创建卷与为存在的卷添加brick变的更加简单也使的为每个主机显示bricks列表变的更加有意义。现在直接选择比打字写出路径变的更加的简单。下面是添加brick的新窗口。
-
-   ![New-add-brick-screen](../images/New-add-brick-screen.png)
-
-###详细设计
-
-引用URl:[http://www.ovirt.org/Features/Design/GlusterHostDiskManagement](http://www.ovirt.org/Features/Design/GlusterHostDiskManagement)详细功能特性的介绍。
-
-###依赖/相关功能和项目
-none
 
 ##测试用例0110001
 * 测试步骤
