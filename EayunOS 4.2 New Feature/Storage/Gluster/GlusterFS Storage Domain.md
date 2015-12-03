@@ -1,0 +1,1 @@
+# GlusterFS Storage Domain
