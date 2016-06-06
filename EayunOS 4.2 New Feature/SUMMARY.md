@@ -219,6 +219,7 @@
    * [Users and Roles](Users and Roles/README.md)
       * [AAA JDBC](Users and Roles/AAA JDBC.md)
    * [VM](VM/README.md)
+      * [Affinity Rules Enforcement Manager](VM/Affinity Rules Enforcement Manager.md)
       * [Allow setting of machine type per VM rather than cluster level](VM/Allow setting of machine type per VM rather than cluster level.md)
       * [Allow to avoid lock screen on spice disconnect](VM/Allow to avoid lock screen on spice disconnect.md)
       * [Blank to Defaults](VM/Blank to Defaults.md)
